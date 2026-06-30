@@ -1,0 +1,60 @@
+scale = 1.25          # Default: The window's scale factor (system dependent)
+theme = "Dark"        # Possible values: ["Auto", "Light", "Dark"]
+lines-to-scroll = 3.0
+
+# [window]
+# position = [500, 200] #[x, y]
+# size = [600, 500] #[width, height]
+
+# Syntax highlighting theme. All of `syntect`s default themes are supported
+# Possible values: [
+#     "base16-eighties-dark", "base16-mocha-dark", "base16-ocean-dark",
+#     "base16-ocean-light",   "coldark-cold",      "coldark-dark",
+#     "dark-neon",            "dracula",           "github",
+#     "gruvbox-dark",         "gruvbox-light",     "leet",
+#     "monokai-extended",     "monokai-extended-light",
+#     "nord",                 "one-half-dark",     "one-half-light",
+#     "solarized-dark",       "solarized-light",   "sublime-snazzy",
+#     "two-dark",             "visual-studio-dark-plus",
+#     "zenburn"
+# ]
+
+[dark-theme]
+text-color = 0x9dacbb
+background-color = 0x1a1d22
+code-color = 0xb38fac
+quote-block-color = 0x1d2025
+link-color = 0x4182eb
+select-color = 0x3675cb
+checkbox-color = 0x0a5301
+code-highlighter = "base16-ocean-dark"
+
+[light-theme]
+text-color = 0x000000
+background-color = 0xffffff
+code-color = 0x95114e
+quote-block-color = 0xeef9fe
+link-color = 0x5466ff
+select-color = 0xcde8f0
+checkbox-color = 0x96ecae
+code-highlighter = "github"
+
+[font-options]
+regular-font = "JetBrainsMono Nerd Font"
+monospace-font = "JetBrainsMono Nerd Font"
+
+[keybindings]
+# The default keybindings include both normal and vim-like bindings
+
+# Base will override the defaults keybindings if set. Useful for when you want
+# to fully specify all of the keybindings
+# Example:
+# base = [
+#     ["ToTop", "Home"],
+#     ["ToBottom", "End"],
+#     ["Copy", { key = "c", mod = ["Ctrl"] }],
+#     ["ToTop", ["g", "g"]],
+#     ["ToBottom", { key = "g", mod = ["Shift"] }],
+#     ["Copy", "y"],
+# ]
+# Default: Not set

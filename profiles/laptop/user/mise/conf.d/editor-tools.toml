@@ -1,0 +1,10 @@
+[tools]
+# lsp
+lua-language-server = "latest"
+tinymist = "latest"
+tombi = "latest"
+# fmt
+"pipx:mdformat" = { version = "latest", uvx = "true", uvx_args = "--with mdformat-gfm,mdformat-frontmatter,mdformat-footnote,mdformat-gfm-alerts" }
+stylua = "latest"
+# etc
+"github:zk-org/zk" = "latest"

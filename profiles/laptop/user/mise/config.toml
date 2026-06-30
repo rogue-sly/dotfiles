@@ -1,0 +1,21 @@
+[tools]
+opencode = "latest"
+
+"github:RivoLink/leaf" = "latest"
+"github:exercism/cli" = "latest"
+"gitlab:rogue-sly/dotbee" = "latest"
+"pipx:gitlabci-local" = "latest"
+"github:scipenai/tylax" = "latest"
+
+# "github:shader-slang/slang" = "latest"
+# "github:spyweb-app/spyweb" = "latest"
+
+[settings]
+auto_install = false
+auto_install_disable_tools = ["rust"]
+disable_tools = ["rust"]
+lockfile = true
+# backends
+cargo.binstall = true
+dotnet = { isolated = true }
+pipx.uvx = true

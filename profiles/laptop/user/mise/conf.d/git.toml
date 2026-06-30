@@ -1,0 +1,5 @@
+[tools]
+gh = "latest"
+glab = { version = "latest", exe = "glab" }
+lefthook = "latest"
+git-cliff = "latest"

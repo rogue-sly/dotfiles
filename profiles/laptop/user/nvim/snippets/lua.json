@@ -1,0 +1,17 @@
+{
+  "Lazy Plugin Spec": {
+    "prefix": "lazy",
+    "body": [
+      "---@type LazySpec",
+      "return {",
+      "    \"${1:author/plugin}\",",
+      "    enabled = ${2:true},",
+      "    ---@type ${3:ConfigType}",
+      "    opts = {",
+      "        ${0}",
+      "    },",
+      "}"
+    ],
+    "description": "Neovim plugin specification for lazy.nvim"
+  }
+}
