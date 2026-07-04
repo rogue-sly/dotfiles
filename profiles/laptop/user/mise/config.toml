@@ -7,15 +7,12 @@ opencode = "latest"
 "pipx:gitlabci-local" = "latest"
 "github:scipenai/tylax" = "latest"
 
-# "github:shader-slang/slang" = "latest"
-# "github:spyweb-app/spyweb" = "latest"
-
 [settings]
 auto_install = false
 auto_install_disable_tools = ["rust"]
 disable_tools = ["rust"]
 lockfile = true
 # backends
-cargo.binstall = true
+cargo = { binstall = true, binstall_only = true }
 dotnet = { isolated = true }
-pipx.uvx = true
+pipx = { uvx = true }
