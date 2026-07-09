@@ -22,5 +22,5 @@
   "tokyonight.nvim": { "branch": "main", "commit": "545d72cde6400835d895160ecb5853874fd5156d" },
   "typst-preview.nvim": { "branch": "master", "commit": "325036ee145ca51d9efb145c09ac16bce3bc8b7d" },
   "which-key.nvim": { "branch": "main", "commit": "fcbf4eea17cb299c02557d576f0d568878e354a4" },
-  "zk": { "branch": "main", "commit": "e6b32dfc220a73b4b6e2ca042f641d088784cb9f" }
+  "zk": { "branch": "main", "commit": "bca7e4a119353f18f2a819385fb7ce10269ef747" }
 }

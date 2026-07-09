@@ -1,11 +1,9 @@
 [tools]
-opencode = "latest"
-
-"github:RivoLink/leaf" = "latest"
 "github:exercism/cli" = "latest"
-"gitlab:rogue-sly/dotbee" = "latest"
-"pipx:gitlabci-local" = "latest"
+"github:rogue-sly/dotbee" = "latest"
 "github:scipenai/tylax" = "latest"
+"github:RivoLink/leaf" = "latest"
+"cargo:wrkflw" = "latest"
 
 [settings]
 auto_install = false

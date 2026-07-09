@@ -4,6 +4,10 @@
 version = "0.23.0"
 backend = "cargo:cargo-zigbuild"
 
+[[tools."cargo:wrkflw"]]
+version = "0.8.0"
+backend = "cargo:wrkflw"
+
 [[tools.gh]]
 version = "2.96.0"
 backend = "aqua:cli/cli"
@@ -76,6 +80,30 @@ checksum = "sha256:068d00b7054c64e9218b5553835e598d685fd0f719c2b8abcb10941ed6e7a
 url = "https://github.com/RivoLink/leaf/releases/download/1.26.0/leaf-linux-x86_64"
 url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/466139004"
 
+[[tools."github:bahdotsh/wrkflw"]]
+version = "0.8.0"
+backend = "github:bahdotsh/wrkflw"
+
+[tools."github:bahdotsh/wrkflw"."platforms.linux-x64"]
+checksum = "sha256:d7140aa917da5bb13a2f27eab6c592bb019cbe4977e14390d579992087a6a902"
+url = "https://github.com/bahdotsh/wrkflw/releases/download/v0.8.0/wrkflw-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/bahdotsh/wrkflw/releases/assets/401841586"
+
+[tools."github:bahdotsh/wrkflw"."platforms.linux-x64-baseline"]
+checksum = "sha256:d7140aa917da5bb13a2f27eab6c592bb019cbe4977e14390d579992087a6a902"
+url = "https://github.com/bahdotsh/wrkflw/releases/download/v0.8.0/wrkflw-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/bahdotsh/wrkflw/releases/assets/401841586"
+
+[tools."github:bahdotsh/wrkflw"."platforms.linux-x64-musl"]
+checksum = "sha256:7606fecdc6816f8d1503929f41f1a9d57b25362b13193aaef2732df061a4de30"
+url = "https://github.com/bahdotsh/wrkflw/releases/download/v0.8.0/wrkflw-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/bahdotsh/wrkflw/releases/assets/401841582"
+
+[tools."github:bahdotsh/wrkflw"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:7606fecdc6816f8d1503929f41f1a9d57b25362b13193aaef2732df061a4de30"
+url = "https://github.com/bahdotsh/wrkflw/releases/download/v0.8.0/wrkflw-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/bahdotsh/wrkflw/releases/assets/401841582"
+
 [[tools."github:exercism/cli"]]
 version = "3.5.8"
 backend = "github:exercism/cli"
@@ -99,6 +127,30 @@ url_api = "https://api.github.com/repos/exercism/cli/releases/assets/296817787"
 checksum = "sha256:4ce6a3e5e41e4c51606f8cb94ef6b46e8f45144ef8c613c1ea4b8b69209e02ad"
 url = "https://github.com/exercism/cli/releases/download/v3.5.8/exercism-3.5.8-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/exercism/cli/releases/assets/296817787"
+
+[[tools."github:rogue-sly/dotbee"]]
+version = "0.7.0"
+backend = "github:rogue-sly/dotbee"
+
+[tools."github:rogue-sly/dotbee"."platforms.linux-x64"]
+checksum = "sha256:fdd765466d056a418f543c7527202075079ec90addcc1956a2bac2ac719b65cf"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.7.0/dotbee-linux-x86_64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/468125151"
+
+[tools."github:rogue-sly/dotbee"."platforms.linux-x64-baseline"]
+checksum = "sha256:fdd765466d056a418f543c7527202075079ec90addcc1956a2bac2ac719b65cf"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.7.0/dotbee-linux-x86_64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/468125151"
+
+[tools."github:rogue-sly/dotbee"."platforms.linux-x64-musl"]
+checksum = "sha256:41f2e085ef22b080a5f86fabc128853a618d0a418852607ef5da14539a80264e"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.7.0/dotbee-linux-x86_64-musl"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/468125166"
+
+[tools."github:rogue-sly/dotbee"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:41f2e085ef22b080a5f86fabc128853a618d0a418852607ef5da14539a80264e"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.7.0/dotbee-linux-x86_64-musl"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/468125166"
 
 [[tools."github:scipenai/tylax"]]
 version = "0.3.6"
@@ -170,28 +222,28 @@ url = "https://gitlab.com/rogue-sly/dotbee/-/releases/v0.6.3/downloads/dotbee-v0
 url_api = "https://gitlab.com/rogue-sly/dotbee/-/jobs/artifacts/v0.6.3/raw/dotbee-v0.6.3-linux-x64-musl.tar.gz?job=build:x86_64"
 
 [[tools.glab]]
-version = "1.106.0"
+version = "1.107.0"
 backend = "gitlab:gitlab-org/cli"
 
 [tools.glab."platforms.linux-x64"]
-checksum = "sha256:9bd32da785683a884121244c0ffc0f8bfc40ee7d47e5c4f546ee10748dabdbe3"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.106.0/downloads/glab_1.106.0_linux_amd64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E106%2E0/glab_1%2E106%2E0_linux_amd64%2Etar%2Egz"
+checksum = "sha256:eb42f56eb1a789cf4f22aa5960ff0ef60cf1e7fc1295327501f9f59030d5ae2c"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.107.0/downloads/glab_1.107.0_linux_amd64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E107%2E0/glab_1%2E107%2E0_linux_amd64%2Etar%2Egz"
 
 [tools.glab."platforms.linux-x64-baseline"]
-checksum = "sha256:9bd32da785683a884121244c0ffc0f8bfc40ee7d47e5c4f546ee10748dabdbe3"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.106.0/downloads/glab_1.106.0_linux_amd64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E106%2E0/glab_1%2E106%2E0_linux_amd64%2Etar%2Egz"
+checksum = "sha256:eb42f56eb1a789cf4f22aa5960ff0ef60cf1e7fc1295327501f9f59030d5ae2c"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.107.0/downloads/glab_1.107.0_linux_amd64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E107%2E0/glab_1%2E107%2E0_linux_amd64%2Etar%2Egz"
 
 [tools.glab."platforms.linux-x64-musl"]
-checksum = "sha256:9bd32da785683a884121244c0ffc0f8bfc40ee7d47e5c4f546ee10748dabdbe3"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.106.0/downloads/glab_1.106.0_linux_amd64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E106%2E0/glab_1%2E106%2E0_linux_amd64%2Etar%2Egz"
+checksum = "sha256:eb42f56eb1a789cf4f22aa5960ff0ef60cf1e7fc1295327501f9f59030d5ae2c"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.107.0/downloads/glab_1.107.0_linux_amd64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E107%2E0/glab_1%2E107%2E0_linux_amd64%2Etar%2Egz"
 
 [tools.glab."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:9bd32da785683a884121244c0ffc0f8bfc40ee7d47e5c4f546ee10748dabdbe3"
-url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.106.0/downloads/glab_1.106.0_linux_amd64.tar.gz"
-url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E106%2E0/glab_1%2E106%2E0_linux_amd64%2Etar%2Egz"
+checksum = "sha256:eb42f56eb1a789cf4f22aa5960ff0ef60cf1e7fc1295327501f9f59030d5ae2c"
+url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.107.0/downloads/glab_1.107.0_linux_amd64.tar.gz"
+url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E107%2E0/glab_1%2E107%2E0_linux_amd64%2Etar%2Egz"
 
 [[tools.lefthook]]
 version = "2.1.9"
@@ -237,6 +289,10 @@ url = "https://github.com/LuaLS/lua-language-server/releases/download/3.18.2/lua
 checksum = "sha256:ca71415dd19f19e30aaa35a4915aefca9fdb5fec31b98331cc3d77f778d539c5"
 url = "https://github.com/LuaLS/lua-language-server/releases/download/3.18.2/lua-language-server-3.18.2-linux-x64.tar.gz"
 
+[[tools."npm:typescript"]]
+version = "7.0.2"
+backend = "npm:typescript"
+
 [[tools.opencode]]
 version = "1.17.13"
 backend = "aqua:anomalyco/opencode"
@@ -274,58 +330,58 @@ uvx = "true"
 uvx_args = "--with mdformat-gfm,mdformat-frontmatter,mdformat-footnote,mdformat-gfm-alerts"
 
 [[tools.slint-lsp]]
-version = "1.17.0"
+version = "1.17.1"
 backend = "github:slint-ui/slint"
 
 [tools.slint-lsp.options]
 asset_pattern = "slint-lsp-linux*"
 
 [tools.slint-lsp."platforms.linux-x64"]
-checksum = "sha256:25a21a6d99e7bd8c3dd7bd93e37e05bb77e24cee0922641062159b1ba2c9f70d"
-url = "https://github.com/slint-ui/slint/releases/download/v1.17.0/slint-lsp-linux.tar.gz"
-url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/456640597"
+checksum = "sha256:6f363163c4deafea085191c2c3cb80d8af8a71510370dac6a1dca21177b571fa"
+url = "https://github.com/slint-ui/slint/releases/download/v1.17.1/slint-lsp-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/468912271"
 
 [tools.slint-lsp."platforms.linux-x64-baseline"]
-checksum = "sha256:25a21a6d99e7bd8c3dd7bd93e37e05bb77e24cee0922641062159b1ba2c9f70d"
-url = "https://github.com/slint-ui/slint/releases/download/v1.17.0/slint-lsp-linux.tar.gz"
-url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/456640597"
+checksum = "sha256:6f363163c4deafea085191c2c3cb80d8af8a71510370dac6a1dca21177b571fa"
+url = "https://github.com/slint-ui/slint/releases/download/v1.17.1/slint-lsp-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/468912271"
 
 [tools.slint-lsp."platforms.linux-x64-musl"]
-checksum = "sha256:25a21a6d99e7bd8c3dd7bd93e37e05bb77e24cee0922641062159b1ba2c9f70d"
-url = "https://github.com/slint-ui/slint/releases/download/v1.17.0/slint-lsp-linux.tar.gz"
-url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/456640597"
+checksum = "sha256:6f363163c4deafea085191c2c3cb80d8af8a71510370dac6a1dca21177b571fa"
+url = "https://github.com/slint-ui/slint/releases/download/v1.17.1/slint-lsp-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/468912271"
 
 [tools.slint-lsp."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:25a21a6d99e7bd8c3dd7bd93e37e05bb77e24cee0922641062159b1ba2c9f70d"
-url = "https://github.com/slint-ui/slint/releases/download/v1.17.0/slint-lsp-linux.tar.gz"
-url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/456640597"
+checksum = "sha256:6f363163c4deafea085191c2c3cb80d8af8a71510370dac6a1dca21177b571fa"
+url = "https://github.com/slint-ui/slint/releases/download/v1.17.1/slint-lsp-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/468912271"
 
 [[tools.slint-viewer]]
-version = "1.17.0"
+version = "1.17.1"
 backend = "github:slint-ui/slint"
 
 [tools.slint-viewer.options]
 asset_pattern = "slint-viewer-linux*"
 
 [tools.slint-viewer."platforms.linux-x64"]
-checksum = "sha256:abe0788e685fe316f2b0ae4f4b079a0d59d7a1eb076ffeb10f2236db71cc9e84"
-url = "https://github.com/slint-ui/slint/releases/download/v1.17.0/slint-viewer-linux.tar.gz"
-url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/456640427"
+checksum = "sha256:79d1d1121d12b2933e1aa714881d17e163b18f81930e87379ac4ef302eaac4b7"
+url = "https://github.com/slint-ui/slint/releases/download/v1.17.1/slint-viewer-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/468912096"
 
 [tools.slint-viewer."platforms.linux-x64-baseline"]
-checksum = "sha256:abe0788e685fe316f2b0ae4f4b079a0d59d7a1eb076ffeb10f2236db71cc9e84"
-url = "https://github.com/slint-ui/slint/releases/download/v1.17.0/slint-viewer-linux.tar.gz"
-url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/456640427"
+checksum = "sha256:79d1d1121d12b2933e1aa714881d17e163b18f81930e87379ac4ef302eaac4b7"
+url = "https://github.com/slint-ui/slint/releases/download/v1.17.1/slint-viewer-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/468912096"
 
 [tools.slint-viewer."platforms.linux-x64-musl"]
-checksum = "sha256:abe0788e685fe316f2b0ae4f4b079a0d59d7a1eb076ffeb10f2236db71cc9e84"
-url = "https://github.com/slint-ui/slint/releases/download/v1.17.0/slint-viewer-linux.tar.gz"
-url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/456640427"
+checksum = "sha256:79d1d1121d12b2933e1aa714881d17e163b18f81930e87379ac4ef302eaac4b7"
+url = "https://github.com/slint-ui/slint/releases/download/v1.17.1/slint-viewer-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/468912096"
 
 [tools.slint-viewer."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:abe0788e685fe316f2b0ae4f4b079a0d59d7a1eb076ffeb10f2236db71cc9e84"
-url = "https://github.com/slint-ui/slint/releases/download/v1.17.0/slint-viewer-linux.tar.gz"
-url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/456640427"
+checksum = "sha256:79d1d1121d12b2933e1aa714881d17e163b18f81930e87379ac4ef302eaac4b7"
+url = "https://github.com/slint-ui/slint/releases/download/v1.17.1/slint-viewer-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/468912096"
 
 [[tools.stylua]]
 version = "2.5.2"
@@ -368,25 +424,25 @@ checksum = "sha256:f5e275c6289a5c4b45ca211abde329dd662b03f2c4aca2299d6c154b81135
 url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.2/tinymist-linux-x64"
 
 [[tools.tombi]]
-version = "1.1.7"
+version = "1.2.0"
 backend = "aqua:tombi-toml/tombi"
 
 [tools.tombi."platforms.linux-x64"]
-checksum = "sha256:7315e375d3a0c6a8ab2d64e833a5a8aa4deb79fbbc6cd0aea8343c0eb7ed382f"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.1.7/tombi-cli-1.1.7-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/463359332"
+checksum = "sha256:6f253f2fce04314a518f7c710471b4c0cdb0140e5a230092c83c98d8559c2816"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.0/tombi-cli-1.2.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/467173957"
 
 [tools.tombi."platforms.linux-x64-baseline"]
-checksum = "sha256:7315e375d3a0c6a8ab2d64e833a5a8aa4deb79fbbc6cd0aea8343c0eb7ed382f"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.1.7/tombi-cli-1.1.7-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/463359332"
+checksum = "sha256:6f253f2fce04314a518f7c710471b4c0cdb0140e5a230092c83c98d8559c2816"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.0/tombi-cli-1.2.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/467173957"
 
 [tools.tombi."platforms.linux-x64-musl"]
-checksum = "sha256:7315e375d3a0c6a8ab2d64e833a5a8aa4deb79fbbc6cd0aea8343c0eb7ed382f"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.1.7/tombi-cli-1.1.7-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/463359332"
+checksum = "sha256:6f253f2fce04314a518f7c710471b4c0cdb0140e5a230092c83c98d8559c2816"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.0/tombi-cli-1.2.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/467173957"
 
 [tools.tombi."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:7315e375d3a0c6a8ab2d64e833a5a8aa4deb79fbbc6cd0aea8343c0eb7ed382f"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.1.7/tombi-cli-1.1.7-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/463359332"
+checksum = "sha256:6f253f2fce04314a518f7c710471b4c0cdb0140e5a230092c83c98d8559c2816"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.0/tombi-cli-1.2.0-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/467173957"
