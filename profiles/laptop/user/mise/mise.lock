@@ -57,28 +57,28 @@ checksum = "sha256:200d2535da6d9703f3bcc8a4d159c3b55eacdb01cf2148c55b3eee9dd04d5
 url = "https://github.com/orhun/git-cliff/releases/download/v2.13.1/git-cliff-2.13.1-x86_64-unknown-linux-musl.tar.gz"
 
 [[tools."github:RivoLink/leaf"]]
-version = "1.26.0"
+version = "1.26.1"
 backend = "github:RivoLink/leaf"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64"]
-checksum = "sha256:068d00b7054c64e9218b5553835e598d685fd0f719c2b8abcb10941ed6e7a603"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.0/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/466139004"
+checksum = "sha256:bea98a8658771a789b855158dbf8a0511c9e0df448b138377deeb960d50f1420"
+url = "https://github.com/RivoLink/leaf/releases/download/1.26.1/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/474710794"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-baseline"]
-checksum = "sha256:068d00b7054c64e9218b5553835e598d685fd0f719c2b8abcb10941ed6e7a603"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.0/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/466139004"
+checksum = "sha256:bea98a8658771a789b855158dbf8a0511c9e0df448b138377deeb960d50f1420"
+url = "https://github.com/RivoLink/leaf/releases/download/1.26.1/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/474710794"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-musl"]
-checksum = "sha256:068d00b7054c64e9218b5553835e598d685fd0f719c2b8abcb10941ed6e7a603"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.0/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/466139004"
+checksum = "sha256:bea98a8658771a789b855158dbf8a0511c9e0df448b138377deeb960d50f1420"
+url = "https://github.com/RivoLink/leaf/releases/download/1.26.1/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/474710794"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:068d00b7054c64e9218b5553835e598d685fd0f719c2b8abcb10941ed6e7a603"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.0/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/466139004"
+checksum = "sha256:bea98a8658771a789b855158dbf8a0511c9e0df448b138377deeb960d50f1420"
+url = "https://github.com/RivoLink/leaf/releases/download/1.26.1/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/474710794"
 
 [[tools."github:bahdotsh/wrkflw"]]
 version = "0.8.0"
@@ -246,27 +246,31 @@ url = "https://gitlab.com/gitlab-org/cli/-/releases/v1.107.0/downloads/glab_1.10
 url_api = "https://gitlab.com/api/v4/projects/gitlab-org%2Fcli/packages/generic/glab/1%2E107%2E0/glab_1%2E107%2E0_linux_amd64%2Etar%2Egz"
 
 [[tools.lefthook]]
-version = "2.1.9"
+version = "2.1.10"
 backend = "aqua:evilmartians/lefthook"
 
 [tools.lefthook."platforms.linux-x64"]
-checksum = "sha256:e938f34bd05bafe1155888879a045ef4ee8cf5b4a56c9e5e9b0c2649f295636e"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.9/lefthook_2.1.9_Linux_x86_64.gz"
+checksum = "sha256:0b14162a0bb2f0c64ae0759f6102f6e19c4d00981666a8ac73d4f5a6878ada4f"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_Linux_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227493"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.linux-x64-baseline"]
-checksum = "sha256:e938f34bd05bafe1155888879a045ef4ee8cf5b4a56c9e5e9b0c2649f295636e"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.9/lefthook_2.1.9_Linux_x86_64.gz"
+checksum = "sha256:0b14162a0bb2f0c64ae0759f6102f6e19c4d00981666a8ac73d4f5a6878ada4f"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_Linux_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227493"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.linux-x64-musl"]
-checksum = "sha256:e938f34bd05bafe1155888879a045ef4ee8cf5b4a56c9e5e9b0c2649f295636e"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.9/lefthook_2.1.9_Linux_x86_64.gz"
+checksum = "sha256:0b14162a0bb2f0c64ae0759f6102f6e19c4d00981666a8ac73d4f5a6878ada4f"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_Linux_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227493"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:e938f34bd05bafe1155888879a045ef4ee8cf5b4a56c9e5e9b0c2649f295636e"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.9/lefthook_2.1.9_Linux_x86_64.gz"
+checksum = "sha256:0b14162a0bb2f0c64ae0759f6102f6e19c4d00981666a8ac73d4f5a6878ada4f"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_Linux_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227493"
 provenance = "github-attestations"
 
 [[tools.lua-language-server]]
