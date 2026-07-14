@@ -150,7 +150,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
             vim.keymap.set("n", "<localleader>df", function()
                 local ok, conform = pcall(require, "conform")
                 if ok then
-                    conform.format()
+                    conform.format({ lsp_format = "fallback" })
                 else
                     vim.lsp.buf.format()
                 end

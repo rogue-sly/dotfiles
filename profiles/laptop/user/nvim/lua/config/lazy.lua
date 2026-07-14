@@ -25,7 +25,6 @@ require("lazy").setup({
         { import = "plugins.editor" }, -- fuzzy finder, filetree, scrollbar, git integration & more
         { import = "plugins.coding" }, -- code completion, formatting, linting, etc...
         -- other (removable plugins)
-        { import = "plugins.misc.discord", enabled = true }, -- flex on discord
         { import = "plugins.misc.doc", enabled = true }, -- notes/doc writing in neovim
     },
     checker = { enabled = false },

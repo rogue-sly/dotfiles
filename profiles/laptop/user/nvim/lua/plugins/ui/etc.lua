@@ -44,6 +44,4 @@ return {
             },
         },
     },
-    -- breadcrumbs
-    { "Bekaboo/dropbar.nvim", enabled = false, opts = {} },
 }

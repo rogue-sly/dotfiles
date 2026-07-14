@@ -25,6 +25,7 @@ return {
     ---@type conform.setupOpts
     opts = {
         format_on_save = true,
+        default_format_opts = { lsp_format = "fallback" },
         formatters_by_ft = {
             c = { "clang-format" },
             cpp = { "clang-format" },
