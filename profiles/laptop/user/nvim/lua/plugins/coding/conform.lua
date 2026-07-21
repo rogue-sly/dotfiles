@@ -24,19 +24,18 @@ return {
     end,
     ---@type conform.setupOpts
     opts = {
-        format_on_save = true,
+        format_on_save = { lsp_format = "fallback" },
         default_format_opts = { lsp_format = "fallback" },
         formatters_by_ft = {
             c = { "clang-format" },
             cpp = { "clang-format" },
             fish = { "fish_indent" },
             lua = { "stylua", lsp_format = "never" },
-            markdown = { "mdformat" },
+            markdown = { "oxfmt" },
             meson = { "meson" },
             python = { "ruff_format" },
             rust = { "rustfmt" },
             typst = { "typstyle" },
-            toml = { "tombi" },
         },
     },
 }

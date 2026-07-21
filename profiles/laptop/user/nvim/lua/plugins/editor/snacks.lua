@@ -9,7 +9,7 @@ return {
     ---@type snacks.Config
     opts = {
         bigfile = { enabled = true },
-        dashboard = { enabled = true },
+        dashboard = { enabled = false },
         explorer = { enabled = true, replace_netrw = true, trash = true },
         ---@type snacks.picker.Config
         picker = {
@@ -35,10 +35,8 @@ return {
             enabled = true,
             animate = { enabled = false },
             filter = function(buf)
-                local filetypes = {
-                    "markdown",
-                }
-
+                -- disabled filetypes
+                local filetypes = { "markdown" }
                 for _, ft in ipairs(filetypes) do
                     if vim.bo[buf].filetype == ft then
                         return

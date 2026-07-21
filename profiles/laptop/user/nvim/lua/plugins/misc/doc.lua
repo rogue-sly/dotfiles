@@ -76,8 +76,13 @@ return {
             },
             {
                 "<localleader>zo",
-                "<Cmd>ZkNotes { sort = { 'modified' } }<CR>",
+                "<Cmd>ZkNotes { sort = { 'modified' }, excludeHrefs = { 'journal/daily' } }<CR>",
                 desc = "open notes",
+            },
+            {
+                "<localleader>zd",
+                "<Cmd>ZkNotes { sort = { 'modified' }, tags = { 'daily' } }<CR>",
+                desc = "open daily notes",
             },
             {
                 "<localleader>zt",
