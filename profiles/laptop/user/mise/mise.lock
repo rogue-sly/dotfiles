@@ -128,6 +128,30 @@ checksum = "sha256:4ce6a3e5e41e4c51606f8cb94ef6b46e8f45144ef8c613c1ea4b8b69209e0
 url = "https://github.com/exercism/cli/releases/download/v3.5.8/exercism-3.5.8-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/exercism/cli/releases/assets/296817787"
 
+[[tools."github:latex-lsp/texlab"]]
+version = "5.26.0"
+backend = "github:latex-lsp/texlab"
+
+[tools."github:latex-lsp/texlab"."platforms.linux-x64"]
+checksum = "sha256:8697bd5e479d4584b14b7eed5c320c80ec4e1d91ebefbb6801e6bf38e9971300"
+url = "https://github.com/latex-lsp/texlab/releases/download/v5.26.0/texlab-x86_64-linux.tar.gz"
+url_api = "https://api.github.com/repos/latex-lsp/texlab/releases/assets/457926494"
+
+[tools."github:latex-lsp/texlab"."platforms.linux-x64-baseline"]
+checksum = "sha256:8697bd5e479d4584b14b7eed5c320c80ec4e1d91ebefbb6801e6bf38e9971300"
+url = "https://github.com/latex-lsp/texlab/releases/download/v5.26.0/texlab-x86_64-linux.tar.gz"
+url_api = "https://api.github.com/repos/latex-lsp/texlab/releases/assets/457926494"
+
+[tools."github:latex-lsp/texlab"."platforms.linux-x64-musl"]
+checksum = "sha256:8697bd5e479d4584b14b7eed5c320c80ec4e1d91ebefbb6801e6bf38e9971300"
+url = "https://github.com/latex-lsp/texlab/releases/download/v5.26.0/texlab-x86_64-linux.tar.gz"
+url_api = "https://api.github.com/repos/latex-lsp/texlab/releases/assets/457926494"
+
+[tools."github:latex-lsp/texlab"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:8697bd5e479d4584b14b7eed5c320c80ec4e1d91ebefbb6801e6bf38e9971300"
+url = "https://github.com/latex-lsp/texlab/releases/download/v5.26.0/texlab-x86_64-linux.tar.gz"
+url_api = "https://api.github.com/repos/latex-lsp/texlab/releases/assets/457926494"
+
 [[tools."github:rogue-sly/dotbee"]]
 version = "0.7.0"
 backend = "github:rogue-sly/dotbee"

@@ -15,12 +15,15 @@ vim.cmd.colorscheme(settings.theme)
 
 -- language server configs to enable
 vim.lsp.enable({
+    -- programming
     "clangd",
     "lua_ls",
     "muon",
     "rust_analyzer",
-    --
+    -- doc
+    "texlab",
     "tinymist",
     "zk",
+    -- etc
     "tombi",
 })

@@ -9,6 +9,7 @@ git-cliff = "latest"
 lefthook = "latest"
 odin = "latest"
 "github:DanielGavin/ols" = "latest"
+"github:latex-lsp/texlab" = "latest"
 
 [settings]
 auto_install = false
