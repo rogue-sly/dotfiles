@@ -1,5 +1,9 @@
 [tools]
 # lsp
+"github:DanielGavin/ols" = "latest"
+"github:OmniSharp/omnisharp-roslyn" = "latest"  # dotnet version < 10
+"dotnet:roslyn-language-server" = { version = "latest", prerelease = true }  # dotnet version >= 10
+"github:latex-lsp/texlab" = "latest"
 lua-language-server = "latest"
 tinymist = "latest"
 tombi = "latest"

@@ -1,15 +1,14 @@
 [tools]
-"cargo:wrkflw" = "latest"
 "github:RivoLink/leaf" = "latest"
+"github:bahdotsh/wrkflw" = "latest"
 "github:exercism/cli" = "latest"
 "github:rogue-sly/dotbee" = "latest"
 "github:scipenai/tylax" = "latest"
+dotnet = "latest"
 gh = "latest"
 git-cliff = "latest"
 lefthook = "latest"
 odin = "latest"
-"github:DanielGavin/ols" = "latest"
-"github:latex-lsp/texlab" = "latest"
 
 [settings]
 auto_install = false
@@ -18,5 +17,5 @@ disable_tools = ["rust"]
 lockfile = true
 # backends
 cargo = { binstall = true, binstall_only = true }
-dotnet = { isolated = true }
+dotnet = { cli_telemetry_optout = true, isolated = true }
 pipx = { uvx = true }
