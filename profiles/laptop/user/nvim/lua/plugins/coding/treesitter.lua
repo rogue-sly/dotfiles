@@ -44,6 +44,7 @@ return {
                 "toml",
                 "yaml",
                 -- misc
+                "bibtex",
                 "comment",
                 "diff",
                 "query",

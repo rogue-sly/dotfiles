@@ -7,7 +7,7 @@ return {
         dependencies = { "nvim-treesitter/nvim-treesitter" },
         ---@type render.md.UserConfig
         opts = {
-            anti_conceal = { enabled = false },
+            anti_conceal = { enabled = true },
             bullet = { enabled = false },
             checkbox = { enabled = false },
             code = { enabled = false },
