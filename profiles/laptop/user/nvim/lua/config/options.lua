@@ -8,8 +8,6 @@ vim.g.editorconfig = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 vim.g.markdown_recommended_style = 0
--- global options
-vim.go.tabline = "%!v:lua.require('misc.ui.tabline').activate()"
 
 -- options
 --- shell
