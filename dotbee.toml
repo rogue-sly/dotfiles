@@ -18,6 +18,7 @@ on_conflict = "ask"
 "~/.config/kitty" = "./profiles/laptop/user/kitty"
 "~/.config/mise" = "./profiles/laptop/user/mise"
 "~/.local/share/wallpapers" = "./wallpapers"
+"~/.npmrc" = "./profiles/laptop/user/.npmrc"
 
 [profiles.termux.links]
 "~/.config/fish" = "./profiles/termux/fish"
