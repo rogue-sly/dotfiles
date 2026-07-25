@@ -105,10 +105,4 @@ return {
             picker = "snacks_picker",
         },
     },
-    {
-        "chomosuke/typst-preview.nvim",
-        enabled = true,
-        lazy = false,
-        opts = {},
-    },
 }

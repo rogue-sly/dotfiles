@@ -25,7 +25,10 @@ require("lazy").setup({
         { import = "plugins.editor" }, -- fuzzy finder, filetree, scrollbar, git integration & more
         { import = "plugins.coding" }, -- code completion, formatting, linting, etc...
         -- other (removable plugins)
-        { import = "plugins.misc.doc", enabled = true }, -- notes/doc writing in neovim
+        { import = "plugins.misc.jls", enabled = true }, -- Java support
+        { import = "plugins.misc.roslyn", enabled = true }, -- C# support
+        { import = "plugins.misc.markdown", enabled = true }, -- better markdown
+        { import = "plugins.misc.typst", enabled = true }, -- better typst
     },
     checker = { enabled = false },
     defaults = { version = "*" },
