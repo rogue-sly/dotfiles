@@ -9,6 +9,7 @@ gh = "latest"
 git-cliff = "latest"
 lefthook = "latest"
 odin = "latest"
+opencode = "latest"
 
 [settings]
 auto_install = false
