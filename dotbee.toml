@@ -1,4 +1,4 @@
-#:schema https://gitlab.com/rogue-sly/dotbee/-/raw/main/schema/dotbee.json
+#:schema https://raw.githubusercontent.com/rogue-sly/dotbee/refs/heads/main/schema/dotbee.json
 
 [settings]
 auto_detect_profile = true
@@ -7,6 +7,8 @@ on_conflict = "ask"
 [global.links]
 "~/.config/fastfetch" = "./profiles/global/fastfetch"
 "~/.config/git" = "./profiles/global/git"
+"~/.config/nvim" = "./profiles/global/nvim/"
+"~/.config/zellij" = "./profiles/global/zellij"
 
 [profiles.den.links]
 "~/.config/alacritty" = "./profiles/laptop/user/alacritty"
@@ -15,13 +17,8 @@ on_conflict = "ask"
 "~/.config/inlyne" = "./profiles/laptop/user/inlyne"
 "~/.config/kitty" = "./profiles/laptop/user/kitty"
 "~/.config/mise" = "./profiles/laptop/user/mise"
-"~/.config/mprisence" = "./profiles/laptop/user/mprisence"
-"~/.config/nvim" = "./profiles/laptop/user/nvim"
-"~/.config/zellij" = "./profiles/laptop/user/zellij"
 "~/.local/share/wallpapers" = "./wallpapers"
 
 [profiles.termux.links]
 "~/.config/fish" = "./profiles/termux/fish"
-"~/.config/nvim" = "./profiles/termux/nvim"
-"~/.config/zellij" = "./profiles/termux/zellij"
 "~/.termux" = "./profiles/termux/termux-settings"
