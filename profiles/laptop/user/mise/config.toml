@@ -2,13 +2,26 @@
 "github:RivoLink/leaf" = "latest"
 "github:bahdotsh/wrkflw" = "latest"
 "github:exercism/cli" = "latest"
+"github:mroboff/vm-curator" = "latest"
 "github:rogue-sly/dotbee" = "latest"
 "github:scipenai/tylax" = "latest"
+"github:zk-org/zk" = "latest"
 dotnet = "latest"
 gh = "latest"
 git-cliff = "latest"
 lefthook = "latest"
 odin = "latest"
+
+# lsp
+"github:DanielGavin/ols" = { version = "latest", rename_exe = { "ols-*" = "ols", "odinfmt-*" = "odinfmt" } }
+"dotnet:roslyn-language-server" = { version = "latest", prerelease = true }
+"github:latex-lsp/texlab" = "latest"
+lua-language-server = "latest"
+tinymist = "latest"
+tombi = "latest"
+# fmt
+oxfmt = "latest"
+stylua = "latest"
 
 [settings]
 auto_install = false

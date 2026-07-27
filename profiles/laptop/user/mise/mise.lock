@@ -60,6 +60,30 @@ checksum = "sha256:200d2535da6d9703f3bcc8a4d159c3b55eacdb01cf2148c55b3eee9dd04d5
 url = "https://github.com/orhun/git-cliff/releases/download/v2.13.1/git-cliff-2.13.1-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/orhun/git-cliff/releases/assets/405850671"
 
+[[tools."github:Canop/broot"]]
+version = "1.58.0"
+backend = "github:Canop/broot"
+
+[tools."github:Canop/broot"."platforms.linux-x64"]
+checksum = "sha256:590068b6c3dba327b91bf6509d55fdf1bc67eccef6961ef2f47977c5e4be5507"
+url = "https://github.com/Canop/broot/releases/download/v1.58.0/broot_1.58.0.zip"
+url_api = "https://api.github.com/repos/Canop/broot/releases/assets/472859897"
+
+[tools."github:Canop/broot"."platforms.linux-x64-baseline"]
+checksum = "sha256:590068b6c3dba327b91bf6509d55fdf1bc67eccef6961ef2f47977c5e4be5507"
+url = "https://github.com/Canop/broot/releases/download/v1.58.0/broot_1.58.0.zip"
+url_api = "https://api.github.com/repos/Canop/broot/releases/assets/472859897"
+
+[tools."github:Canop/broot"."platforms.linux-x64-musl"]
+checksum = "sha256:590068b6c3dba327b91bf6509d55fdf1bc67eccef6961ef2f47977c5e4be5507"
+url = "https://github.com/Canop/broot/releases/download/v1.58.0/broot_1.58.0.zip"
+url_api = "https://api.github.com/repos/Canop/broot/releases/assets/472859897"
+
+[tools."github:Canop/broot"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:590068b6c3dba327b91bf6509d55fdf1bc67eccef6961ef2f47977c5e4be5507"
+url = "https://github.com/Canop/broot/releases/download/v1.58.0/broot_1.58.0.zip"
+url_api = "https://api.github.com/repos/Canop/broot/releases/assets/472859897"
+
 [[tools."github:DanielGavin/ols"]]
 version = "dev-2026-06"
 backend = "github:DanielGavin/ols"
@@ -83,30 +107,6 @@ url_api = "https://api.github.com/repos/DanielGavin/ols/releases/assets/48766859
 checksum = "sha256:d0b232947a258032979321626a54c3dba54e44ebd23be255a34eb254dfc679a3"
 url = "https://github.com/DanielGavin/ols/releases/download/dev-2026-06/ols-x86_64-unknown-linux-gnu.zip"
 url_api = "https://api.github.com/repos/DanielGavin/ols/releases/assets/487668598"
-
-[[tools."github:OmniSharp/omnisharp-roslyn"]]
-version = "1.39.15"
-backend = "github:OmniSharp/omnisharp-roslyn"
-
-[tools."github:OmniSharp/omnisharp-roslyn"."platforms.linux-x64"]
-checksum = "sha256:8c5e03a59ae04ee18acf2e5034267f32117f2f3fe2741cda141ff1cea0c9c5d5"
-url = "https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.39.15/omnisharp-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/OmniSharp/omnisharp-roslyn/releases/assets/316441081"
-
-[tools."github:OmniSharp/omnisharp-roslyn"."platforms.linux-x64-baseline"]
-checksum = "sha256:8c5e03a59ae04ee18acf2e5034267f32117f2f3fe2741cda141ff1cea0c9c5d5"
-url = "https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.39.15/omnisharp-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/OmniSharp/omnisharp-roslyn/releases/assets/316441081"
-
-[tools."github:OmniSharp/omnisharp-roslyn"."platforms.linux-x64-musl"]
-checksum = "sha256:0aa07fd3798ffdeba5e91dbcef740bdbb4cc79d9320d5770749e8b2e7c2d79a5"
-url = "https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.39.15/omnisharp-linux-musl-x64-net6.0.tar.gz"
-url_api = "https://api.github.com/repos/OmniSharp/omnisharp-roslyn/releases/assets/316441010"
-
-[tools."github:OmniSharp/omnisharp-roslyn"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:0aa07fd3798ffdeba5e91dbcef740bdbb4cc79d9320d5770749e8b2e7c2d79a5"
-url = "https://github.com/OmniSharp/omnisharp-roslyn/releases/download/v1.39.15/omnisharp-linux-musl-x64-net6.0.tar.gz"
-url_api = "https://api.github.com/repos/OmniSharp/omnisharp-roslyn/releases/assets/316441010"
 
 [[tools."github:RivoLink/leaf"]]
 version = "1.26.1"
@@ -204,6 +204,35 @@ checksum = "sha256:8697bd5e479d4584b14b7eed5c320c80ec4e1d91ebefbb6801e6bf38e9971
 url = "https://github.com/latex-lsp/texlab/releases/download/v5.26.0/texlab-x86_64-linux.tar.gz"
 url_api = "https://api.github.com/repos/latex-lsp/texlab/releases/assets/457926494"
 
+[[tools."github:mroboff/vm-curator"]]
+version = "1.2.2"
+backend = "github:mroboff/vm-curator"
+
+[tools."github:mroboff/vm-curator"."platforms.linux-x64"]
+checksum = "sha256:debf534e71b3bab8b70784c096c3303549476032fcab45f5ce91a0edd9ca7812"
+url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.2/vm-curator-v1.2.2-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/485241181"
+provenance = "github-attestations"
+provenance_verified = true
+
+[tools."github:mroboff/vm-curator"."platforms.linux-x64-baseline"]
+checksum = "sha256:debf534e71b3bab8b70784c096c3303549476032fcab45f5ce91a0edd9ca7812"
+url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.2/vm-curator-v1.2.2-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/485241181"
+provenance = "github-attestations"
+
+[tools."github:mroboff/vm-curator"."platforms.linux-x64-musl"]
+checksum = "sha256:debf534e71b3bab8b70784c096c3303549476032fcab45f5ce91a0edd9ca7812"
+url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.2/vm-curator-v1.2.2-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/485241181"
+provenance = "github-attestations"
+
+[tools."github:mroboff/vm-curator"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:debf534e71b3bab8b70784c096c3303549476032fcab45f5ce91a0edd9ca7812"
+url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.2/vm-curator-v1.2.2-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/485241181"
+provenance = "github-attestations"
+
 [[tools."github:rogue-sly/dotbee"]]
 version = "0.7.0"
 backend = "github:rogue-sly/dotbee"
@@ -253,28 +282,28 @@ url = "https://github.com/scipenai/tylax/releases/download/v0.3.7/t2l-v0.3.7-x86
 url_api = "https://api.github.com/repos/scipenai/tylax/releases/assets/481216119"
 
 [[tools."github:zk-org/zk"]]
-version = "0.15.5"
+version = "0.15.6"
 backend = "github:zk-org/zk"
 
 [tools."github:zk-org/zk"."platforms.linux-x64"]
-checksum = "sha256:ec522547071a1cc7aeae054a5d4e325a9e6826e3cf5ca05845917848b07770e8"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.5/zk-v0.15.5-linux-amd64.tar.gz"
-url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/441663249"
+checksum = "sha256:50b2f0a8c533d607e5a8a1f478fe78d5585317178bd86456659c049965a8945d"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.6/zk-v0.15.6-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/490446227"
 
 [tools."github:zk-org/zk"."platforms.linux-x64-baseline"]
-checksum = "sha256:ec522547071a1cc7aeae054a5d4e325a9e6826e3cf5ca05845917848b07770e8"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.5/zk-v0.15.5-linux-amd64.tar.gz"
-url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/441663249"
+checksum = "sha256:50b2f0a8c533d607e5a8a1f478fe78d5585317178bd86456659c049965a8945d"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.6/zk-v0.15.6-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/490446227"
 
 [tools."github:zk-org/zk"."platforms.linux-x64-musl"]
-checksum = "sha256:ec522547071a1cc7aeae054a5d4e325a9e6826e3cf5ca05845917848b07770e8"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.5/zk-v0.15.5-linux-amd64.tar.gz"
-url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/441663249"
+checksum = "sha256:50b2f0a8c533d607e5a8a1f478fe78d5585317178bd86456659c049965a8945d"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.6/zk-v0.15.6-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/490446227"
 
 [tools."github:zk-org/zk"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:ec522547071a1cc7aeae054a5d4e325a9e6826e3cf5ca05845917848b07770e8"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.5/zk-v0.15.5-linux-amd64.tar.gz"
-url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/441663249"
+checksum = "sha256:50b2f0a8c533d607e5a8a1f478fe78d5585317178bd86456659c049965a8945d"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.6/zk-v0.15.6-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/490446227"
 
 [[tools.lefthook]]
 version = "2.1.10"
