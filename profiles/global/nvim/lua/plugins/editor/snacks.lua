@@ -61,7 +61,9 @@ return {
         scroll = { enabled = false },
         statuscolumn = { enabled = true },
         words = { enabled = true },
-        -- styles = {},
+        styles = {
+            lazygit = { position = "current" },
+        },
     },
 	-- stylua: ignore
 	keys = {

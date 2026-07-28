@@ -109,28 +109,28 @@ url = "https://github.com/DanielGavin/ols/releases/download/dev-2026-06/ols-x86_
 url_api = "https://api.github.com/repos/DanielGavin/ols/releases/assets/487668598"
 
 [[tools."github:RivoLink/leaf"]]
-version = "1.26.1"
+version = "1.26.2"
 backend = "github:RivoLink/leaf"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64"]
-checksum = "sha256:bea98a8658771a789b855158dbf8a0511c9e0df448b138377deeb960d50f1420"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.1/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/474710794"
+checksum = "sha256:246fef2b941faa3d47e925700e978f34df0832c32b855a586d32c9441c06eebb"
+url = "https://github.com/RivoLink/leaf/releases/download/1.26.2/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/491004002"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-baseline"]
-checksum = "sha256:bea98a8658771a789b855158dbf8a0511c9e0df448b138377deeb960d50f1420"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.1/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/474710794"
+checksum = "sha256:246fef2b941faa3d47e925700e978f34df0832c32b855a586d32c9441c06eebb"
+url = "https://github.com/RivoLink/leaf/releases/download/1.26.2/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/491004002"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-musl"]
-checksum = "sha256:bea98a8658771a789b855158dbf8a0511c9e0df448b138377deeb960d50f1420"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.1/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/474710794"
+checksum = "sha256:246fef2b941faa3d47e925700e978f34df0832c32b855a586d32c9441c06eebb"
+url = "https://github.com/RivoLink/leaf/releases/download/1.26.2/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/491004002"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:bea98a8658771a789b855158dbf8a0511c9e0df448b138377deeb960d50f1420"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.1/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/474710794"
+checksum = "sha256:246fef2b941faa3d47e925700e978f34df0832c32b855a586d32c9441c06eebb"
+url = "https://github.com/RivoLink/leaf/releases/download/1.26.2/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/491004002"
 
 [[tools."github:bahdotsh/wrkflw"]]
 version = "0.8.0"
@@ -205,32 +205,32 @@ url = "https://github.com/latex-lsp/texlab/releases/download/v5.26.0/texlab-x86_
 url_api = "https://api.github.com/repos/latex-lsp/texlab/releases/assets/457926494"
 
 [[tools."github:mroboff/vm-curator"]]
-version = "1.2.2"
+version = "1.2.3"
 backend = "github:mroboff/vm-curator"
 
 [tools."github:mroboff/vm-curator"."platforms.linux-x64"]
-checksum = "sha256:debf534e71b3bab8b70784c096c3303549476032fcab45f5ce91a0edd9ca7812"
-url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.2/vm-curator-v1.2.2-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/485241181"
+checksum = "sha256:33230c9467a54b214e4aba8c3d1a47f1438fd663b8a8919854659e2b6263267c"
+url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.3/vm-curator-v1.2.3-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/491733790"
 provenance = "github-attestations"
 provenance_verified = true
 
 [tools."github:mroboff/vm-curator"."platforms.linux-x64-baseline"]
-checksum = "sha256:debf534e71b3bab8b70784c096c3303549476032fcab45f5ce91a0edd9ca7812"
-url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.2/vm-curator-v1.2.2-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/485241181"
+checksum = "sha256:33230c9467a54b214e4aba8c3d1a47f1438fd663b8a8919854659e2b6263267c"
+url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.3/vm-curator-v1.2.3-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/491733790"
 provenance = "github-attestations"
 
 [tools."github:mroboff/vm-curator"."platforms.linux-x64-musl"]
-checksum = "sha256:debf534e71b3bab8b70784c096c3303549476032fcab45f5ce91a0edd9ca7812"
-url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.2/vm-curator-v1.2.2-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/485241181"
+checksum = "sha256:33230c9467a54b214e4aba8c3d1a47f1438fd663b8a8919854659e2b6263267c"
+url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.3/vm-curator-v1.2.3-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/491733790"
 provenance = "github-attestations"
 
 [tools."github:mroboff/vm-curator"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:debf534e71b3bab8b70784c096c3303549476032fcab45f5ce91a0edd9ca7812"
-url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.2/vm-curator-v1.2.2-linux-x86_64.tar.gz"
-url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/485241181"
+checksum = "sha256:33230c9467a54b214e4aba8c3d1a47f1438fd663b8a8919854659e2b6263267c"
+url = "https://github.com/mroboff/vm-curator/releases/download/v1.2.3/vm-curator-v1.2.3-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/491733790"
 provenance = "github-attestations"
 
 [[tools."github:rogue-sly/dotbee"]]
@@ -382,7 +382,7 @@ url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-07a/odin-lin
 url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/472392374"
 
 [[tools.oxfmt]]
-version = "0.60.0"
+version = "0.61.0"
 backend = "npm:oxfmt"
 
 [[tools.slint-lsp]]
