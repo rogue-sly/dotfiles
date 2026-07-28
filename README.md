@@ -1,6 +1,6 @@
 # My Dotfiles
 
-I use [Dotbee](https://gitlab.com/rogue87/dotbee) to manage my dotfiles.
+I use [Dotbee](https://github.com/rogue-sly/dotbee) to manage my dotfiles.
 I made this tool because I became quite frustrated with `stow`.
 
 ```text
@@ -27,7 +27,7 @@ Options:
 1. Clone this repository
 
    ```sh
-   git clone https://gitlab.com/rogue87/dotfiles.git
+   git clone https://github.com/rogue-sly/dotfiles.git
    ```
 
 2. Select desired profile
@@ -38,7 +38,3 @@ Options:
    ```
 
 Ta-da!, you're good to go :]
-
-### Extra Stuff
-
-- [Neovim Configuration](https://gitlab.com/rogue87/dotfiles/blob/main/doc/neovim/README.md)
