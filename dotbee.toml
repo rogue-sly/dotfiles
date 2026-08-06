@@ -17,6 +17,7 @@ on_conflict = "ask"
 "~/.config/inlyne" = "./profiles/laptop/user/inlyne"
 "~/.config/kitty" = "./profiles/laptop/user/kitty"
 "~/.config/mise" = "./profiles/laptop/user/mise"
+"~/.config/ripgrep" = "./profiles/laptop/user/ripgrep"
 "~/.local/share/wallpapers" = "./wallpapers"
 "~/.npmrc" = "./profiles/laptop/user/.npmrc"
 

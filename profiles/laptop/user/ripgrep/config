@@ -1,0 +1,4 @@
+# vim: ft=config 
+# ripgrep global config
+--ignore-file
+/home/rogue/.config/ripgrep/ignore
