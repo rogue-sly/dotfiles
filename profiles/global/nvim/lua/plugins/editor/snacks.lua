@@ -62,7 +62,7 @@ return {
         statuscolumn = { enabled = true },
         words = { enabled = true },
         styles = {
-            lazygit = { position = "current" },
+            lazygit = { position = "float", width = 0, height = 0 },
         },
     },
 	-- stylua: ignore

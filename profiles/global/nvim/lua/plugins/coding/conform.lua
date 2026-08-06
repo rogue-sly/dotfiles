@@ -30,6 +30,8 @@ return {
             c = { "clang-format" },
             cpp = { "clang-format" },
             fish = { "fish_indent" },
+            json = { "oxfmt" },
+            jsonc = { "oxfmt" },
             lua = { "stylua", lsp_format = "never" },
             markdown = { "oxfmt" },
             meson = { "meson" },

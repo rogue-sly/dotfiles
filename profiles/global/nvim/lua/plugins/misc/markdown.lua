@@ -13,6 +13,7 @@ return {
             code = { enabled = false },
             completions = { lsp = { enabled = true } },
             heading = { enabled = false },
+            html = { enabled = true, render_modes = false, comment = { conceal = false } },
             latex = { enabled = false },
             sign = { enabled = false },
             overrides = {

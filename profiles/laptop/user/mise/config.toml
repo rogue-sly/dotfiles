@@ -6,6 +6,7 @@
 "github:rogue-sly/dotbee" = "latest"
 "github:scipenai/tylax" = "latest"
 "github:zk-org/zk" = "latest"
+cargo-binstall = "latest"
 dotnet = "latest"
 gh = "latest"
 git-cliff = "latest"
@@ -13,8 +14,8 @@ lefthook = "latest"
 odin = "latest"
 
 # lsp
-"github:DanielGavin/ols" = { version = "latest", rename_exe = { "ols-*" = "ols", "odinfmt-*" = "odinfmt" } }
 "dotnet:roslyn-language-server" = { version = "latest", prerelease = true }
+"github:DanielGavin/ols" = { version = "latest", rename_exe = { "ols-*" = "ols", "odinfmt-*" = "odinfmt" } }
 "github:latex-lsp/texlab" = "latest"
 lua-language-server = "latest"
 tinymist = "latest"
@@ -25,10 +26,8 @@ stylua = "latest"
 
 [settings]
 auto_install = false
-auto_install_disable_tools = ["rust"]
-disable_tools = ["rust"]
 lockfile = true
 # backends
-cargo = { binstall = true, binstall_only = true }
+cargo = { binstall = true }
 dotnet = { cli_telemetry_optout = true, isolated = true }
 pipx = { uvx = true }
