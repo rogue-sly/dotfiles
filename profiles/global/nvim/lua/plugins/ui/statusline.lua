@@ -18,7 +18,7 @@ return {
                 globalstatus = true,
                 disabled_filetypes = {},
                 always_divide_middle = false,
-                extensions = { "neo-tree", "lazy" },
+                extensions = { "lazy" },
             },
             sections = {
                 lualine_a = {
