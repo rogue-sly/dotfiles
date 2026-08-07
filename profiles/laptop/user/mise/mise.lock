@@ -161,28 +161,28 @@ url = "https://github.com/DanielGavin/ols/releases/download/dev-2026-06/ols-x86_
 url_api = "https://api.github.com/repos/DanielGavin/ols/releases/assets/487668598"
 
 [[tools."github:RivoLink/leaf"]]
-version = "1.26.2"
+version = "1.27.0"
 backend = "github:RivoLink/leaf"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64"]
-checksum = "sha256:246fef2b941faa3d47e925700e978f34df0832c32b855a586d32c9441c06eebb"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.2/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/491004002"
+checksum = "sha256:430887e4beb78f6c40d1c4f5d177c06c5016c602554b5fe00a9421dbba5cb88e"
+url = "https://github.com/RivoLink/leaf/releases/download/1.27.0/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/502901399"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-baseline"]
-checksum = "sha256:246fef2b941faa3d47e925700e978f34df0832c32b855a586d32c9441c06eebb"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.2/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/491004002"
+checksum = "sha256:430887e4beb78f6c40d1c4f5d177c06c5016c602554b5fe00a9421dbba5cb88e"
+url = "https://github.com/RivoLink/leaf/releases/download/1.27.0/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/502901399"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-musl"]
-checksum = "sha256:246fef2b941faa3d47e925700e978f34df0832c32b855a586d32c9441c06eebb"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.2/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/491004002"
+checksum = "sha256:430887e4beb78f6c40d1c4f5d177c06c5016c602554b5fe00a9421dbba5cb88e"
+url = "https://github.com/RivoLink/leaf/releases/download/1.27.0/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/502901399"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:246fef2b941faa3d47e925700e978f34df0832c32b855a586d32c9441c06eebb"
-url = "https://github.com/RivoLink/leaf/releases/download/1.26.2/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/491004002"
+checksum = "sha256:430887e4beb78f6c40d1c4f5d177c06c5016c602554b5fe00a9421dbba5cb88e"
+url = "https://github.com/RivoLink/leaf/releases/download/1.27.0/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/502901399"
 
 [[tools."github:bahdotsh/wrkflw"]]
 version = "0.8.0"
@@ -410,28 +410,28 @@ url = "https://github.com/LuaLS/lua-language-server/releases/download/3.18.2/lua
 url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/396268957"
 
 [[tools.odin]]
-version = "dev-2026-07a"
+version = "dev-2026-08"
 backend = "github:odin-lang/Odin"
 
 [tools.odin."platforms.linux-x64"]
-checksum = "sha256:32a7678abc66f1af7353abb5b0b5da47d94b7e663f6d250df29bc9117e864c10"
-url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-07a/odin-linux-amd64-dev-2026-07a.tar.gz"
-url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/472392374"
+checksum = "sha256:d858c0a182bb28d7b04b04dbb8aed592a9c96c84e4400ee917c74b45848a4d87"
+url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-08/odin-linux-amd64-dev-2026-08.tar.gz"
+url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/504110654"
 
 [tools.odin."platforms.linux-x64-baseline"]
-checksum = "sha256:32a7678abc66f1af7353abb5b0b5da47d94b7e663f6d250df29bc9117e864c10"
-url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-07a/odin-linux-amd64-dev-2026-07a.tar.gz"
-url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/472392374"
+checksum = "sha256:d858c0a182bb28d7b04b04dbb8aed592a9c96c84e4400ee917c74b45848a4d87"
+url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-08/odin-linux-amd64-dev-2026-08.tar.gz"
+url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/504110654"
 
 [tools.odin."platforms.linux-x64-musl"]
-checksum = "sha256:32a7678abc66f1af7353abb5b0b5da47d94b7e663f6d250df29bc9117e864c10"
-url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-07a/odin-linux-amd64-dev-2026-07a.tar.gz"
-url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/472392374"
+checksum = "sha256:d858c0a182bb28d7b04b04dbb8aed592a9c96c84e4400ee917c74b45848a4d87"
+url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-08/odin-linux-amd64-dev-2026-08.tar.gz"
+url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/504110654"
 
 [tools.odin."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:32a7678abc66f1af7353abb5b0b5da47d94b7e663f6d250df29bc9117e864c10"
-url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-07a/odin-linux-amd64-dev-2026-07a.tar.gz"
-url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/472392374"
+checksum = "sha256:d858c0a182bb28d7b04b04dbb8aed592a9c96c84e4400ee917c74b45848a4d87"
+url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-08/odin-linux-amd64-dev-2026-08.tar.gz"
+url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/504110654"
 
 [[tools.oxfmt]]
 version = "0.62.0"
@@ -544,29 +544,29 @@ url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.2/tiny
 url_api = "https://api.github.com/repos/Myriad-Dreamin/tinymist/releases/assets/454537259"
 
 [[tools.tombi]]
-version = "1.2.6"
+version = "1.2.7"
 backend = "aqua:tombi-toml/tombi"
 
 [tools.tombi."platforms.linux-x64"]
-checksum = "sha256:43f8e209818f425d45fca06797eec44b1cf643e8a58c74f29dbdaaaf827052e0"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.6/tombi-cli-1.2.6-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/499469529"
+checksum = "sha256:f7353252b12d0132eaefcd234890d478580e60e13fd9b4a7a918995acfa2c139"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.7/tombi-cli-1.2.7-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/503838599"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-x64-baseline"]
-checksum = "sha256:43f8e209818f425d45fca06797eec44b1cf643e8a58c74f29dbdaaaf827052e0"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.6/tombi-cli-1.2.6-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/499469529"
+checksum = "sha256:f7353252b12d0132eaefcd234890d478580e60e13fd9b4a7a918995acfa2c139"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.7/tombi-cli-1.2.7-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/503838599"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-x64-musl"]
-checksum = "sha256:43f8e209818f425d45fca06797eec44b1cf643e8a58c74f29dbdaaaf827052e0"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.6/tombi-cli-1.2.6-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/499469529"
+checksum = "sha256:f7353252b12d0132eaefcd234890d478580e60e13fd9b4a7a918995acfa2c139"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.7/tombi-cli-1.2.7-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/503838599"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:43f8e209818f425d45fca06797eec44b1cf643e8a58c74f29dbdaaaf827052e0"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.6/tombi-cli-1.2.6-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/499469529"
+checksum = "sha256:f7353252b12d0132eaefcd234890d478580e60e13fd9b4a7a918995acfa2c139"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.7/tombi-cli-1.2.7-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/503838599"
 provenance = "github-attestations"
