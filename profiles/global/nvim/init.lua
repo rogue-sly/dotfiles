@@ -18,12 +18,14 @@ vim.lsp.enable({
     -- programming
     "clangd",
     "lua_ls",
-    "muon",
     "rust_analyzer",
+    "vtsls",
     -- doc
     "texlab",
     "tinymist",
-    "zk",
     -- etc
+    "jason",
+    "mesonlsp",
     "tombi",
+    "zk",
 })

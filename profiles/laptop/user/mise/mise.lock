@@ -160,6 +160,30 @@ checksum = "sha256:d0b232947a258032979321626a54c3dba54e44ebd23be255a34eb254dfc67
 url = "https://github.com/DanielGavin/ols/releases/download/dev-2026-06/ols-x86_64-unknown-linux-gnu.zip"
 url_api = "https://api.github.com/repos/DanielGavin/ols/releases/assets/487668598"
 
+[[tools."github:JCWasmx86/MesonLSP"]]
+version = "5.0.4"
+backend = "github:JCWasmx86/MesonLSP"
+
+[tools."github:JCWasmx86/MesonLSP"."platforms.linux-x64"]
+checksum = "sha256:e6e604773eb40adee31c48a6c00333c1baaba4468acbc18d285da9caef7ac094"
+url = "https://github.com/JCWasmx86/mesonlsp/releases/download/v5.0.4/mesonlsp-x86_64-unknown-linux-musl.zip"
+url_api = "https://api.github.com/repos/JCWasmx86/mesonlsp/releases/assets/507312509"
+
+[tools."github:JCWasmx86/MesonLSP"."platforms.linux-x64-baseline"]
+checksum = "sha256:e6e604773eb40adee31c48a6c00333c1baaba4468acbc18d285da9caef7ac094"
+url = "https://github.com/JCWasmx86/mesonlsp/releases/download/v5.0.4/mesonlsp-x86_64-unknown-linux-musl.zip"
+url_api = "https://api.github.com/repos/JCWasmx86/mesonlsp/releases/assets/507312509"
+
+[tools."github:JCWasmx86/MesonLSP"."platforms.linux-x64-musl"]
+checksum = "sha256:e6e604773eb40adee31c48a6c00333c1baaba4468acbc18d285da9caef7ac094"
+url = "https://github.com/JCWasmx86/mesonlsp/releases/download/v5.0.4/mesonlsp-x86_64-unknown-linux-musl.zip"
+url_api = "https://api.github.com/repos/JCWasmx86/mesonlsp/releases/assets/507312509"
+
+[tools."github:JCWasmx86/MesonLSP"."platforms.linux-x64-musl-baseline"]
+checksum = "sha256:e6e604773eb40adee31c48a6c00333c1baaba4468acbc18d285da9caef7ac094"
+url = "https://github.com/JCWasmx86/mesonlsp/releases/download/v5.0.4/mesonlsp-x86_64-unknown-linux-musl.zip"
+url_api = "https://api.github.com/repos/JCWasmx86/mesonlsp/releases/assets/507312509"
+
 [[tools."github:RivoLink/leaf"]]
 version = "1.27.0"
 backend = "github:RivoLink/leaf"
@@ -386,52 +410,52 @@ url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/47
 provenance = "github-attestations"
 
 [[tools.lua-language-server]]
-version = "3.18.2"
+version = "3.19.0"
 backend = "aqua:LuaLS/lua-language-server"
 
 [tools.lua-language-server."platforms.linux-x64"]
-checksum = "sha256:ca71415dd19f19e30aaa35a4915aefca9fdb5fec31b98331cc3d77f778d539c5"
-url = "https://github.com/LuaLS/lua-language-server/releases/download/3.18.2/lua-language-server-3.18.2-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/396268957"
+checksum = "sha256:624ae8dd3bfbd5c2ee3ccf2f3547d33aeefa209971cce8c11d48f69fc1ec065a"
+url = "https://github.com/LuaLS/lua-language-server/releases/download/3.19.0/lua-language-server-3.19.0-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/505550982"
 
 [tools.lua-language-server."platforms.linux-x64-baseline"]
-checksum = "sha256:ca71415dd19f19e30aaa35a4915aefca9fdb5fec31b98331cc3d77f778d539c5"
-url = "https://github.com/LuaLS/lua-language-server/releases/download/3.18.2/lua-language-server-3.18.2-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/396268957"
+checksum = "sha256:624ae8dd3bfbd5c2ee3ccf2f3547d33aeefa209971cce8c11d48f69fc1ec065a"
+url = "https://github.com/LuaLS/lua-language-server/releases/download/3.19.0/lua-language-server-3.19.0-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/505550982"
 
 [tools.lua-language-server."platforms.linux-x64-musl"]
-checksum = "sha256:ca71415dd19f19e30aaa35a4915aefca9fdb5fec31b98331cc3d77f778d539c5"
-url = "https://github.com/LuaLS/lua-language-server/releases/download/3.18.2/lua-language-server-3.18.2-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/396268957"
+checksum = "sha256:624ae8dd3bfbd5c2ee3ccf2f3547d33aeefa209971cce8c11d48f69fc1ec065a"
+url = "https://github.com/LuaLS/lua-language-server/releases/download/3.19.0/lua-language-server-3.19.0-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/505550982"
 
 [tools.lua-language-server."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:ca71415dd19f19e30aaa35a4915aefca9fdb5fec31b98331cc3d77f778d539c5"
-url = "https://github.com/LuaLS/lua-language-server/releases/download/3.18.2/lua-language-server-3.18.2-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/396268957"
+checksum = "sha256:624ae8dd3bfbd5c2ee3ccf2f3547d33aeefa209971cce8c11d48f69fc1ec065a"
+url = "https://github.com/LuaLS/lua-language-server/releases/download/3.19.0/lua-language-server-3.19.0-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/505550982"
 
 [[tools.odin]]
-version = "dev-2026-08"
+version = "dev-2026-07a"
 backend = "github:odin-lang/Odin"
 
 [tools.odin."platforms.linux-x64"]
-checksum = "sha256:d858c0a182bb28d7b04b04dbb8aed592a9c96c84e4400ee917c74b45848a4d87"
-url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-08/odin-linux-amd64-dev-2026-08.tar.gz"
-url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/504110654"
+checksum = "sha256:32a7678abc66f1af7353abb5b0b5da47d94b7e663f6d250df29bc9117e864c10"
+url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-07a/odin-linux-amd64-dev-2026-07a.tar.gz"
+url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/472392374"
 
 [tools.odin."platforms.linux-x64-baseline"]
-checksum = "sha256:d858c0a182bb28d7b04b04dbb8aed592a9c96c84e4400ee917c74b45848a4d87"
-url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-08/odin-linux-amd64-dev-2026-08.tar.gz"
-url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/504110654"
+checksum = "sha256:32a7678abc66f1af7353abb5b0b5da47d94b7e663f6d250df29bc9117e864c10"
+url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-07a/odin-linux-amd64-dev-2026-07a.tar.gz"
+url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/472392374"
 
 [tools.odin."platforms.linux-x64-musl"]
-checksum = "sha256:d858c0a182bb28d7b04b04dbb8aed592a9c96c84e4400ee917c74b45848a4d87"
-url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-08/odin-linux-amd64-dev-2026-08.tar.gz"
-url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/504110654"
+checksum = "sha256:32a7678abc66f1af7353abb5b0b5da47d94b7e663f6d250df29bc9117e864c10"
+url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-07a/odin-linux-amd64-dev-2026-07a.tar.gz"
+url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/472392374"
 
 [tools.odin."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:d858c0a182bb28d7b04b04dbb8aed592a9c96c84e4400ee917c74b45848a4d87"
-url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-08/odin-linux-amd64-dev-2026-08.tar.gz"
-url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/504110654"
+checksum = "sha256:32a7678abc66f1af7353abb5b0b5da47d94b7e663f6d250df29bc9117e864c10"
+url = "https://github.com/odin-lang/Odin/releases/download/dev-2026-07a/odin-linux-amd64-dev-2026-07a.tar.gz"
+url_api = "https://api.github.com/repos/odin-lang/Odin/releases/assets/472392374"
 
 [[tools.oxfmt]]
 version = "0.62.0"
