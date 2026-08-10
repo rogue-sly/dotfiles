@@ -22,7 +22,7 @@ require("lazy").setup({
         { "neovim/nvim-lspconfig", version = false },
         -- essential plugins
         { import = "plugins.ui" }, -- colorschemes, improved lsp UI and more
-        { import = "plugins.editor" }, -- fuzzy finder, filetree, scrollbar, git integration & more
+        { import = "plugins.editor" }, -- fuzzy finder, filetree, git integration & more
         { import = "plugins.coding" }, -- code completion, formatting, linting, etc...
         -- other (removable plugins)
         { import = "plugins.misc.jls", enabled = true }, -- Java support
@@ -32,7 +32,7 @@ require("lazy").setup({
     },
     checker = { enabled = false },
     defaults = { version = "*" },
-    install = { colorscheme = { settings.theme } },
+    install = { colorscheme = { vim.g.settings.theme } },
     news = { lazy = true },
     rocks = { enabled = false },
     ui = { wrap = true },

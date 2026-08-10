@@ -1,5 +1,5 @@
 -- global settings
-_G.settings = {
+vim.g.settings = {
     ---@readonly
     theme = "tokyonight-night",
 }
@@ -11,7 +11,7 @@ vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH
 require("config")
 
 -- choose colorscheme
-vim.cmd.colorscheme(settings.theme)
+vim.cmd.colorscheme(vim.g.settings.theme)
 
 -- language server configs to enable
 vim.lsp.enable({
@@ -26,6 +26,7 @@ vim.lsp.enable({
     -- etc
     "jason",
     "mesonlsp",
+    "neocmake",
     "tombi",
     "zk",
 })

@@ -35,40 +35,37 @@ return {
     },
     {
         "yousefhadder/markdown-plus.nvim",
-        enabled = true,
         ft = "markdown", -- Load on markdown files by default
-        config = function()
-            require("markdown-plus").setup({
-                -- Configuration options (all optional)
-                enabled = true,
-                features = {
-                    list_management = false, -- List management features
-                    text_formatting = true, -- Text formatting features
-                    headers_toc = true, -- Headers + TOC features
-                    links = true, -- Link management features
-                    images = true, -- Image link management features
-                    quotes = true, -- Blockquote toggling feature
-                    callouts = true, -- GFM callouts/admonitions feature
-                    code_block = true, -- Code block conversion feature
-                    table = true, -- Table support features
-                    footnotes = true, -- Footnotes management features
-                },
-                footnotes = { -- Footnotes configuration
-                    section_header = "Footnotes", -- Header for footnotes section
-                    confirm_delete = true, -- Confirm before deleting footnotes
-                },
-            })
-        end,
+        ---@type markdown-plus.Config
+        opts = {
+            -- Configuration options (all optional)
+            enabled = true,
+            features = {
+                list_management = false, -- List management features
+                text_formatting = true, -- Text formatting features
+                headers_toc = true, -- Headers + TOC features
+                links = true, -- Link management features
+                images = true, -- Image link management features
+                quotes = true, -- Blockquote toggling feature
+                callouts = true, -- GFM callouts/admonitions feature
+                code_block = true, -- Code block conversion feature
+                table = true, -- Table support features
+                footnotes = true, -- Footnotes management features
+            },
+            footnotes = { -- Footnotes configuration
+                section_header = "Footnotes", -- Header for footnotes section
+                confirm_delete = true, -- Confirm before deleting footnotes
+            },
+        },
     },
     {
         "zk-org/zk-nvim",
         name = "zk",
-        lazy = false,
         keys = {
             {
                 "<localleader>z",
                 "",
-                desc = "zettelkasten",
+                desc = "zk.nvim",
             },
             {
                 "<localleader>zn",

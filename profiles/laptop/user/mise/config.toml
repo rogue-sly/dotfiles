@@ -14,10 +14,11 @@ lefthook = "latest"
 odin = "dev-2026-07a"
 
 # lsp
+"cargo:neocmakelsp" = "latest"
 "dotnet:roslyn-language-server" = { version = "latest", prerelease = true }
 "github:DanielGavin/ols" = { version = "latest", rename_exe = { "ols-*" = "ols", "odinfmt-*" = "odinfmt" } }
-"github:latex-lsp/texlab" = "latest"
 "github:JCWasmx86/MesonLSP" = "latest"
+"github:latex-lsp/texlab" = "latest"
 lua-language-server = "latest"
 tinymist = "latest"
 tombi = "latest"

@@ -52,6 +52,10 @@ url = "https://github.com/cargo-bins/cargo-binstall/releases/download/v1.21.1/ca
 url_api = "https://api.github.com/repos/cargo-bins/cargo-binstall/releases/assets/489425174"
 provenance = "github-attestations"
 
+[[tools."cargo:neocmakelsp"]]
+version = "0.11.0"
+backend = "cargo:neocmakelsp"
+
 [[tools.dotnet]]
 version = "10.0.302"
 backend = "core:dotnet"
@@ -568,29 +572,29 @@ url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.2/tiny
 url_api = "https://api.github.com/repos/Myriad-Dreamin/tinymist/releases/assets/454537259"
 
 [[tools.tombi]]
-version = "1.2.7"
+version = "1.2.8"
 backend = "aqua:tombi-toml/tombi"
 
 [tools.tombi."platforms.linux-x64"]
-checksum = "sha256:f7353252b12d0132eaefcd234890d478580e60e13fd9b4a7a918995acfa2c139"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.7/tombi-cli-1.2.7-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/503838599"
+checksum = "sha256:be0f539e0474d250f77fa8fae845b4507036f5b95da782f9fc1d9f6a97c5bf30"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.8/tombi-cli-1.2.8-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/507611362"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-x64-baseline"]
-checksum = "sha256:f7353252b12d0132eaefcd234890d478580e60e13fd9b4a7a918995acfa2c139"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.7/tombi-cli-1.2.7-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/503838599"
+checksum = "sha256:be0f539e0474d250f77fa8fae845b4507036f5b95da782f9fc1d9f6a97c5bf30"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.8/tombi-cli-1.2.8-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/507611362"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-x64-musl"]
-checksum = "sha256:f7353252b12d0132eaefcd234890d478580e60e13fd9b4a7a918995acfa2c139"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.7/tombi-cli-1.2.7-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/503838599"
+checksum = "sha256:be0f539e0474d250f77fa8fae845b4507036f5b95da782f9fc1d9f6a97c5bf30"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.8/tombi-cli-1.2.8-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/507611362"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-x64-musl-baseline"]
-checksum = "sha256:f7353252b12d0132eaefcd234890d478580e60e13fd9b4a7a918995acfa2c139"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.7/tombi-cli-1.2.7-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/503838599"
+checksum = "sha256:be0f539e0474d250f77fa8fae845b4507036f5b95da782f9fc1d9f6a97c5bf30"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.2.8/tombi-cli-1.2.8-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/507611362"
 provenance = "github-attestations"

@@ -1,6 +1,6 @@
 return {
     "chomosuke/typst-preview.nvim",
-    enabled = true,
+    cond = true,
     lazy = false,
     opts = {},
 }

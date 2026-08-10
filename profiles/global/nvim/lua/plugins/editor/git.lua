@@ -2,6 +2,7 @@
 -- git integration
 return {
     "lewis6991/gitsigns.nvim",
+    ---@diagnostic disable-next-line: missing-fields
     opts = {
         current_line_blame = true,
         watch_gitdir = { enable = true, follow_files = true },
