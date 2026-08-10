@@ -1,8 +1,3 @@
--- neovide
-if vim.g.neovide then
-    vim.o.guifont = "JetBrainsMono Nerd Font:h14"
-end
-
 -- global vim variables
 vim.g.editorconfig = true
 vim.g.mapleader = " "
@@ -14,8 +9,8 @@ vim.g.markdown_recommended_style = 0
 local shell = { main = "fish", fallback = "bash" }
 vim.o.shell = vim.fn.exepath(shell.main) ~= "" and vim.fn.exepath(shell.main) or vim.fn.exepath(shell.fallback)
 --- ui
-vim.o.conceallevel = 0
 vim.o.concealcursor = ""
+vim.o.conceallevel = 0
 vim.o.confirm = true
 vim.o.cursorline = true
 vim.o.cursorlineopt = "number"
@@ -24,6 +19,7 @@ vim.o.relativenumber = true
 vim.o.showmode = false
 vim.o.showtabline = 1
 vim.o.signcolumn = "yes"
+vim.o.tabline = "%!tabline#activate()"
 --- indents
 vim.o.autoindent = true
 vim.o.expandtab = true
