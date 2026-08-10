@@ -80,21 +80,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
         ---@type vim.keymap.set.Opts
         local ls_opts = { buffer = bufnr }
 
-        local ok, whichkey = pcall(require, "which-key.nvim")
-        if ok then
-            whichkey.add({
-                { "<localleader>", desc = "lsp", buffer = bufnr },
-                { "<localleader>c", desc = "code" },
-                { "<localleader>b", desc = "buffer", buffer = bufnr },
-                { "<localleader>d", desc = "document" },
-                { "<localleader>g", desc = "goto" },
-                { "<localleader>l", desc = "line" },
-                { "<localleader>r", desc = "rename" },
-                { "<localleader>u", desc = "toggles", buffer = bufnr },
-                { "<localleader>w", desc = "workspace" },
-            })
-        end
-
         if client == nil then
             vim.notify("Couldn't setup language server related keymaps", vim.log.levels.ERROR)
             return
