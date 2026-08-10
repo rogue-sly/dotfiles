@@ -8,6 +8,7 @@ on_conflict = "ask"
 "~/.config/fastfetch" = "./profiles/global/fastfetch"
 "~/.config/git" = "./profiles/global/git"
 "~/.config/nvim" = "./profiles/global/nvim/"
+"~/.config/vim" = "./profiles/global/vim/"
 "~/.config/zellij" = "./profiles/global/zellij"
 "~/.local/share/wallpapers" = "./wallpapers"
 
