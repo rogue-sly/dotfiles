@@ -17,6 +17,7 @@ return {
             },
             clues = {
                 -- <leader> mapping groups
+                { mode = { "n", "x" }, keys = "<leader>d", desc = "+debug" },
                 { mode = { "n", "x" }, keys = "<leader>f", desc = "+file/find" },
                 { mode = { "n", "x" }, keys = "<leader>p", desc = "+profiler" },
                 { mode = { "n", "x" }, keys = "<leader>r", desc = "+run" },
@@ -36,10 +37,7 @@ return {
                 miniclue.gen_clues.square_brackets(),
                 miniclue.gen_clues.windows(),
             },
-            window = {
-                delay = 0,
-                config = { border = "rounded" },
-            },
+            window = { delay = 0, config = { width = "auto", border = "rounded" } },
         }
     end,
 }

@@ -5,7 +5,7 @@ return {
     root_markers = {},
     settings = {
         json = {
-            format = { enable = true },
+            format = { enable = false },
         },
     },
 }

@@ -86,6 +86,7 @@ return {
 		{ "<leader>sk", function() Snacks.picker.keymaps() end,                                                     desc = "Keymaps" },
 		{ "<leader>sl", function() Snacks.picker.lsp_config() end,                                                  desc = "LSP Configs" },
 		{ "<leader>sw", function() Snacks.picker.grep_word() end,                                                   desc = "Visual selection or word",                                   mode = { "n", "x" } },
+        { "<leader>su", function() Snacks.picker.undo() end,                                                        desc = "Undo History" },
 		-- Explorer
 		{ "<leader>e",  function() Snacks.explorer.open() end,                                                      desc = "explore" },
 		{ "<leader>\\", function() Snacks.explorer.reveal() end,                                                    desc = "reveal file location in Filetree" },
