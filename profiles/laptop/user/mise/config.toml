@@ -25,6 +25,7 @@ tombi = "latest"
 # fmt
 oxfmt = "latest"
 stylua = "latest"
+"npm:@vtsls/language-server" = "latest"
 
 [settings]
 auto_install = false

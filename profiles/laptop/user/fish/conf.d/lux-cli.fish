@@ -1,3 +1,3 @@
 if command -q -v lx >/dev/null
-    lx completion fish | source
+    lx util completion fish | source
 end
