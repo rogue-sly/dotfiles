@@ -3,25 +3,6 @@
 I use [Dotbee](https://github.com/rogue-sly/dotbee) to manage my dotfiles.
 I made this tool because I became quite frustrated with `stow`.
 
-```text
-Easy to use dotfiles manager
-
-Usage: dotbee <COMMAND>
-
-Commands:
-  doctor  show currently used configs and symlinks status
-  init    init dotbee
-  list    list all available configs
-  purge   purge symlinks
-  repair  attempt to fix broken symlinks
-  switch  select profile
-  help    Print this message or the help of the given subcommand(s)
-
-Options:
-  -h, --help     Print help
-  -V, --version  Print version
-```
-
 ## Setup Instructions
 
 1. Clone this repository
