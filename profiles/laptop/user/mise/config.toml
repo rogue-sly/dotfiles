@@ -1,14 +1,10 @@
 [tools]
 "github:RivoLink/leaf" = "latest"
 "github:bahdotsh/wrkflw" = "latest"
-"github:exercism/cli" = "latest"
 "github:mroboff/vm-curator" = "latest"
 "github:rogue-sly/dotbee" = "latest"
 "github:scipenai/tylax" = "latest"
 "github:zk-org/zk" = "latest"
-cargo-binstall = "latest"
-dotnet = "latest"
-gh = "latest"
 git-cliff = "latest"
 lefthook = "latest"
 odin = "dev-2026-07a"
@@ -19,18 +15,24 @@ odin = "dev-2026-07a"
 "github:DanielGavin/ols" = { version = "latest", rename_exe = { "ols-*" = "ols", "odinfmt-*" = "odinfmt" } }
 "github:JCWasmx86/MesonLSP" = "latest"
 "github:latex-lsp/texlab" = "latest"
+"npm:@vtsls/language-server" = "latest"
 lua-language-server = "latest"
 tinymist = "latest"
 tombi = "latest"
 # fmt
 oxfmt = "latest"
 stylua = "latest"
-"npm:@vtsls/language-server" = "latest"
 
 [settings]
 auto_install = false
+disable_tools = [
+  "dotnet",
+  "node",
+  "rust",
+  "uv",
+  "python",
+]
 lockfile = true
 # backends
 cargo = { binstall = true }
-dotnet = { cli_telemetry_optout = true, isolated = true }
 pipx = { uvx = true }

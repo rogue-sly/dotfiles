@@ -1,13 +1,7 @@
-# language server
-[tools.slint-lsp]
-version = "latest"
-asset_pattern = "slint-lsp-linux*"
-
-# viewer
-[tools.slint-viewer]
-version = "latest"
-asset_pattern = "slint-viewer-linux*"
-
 [tool_alias]
 slint-lsp = "github:slint-ui/slint"
 slint-viewer = "github:slint-ui/slint"
+
+[tools]
+slint-lsp = { version = "latest", asset_pattern = "slint-lsp-linux*" }
+slint-viewer = { version = "latest", asset_pattern = "slint-viewer-linux*" }
