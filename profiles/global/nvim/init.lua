@@ -20,6 +20,8 @@ vim.lsp.enable({
     "lua_ls",
     "rust_analyzer",
     "vtsls",
+    -- shell
+    "bashls",
     -- doc
     "texlab",
     "tinymist",
