@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#MISE description="Enable OpenH264 codec repo in DNF"
+#MISE depends=["setup-fedora:add-repositories"]
+set -euo pipefail
+
+sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1

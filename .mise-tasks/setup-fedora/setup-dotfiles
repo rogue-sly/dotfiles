@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#MISE description="Set up dotfiles via dotbee"
+#MISE depends=["setup-fedora:install-packages"]
+set -euo pipefail
+
+mise install github:rogue-sly/dotbee
+mise x github:rogue-sly/dotbee -- dotbee switch --profile den

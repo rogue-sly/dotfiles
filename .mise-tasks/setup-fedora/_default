@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#MISE description="Run full Fedora workstation setup (repos, DNF, packages, dotfiles)"
+#MISE depends=["setup-fedora:setup-dotfiles"]
+set -euo pipefail
+
+echo
+echo "Fedora setup complete!"
+echo
+echo "Next steps:"
+echo "  1. Restart your shell or run:  exec fish"
+echo "  2. Verify dotfiles:            dotbee doctor"
+echo "  3. Reboot (recommended) to pick up kernel/driver updates."
