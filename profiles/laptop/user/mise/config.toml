@@ -1,5 +1,6 @@
 [tools]
 "github:RivoLink/leaf" = "latest"
+"github:Y2Z/monolith" = "latest"
 "github:bahdotsh/wrkflw" = "latest"
 "github:mroboff/vm-curator" = "latest"
 "github:rogue-sly/dotbee" = "latest"
@@ -7,12 +8,10 @@
 "github:zk-org/zk" = "latest"
 git-cliff = "latest"
 lefthook = "latest"
-odin = "dev-2026-07a"
 
 # lsp
 "cargo:neocmakelsp" = "latest"
 "dotnet:roslyn-language-server" = { version = "latest", prerelease = true }
-"github:DanielGavin/ols" = { version = "latest", rename_exe = { "ols-*" = "ols", "odinfmt-*" = "odinfmt" } }
 "github:JCWasmx86/MesonLSP" = "latest"
 "github:latex-lsp/texlab" = "latest"
 "npm:@vtsls/language-server" = "latest"
