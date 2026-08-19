@@ -7,23 +7,23 @@ den = "./profiles/den"
 termux = "./profiles/termux"
 
 [profiles.global.links]
-fastfetch = { dst = "{cfg}/fastfetch", src = "{global}/fastfetch" }
-git = { dst = "{cfg}/git", src = "{global}/git" }
-nvim = { dst = "{cfg}/nvim", src = "{global}/nvim/" }
-vim = { dst = "{cfg}/vim", src = "{global}/vim/" }
-zellij = { dst = "{cfg}/zellij", src = "{global}/zellij" }
-wallpapers = { dst = "~/.local/share/wallpapers", src = "wallpapers" }
+fastfetch = { src = "{global}/fastfetch", dst = "{cfg}/fastfetch" }
+git = { src = "{global}/git", dst = "{cfg}/git" }
+nvim = { src = "{global}/nvim/", dst = "{cfg}/nvim" }
+vim = { src = "{global}/vim/", dst = "{cfg}/vim" }
+zellij = { src = "{global}/zellij", dst = "{cfg}/zellij" }
+wallpapers = { src = "wallpapers", dst = "~/.local/share/wallpapers" }
 
 [profiles.den.links]
-alacritty = { dst = "{cfg}/alacritty", src = "{den}/user/alacritty" }
-fish = { dst = "{cfg}/fish", src = "{den}/user/fish" }
-godot = { dst = "{cfg}/godot", src = "{den}/user/godot" }
-inlyne = { dst = "{cfg}/inlyne", src = "{den}/user/inlyne" }
-kitty = { dst = "{cfg}/kitty", src = "{den}/user/kitty" }
-mise = { dst = "{cfg}/mise", src = "{den}/user/mise" }
-rg = { dst = "{cfg}/ripgrep", src = "{den}/user/ripgrep" }
-npmrc = { dst = "~/.npmrc", src = "{den}/user/.npmrc" }
+alacritty = { src = "{den}/user/alacritty", dst = "{cfg}/alacritty" }
+fish = { src = "{den}/user/fish", dst = "{cfg}/fish" }
+godot = { src = "{den}/user/godot", dst = "{cfg}/godot" }
+inlyne = { src = "{den}/user/inlyne", dst = "{cfg}/inlyne" }
+kitty = { src = "{den}/user/kitty", dst = "{cfg}/kitty" }
+mise = { src = "{den}/user/mise", dst = "{cfg}/mise" }
+rg = { src = "{den}/user/ripgrep", dst = "{cfg}/ripgrep" }
+npmrc = { src = "{den}/user/.npmrc", dst = "~/.npmrc" }
 
 [profiles.termux.links]
-fish = { dst = "{cfg}/fish", src = "{termux}/fish" }
-termux = { dst = "~/.termux", src = "{termux}/termux-settings" }
+fish = { src = "{termux}/fish", dst = "{cfg}/fish" }
+termux = { src = "{termux}/termux-settings", dst = "~/.termux" }
