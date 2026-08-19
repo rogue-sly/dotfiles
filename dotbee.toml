@@ -1,26 +1,29 @@
 #:schema https://raw.githubusercontent.com/rogue-sly/dotbee/refs/heads/main/schema/dotbee.json
 
-[settings]
-on_conflict = "ask"
+[vars]
+cfg = "~/.config"
+global = "./profiles/global"
+den = "./profiles/den"
+termux = "./profiles/termux"
 
-[global.links]
-"~/.config/fastfetch" = "./profiles/global/fastfetch"
-"~/.config/git" = "./profiles/global/git"
-"~/.config/nvim" = "./profiles/global/nvim/"
-"~/.config/vim" = "./profiles/global/vim/"
-"~/.config/zellij" = "./profiles/global/zellij"
-"~/.local/share/wallpapers" = "./wallpapers"
+[profiles.global.links]
+fastfetch = { dst = "{cfg}/fastfetch", src = "{global}/fastfetch" }
+git = { dst = "{cfg}/git", src = "{global}/git" }
+nvim = { dst = "{cfg}/nvim", src = "{global}/nvim/" }
+vim = { dst = "{cfg}/vim", src = "{global}/vim/" }
+zellij = { dst = "{cfg}/zellij", src = "{global}/zellij" }
+wallpapers = { dst = "~/.local/share/wallpapers", src = "wallpapers" }
 
 [profiles.den.links]
-"~/.config/alacritty" = "./profiles/laptop/user/alacritty"
-"~/.config/fish" = "./profiles/laptop/user/fish"
-"~/.config/godot" = "./profiles/laptop/user/godot"
-"~/.config/inlyne" = "./profiles/laptop/user/inlyne"
-"~/.config/kitty" = "./profiles/laptop/user/kitty"
-"~/.config/mise" = "./profiles/laptop/user/mise"
-"~/.config/ripgrep" = "./profiles/laptop/user/ripgrep"
-"~/.npmrc" = "./profiles/laptop/user/.npmrc"
+alacritty = { dst = "{cfg}/alacritty", src = "{den}/user/alacritty" }
+fish = { dst = "{cfg}/fish", src = "{den}/user/fish" }
+godot = { dst = "{cfg}/godot", src = "{den}/user/godot" }
+inlyne = { dst = "{cfg}/inlyne", src = "{den}/user/inlyne" }
+kitty = { dst = "{cfg}/kitty", src = "{den}/user/kitty" }
+mise = { dst = "{cfg}/mise", src = "{den}/user/mise" }
+rg = { dst = "{cfg}/ripgrep", src = "{den}/user/ripgrep" }
+npmrc = { dst = "~/.npmrc", src = "{den}/user/.npmrc" }
 
 [profiles.termux.links]
-"~/.config/fish" = "./profiles/termux/fish"
-"~/.termux" = "./profiles/termux/termux-settings"
+fish = { dst = "{cfg}/fish", src = "{termux}/fish" }
+termux = { dst = "~/.termux", src = "{termux}/termux-settings" }

@@ -99,43 +99,43 @@ url = "https://github.com/JCWasmx86/mesonlsp/releases/download/v5.0.4/mesonlsp-x
 url_api = "https://api.github.com/repos/JCWasmx86/mesonlsp/releases/assets/507314068"
 
 [[tools."github:RivoLink/leaf"]]
-version = "1.27.1"
+version = "1.28.0"
 backend = "github:RivoLink/leaf"
 
 [tools."github:RivoLink/leaf"."platforms.linux-arm64"]
-checksum = "sha256:ded3a1434e39d78dbe52d7fbc8132410165721406de97670f5aa68bd1f0bb1ca"
-url = "https://github.com/RivoLink/leaf/releases/download/1.27.1/leaf-linux-arm64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/512154819"
+checksum = "sha256:e95a16fc284b2f42b1918fdfbdbd9b4528e7f64c2c118d061c71c3f9c3fdf271"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.0/leaf-linux-arm64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/517256711"
 
 [tools."github:RivoLink/leaf"."platforms.linux-arm64-musl"]
-checksum = "sha256:ded3a1434e39d78dbe52d7fbc8132410165721406de97670f5aa68bd1f0bb1ca"
-url = "https://github.com/RivoLink/leaf/releases/download/1.27.1/leaf-linux-arm64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/512154819"
+checksum = "sha256:e95a16fc284b2f42b1918fdfbdbd9b4528e7f64c2c118d061c71c3f9c3fdf271"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.0/leaf-linux-arm64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/517256711"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64"]
-checksum = "sha256:c7afa9e6d884f303a2a386df6fe1c1e8d2594910b7a55fdc7f27577af340735d"
-url = "https://github.com/RivoLink/leaf/releases/download/1.27.1/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/512154818"
+checksum = "sha256:75ae19911daca4041a32aa9282e5ae7e51f6d4c6e6ceed1e59fc40879e00825c"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.0/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/517256707"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-musl"]
-checksum = "sha256:c7afa9e6d884f303a2a386df6fe1c1e8d2594910b7a55fdc7f27577af340735d"
-url = "https://github.com/RivoLink/leaf/releases/download/1.27.1/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/512154818"
+checksum = "sha256:75ae19911daca4041a32aa9282e5ae7e51f6d4c6e6ceed1e59fc40879e00825c"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.0/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/517256707"
 
 [tools."github:RivoLink/leaf"."platforms.macos-arm64"]
-checksum = "sha256:c091158880b41b164f9c7b2bfd296c0f5a466c74cdb1f23b582c14559ef7c5cd"
-url = "https://github.com/RivoLink/leaf/releases/download/1.27.1/leaf-macos-arm64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/512154821"
+checksum = "sha256:00039126a37a4b20a3ad56d60e207df8acd09369240de2a2d21f83447b7b42de"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.0/leaf-macos-arm64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/517256710"
 
 [tools."github:RivoLink/leaf"."platforms.macos-x64"]
-checksum = "sha256:237278ff517248d6e02e48ae1602e026cc7bfc34e565ebe7a07d6171f0849472"
-url = "https://github.com/RivoLink/leaf/releases/download/1.27.1/leaf-macos-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/512154827"
+checksum = "sha256:c17a5ca4acb44feb2efc221bff933de2bc32cd2bd2cacb7f5976d96cf4063e64"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.0/leaf-macos-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/517256715"
 
 [tools."github:RivoLink/leaf"."platforms.windows-x64"]
-checksum = "sha256:213ac103c9135b81bd85763a2b08ec14227bce7aa68b9d5cdcae4c0d992945bf"
-url = "https://github.com/RivoLink/leaf/releases/download/1.27.1/leaf-windows-x86_64.exe"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/512154836"
+checksum = "sha256:32db587c6861622fed9d6d8c040de098fce1fa4b29c1a3c719a82edf76e8eef7"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.0/leaf-windows-x86_64.exe"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/517256722"
 
 [[tools."github:Y2Z/monolith"]]
 version = "2.10.1"
@@ -316,38 +316,38 @@ url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/51054
 provenance = "github-attestations"
 
 [[tools."github:rogue-sly/dotbee"]]
-version = "0.7.0"
+version = "0.8.0"
 backend = "github:rogue-sly/dotbee"
 
 [tools."github:rogue-sly/dotbee"."platforms.linux-arm64"]
-checksum = "sha256:03eee20f5556e326c5dddc969ef09d8e5ea2995ad9e7fb9372d5b0d8075facb2"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.7.0/dotbee-linux-arm64"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/468125130"
+checksum = "sha256:35d8a3236bcb1baf96a0dfae917d69d48750161b8c511d307bbc21e168e338ec"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-linux-arm64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520838213"
 
 [tools."github:rogue-sly/dotbee"."platforms.linux-arm64-musl"]
-checksum = "sha256:1e1ab1653026e0006b47d1400282399d33b615a16734dd7c397939c13e25300c"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.7.0/dotbee-linux-arm64-musl"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/468125145"
+checksum = "sha256:a90bd8a9c46b94f23a70eba4d6789e183dc1e996127cf834576b7f2666ced2e8"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-linux-arm64-musl"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520838214"
 
 [tools."github:rogue-sly/dotbee"."platforms.linux-x64"]
-checksum = "sha256:fdd765466d056a418f543c7527202075079ec90addcc1956a2bac2ac719b65cf"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.7.0/dotbee-linux-x86_64"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/468125151"
+checksum = "sha256:42978ccc3ab0c39267d8ed254c13e625c13c8ada1d088e33398039ef87213e21"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-linux-x86_64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520838218"
 
 [tools."github:rogue-sly/dotbee"."platforms.linux-x64-musl"]
-checksum = "sha256:41f2e085ef22b080a5f86fabc128853a618d0a418852607ef5da14539a80264e"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.7.0/dotbee-linux-x86_64-musl"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/468125166"
+checksum = "sha256:f933c35e3408ab667f1377949e20e1b22c7a972acef4fd544f5d295d9410d719"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-linux-x86_64-musl"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520838212"
 
 [tools."github:rogue-sly/dotbee"."platforms.macos-arm64"]
-checksum = "sha256:0645e198f3d79a1c2715de83586b9d69a8aea670baa6dff4d583928aa93fcd84"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.7.0/dotbee-macos-arm64"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/468125176"
+checksum = "sha256:4b1b3c193ae551ece82c0e55bcecfa4b5a1e0f46de09978731e1a364427fcac1"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-macos-arm64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520839759"
 
 [tools."github:rogue-sly/dotbee"."platforms.macos-x64"]
-checksum = "sha256:9ba6b99a68d537ade9c79a05e2d2a22cb3c34e4b9ca58d9c55e10dafb7e4c4c4"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.7.0/dotbee-macos-x86_64"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/468125178"
+checksum = "sha256:29bc6c20df5272122aae3b04742f2be9180a42121d7c438bbb9e2677eb8c8385"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-macos-x86_64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520839749"
 
 [[tools."github:scipenai/tylax"]]
 version = "0.3.7"
@@ -721,3 +721,36 @@ checksum = "sha256:376f26ef04c32b7de57352fb1572d550d2f728958f00bfa585cec94a1df67
 url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.0/tombi-cli-1.4.0-x86_64-pc-windows-msvc.zip"
 url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/513163086"
 provenance = "github-attestations"
+
+[[tools.zig]]
+version = "0.16.0"
+backend = "core:zig"
+
+[tools.zig."platforms.linux-arm64"]
+checksum = "sha256:ea4b09bfb22ec6f6c6ceac57ab63efb6b46e17ab08d21f69f3a48b38e1534f17"
+url = "https://ziglang.org/download/0.16.0/zig-aarch64-linux-0.16.0.tar.xz"
+
+[tools.zig."platforms.linux-arm64-musl"]
+checksum = "sha256:ea4b09bfb22ec6f6c6ceac57ab63efb6b46e17ab08d21f69f3a48b38e1534f17"
+url = "https://ziglang.org/download/0.16.0/zig-aarch64-linux-0.16.0.tar.xz"
+
+[tools.zig."platforms.linux-x64"]
+checksum = "sha256:70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00"
+url = "https://ziglang.org/download/0.16.0/zig-x86_64-linux-0.16.0.tar.xz"
+provenance = "minisign"
+
+[tools.zig."platforms.linux-x64-musl"]
+checksum = "sha256:70e49664a74374b48b51e6f3fdfbf437f6395d42509050588bd49abe52ba3d00"
+url = "https://ziglang.org/download/0.16.0/zig-x86_64-linux-0.16.0.tar.xz"
+
+[tools.zig."platforms.macos-arm64"]
+checksum = "sha256:b23d70deaa879b5c2d486ed3316f7eaa53e84acf6fc9cc747de152450d401489"
+url = "https://ziglang.org/download/0.16.0/zig-aarch64-macos-0.16.0.tar.xz"
+
+[tools.zig."platforms.macos-x64"]
+checksum = "sha256:0387557ed1877bc6a2e1802c8391953baddba76081876301c522f52977b52ba7"
+url = "https://ziglang.org/download/0.16.0/zig-x86_64-macos-0.16.0.tar.xz"
+
+[tools.zig."platforms.windows-x64"]
+checksum = "sha256:68659eb5f1e4eb1437a722f1dd889c5a322c9954607f5edcf337bc3684a75a7e"
+url = "https://ziglang.org/download/0.16.0/zig-x86_64-windows-0.16.0.zip"
