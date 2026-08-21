@@ -511,7 +511,7 @@ version = "dev-2026-07a"
 backend = "github:odin-lang/Odin"
 
 [[tools.oxfmt]]
-version = "0.63.0"
+version = "0.64.0"
 backend = "npm:oxfmt"
 
 [[tools.slint-lsp]]

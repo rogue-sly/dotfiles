@@ -4,7 +4,6 @@ return {
     version = false,
     init = function()
         vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
-
         vim.api.nvim_create_user_command("Format", function(args)
             local range = nil
             if args.count ~= -1 then
@@ -21,23 +20,36 @@ return {
                 range = range,
             })
         end, { desc = "Format file", range = true })
+
+        vim.g.auto_format_is_off = false
+        vim.api.nvim_create_user_command("ConformToggle", function()
+            vim.g.auto_format_is_off = not vim.g.auto_format_is_off
+        end, {
+            desc = "Toggle autoformat-on-save",
+        })
     end,
-    ---@type conform.setupOpts
-    opts = {
-        format_on_save = { lsp_format = "fallback" },
-        default_format_opts = { lsp_format = "fallback" },
-        formatters_by_ft = {
-            c = { "clang-format" },
-            cpp = { "clang-format" },
-            fish = { "fish_indent" },
-            json = { "oxfmt" },
-            jsonc = { "oxfmt" },
-            lua = { "stylua", lsp_format = "never" },
-            markdown = { "oxfmt" },
-            meson = { "meson" },
-            python = { "ruff_format" },
-            rust = { "rustfmt" },
-            typst = { "typstyle" },
-        },
-    },
+    config = function()
+        require("conform").setup({
+            format_on_save = function()
+                if vim.g.auto_format_is_off then
+                    return
+                end
+                return { timeout_ms = 500, lsp_format = "fallback" }
+            end,
+            default_format_opts = { lsp_format = "fallback" },
+            formatters_by_ft = {
+                c = { "clang-format" },
+                cpp = { "clang-format" },
+                fish = { "fish_indent" },
+                json = { "oxfmt" },
+                jsonc = { "oxfmt" },
+                lua = { "stylua", lsp_format = "never" },
+                markdown = { "oxfmt" },
+                meson = { "meson" },
+                python = { "ruff_format" },
+                rust = { "rustfmt" },
+                typst = { "typstyle" },
+            },
+        })
+    end,
 }
