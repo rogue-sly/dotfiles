@@ -195,8 +195,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
         Snacks.toggle.words():map("<localleader>uw")
         -- stylua: ignore
-        vim.keymap.set("n", "]]", function() Snacks.words.jump(vim.v.count1) end, { desc = "Next Reference" })
+        vim.keymap.set("n", "]w", function() Snacks.words.jump(vim.v.count1) end, { desc = "Next Reference" })
         -- stylua: ignore
-        vim.keymap.set("n", "[[", function() Snacks.words.jump(-vim.v.count1) end, { desc = "Prev Reference" })
+        vim.keymap.set("n", "[w", function() Snacks.words.jump(-vim.v.count1) end, { desc = "Prev Reference" })
     end,
 })

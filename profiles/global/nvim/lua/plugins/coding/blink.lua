@@ -9,7 +9,7 @@ return {
         cmdline = { enabled = true, completion = { ghost_text = { enabled = true } } },
         appearance = { nerd_font_variant = "normal" },
         completion = {
-            menu = { auto_show = false },
+            menu = { auto_show = true },
             documentation = { window = { border = "padded", scrollbar = true } },
             list = { selection = { preselect = false, auto_insert = false } },
             ghost_text = { enabled = true },

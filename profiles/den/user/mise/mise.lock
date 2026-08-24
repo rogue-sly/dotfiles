@@ -316,38 +316,38 @@ url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/51054
 provenance = "github-attestations"
 
 [[tools."github:rogue-sly/dotbee"]]
-version = "0.8.0"
+version = "0.9.0"
 backend = "github:rogue-sly/dotbee"
 
 [tools."github:rogue-sly/dotbee"."platforms.linux-arm64"]
-checksum = "sha256:35d8a3236bcb1baf96a0dfae917d69d48750161b8c511d307bbc21e168e338ec"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-linux-arm64"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520838213"
+checksum = "sha256:a176242816f3c0ae21cd0e1ff00dc42e2af00cd96fc5b2d6e8639d4152431268"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.9.0/dotbee-linux-arm64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/524342135"
 
 [tools."github:rogue-sly/dotbee"."platforms.linux-arm64-musl"]
-checksum = "sha256:a90bd8a9c46b94f23a70eba4d6789e183dc1e996127cf834576b7f2666ced2e8"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-linux-arm64-musl"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520838214"
+checksum = "sha256:51afd9d1e5c471f43c17cb2921ba5db7486a8d55c0987ed6e1f740721a471b4a"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.9.0/dotbee-linux-arm64-musl"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/524342125"
 
 [tools."github:rogue-sly/dotbee"."platforms.linux-x64"]
-checksum = "sha256:42978ccc3ab0c39267d8ed254c13e625c13c8ada1d088e33398039ef87213e21"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-linux-x86_64"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520838218"
+checksum = "sha256:ae3a257697a91e3bc19d3f50ae9df85abd1076be9d728ea78ec5f178098343bf"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.9.0/dotbee-linux-x86_64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/524342126"
 
 [tools."github:rogue-sly/dotbee"."platforms.linux-x64-musl"]
-checksum = "sha256:f933c35e3408ab667f1377949e20e1b22c7a972acef4fd544f5d295d9410d719"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-linux-x86_64-musl"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520838212"
+checksum = "sha256:28e19fccec5c8840cd091f8245488c02c35ffb2e6a0c1eb214a6e2ea76b81d82"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.9.0/dotbee-linux-x86_64-musl"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/524342136"
 
 [tools."github:rogue-sly/dotbee"."platforms.macos-arm64"]
-checksum = "sha256:4b1b3c193ae551ece82c0e55bcecfa4b5a1e0f46de09978731e1a364427fcac1"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-macos-arm64"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520839759"
+checksum = "sha256:d8126e5f54e1eef9778305e752afd2ccf99cbefab55cf7d0b9abaa2783c80475"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.9.0/dotbee-macos-arm64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/524342296"
 
 [tools."github:rogue-sly/dotbee"."platforms.macos-x64"]
-checksum = "sha256:29bc6c20df5272122aae3b04742f2be9180a42121d7c438bbb9e2677eb8c8385"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.8.0/dotbee-macos-x86_64"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/520839749"
+checksum = "sha256:74494b563380750eafe006dbd37f38a22054c975f4676bf14c9973abc9c5004d"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v0.9.0/dotbee-macos-x86_64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/524342319"
 
 [[tools."github:scipenai/tylax"]]
 version = "0.3.7"
@@ -418,49 +418,49 @@ url = "https://github.com/zk-org/zk/releases/download/v0.15.6/zk-v0.15.6-windows
 url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/490446228"
 
 [[tools.lefthook]]
-version = "2.1.10"
+version = "2.1.11"
 backend = "aqua:evilmartians/lefthook"
 
 [tools.lefthook."platforms.linux-arm64"]
-checksum = "sha256:6380a6ad6dd484466fd69bd83f24491d6ec27dc0b84e837be025620f7c4e11e3"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_Linux_aarch64.gz"
-url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227512"
+checksum = "sha256:94568fb0f7bc62eb7d7b110534f7bb01c5153551a3f364269e742fcfaa0b1c07"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.11/lefthook_2.1.11_Linux_aarch64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/523446803"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.linux-arm64-musl"]
-checksum = "sha256:6380a6ad6dd484466fd69bd83f24491d6ec27dc0b84e837be025620f7c4e11e3"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_Linux_aarch64.gz"
-url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227512"
+checksum = "sha256:94568fb0f7bc62eb7d7b110534f7bb01c5153551a3f364269e742fcfaa0b1c07"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.11/lefthook_2.1.11_Linux_aarch64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/523446803"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.linux-x64"]
-checksum = "sha256:0b14162a0bb2f0c64ae0759f6102f6e19c4d00981666a8ac73d4f5a6878ada4f"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_Linux_x86_64.gz"
-url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227493"
+checksum = "sha256:435aff51fc767a7f135717a4e3e4f3282c15e0a4ca4e2dfd1b54ef8241ee5f3f"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.11/lefthook_2.1.11_Linux_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/523446768"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.linux-x64-musl"]
-checksum = "sha256:0b14162a0bb2f0c64ae0759f6102f6e19c4d00981666a8ac73d4f5a6878ada4f"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_Linux_x86_64.gz"
-url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227493"
+checksum = "sha256:435aff51fc767a7f135717a4e3e4f3282c15e0a4ca4e2dfd1b54ef8241ee5f3f"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.11/lefthook_2.1.11_Linux_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/523446768"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.macos-arm64"]
-checksum = "sha256:1dd4dc7b4c50efb1f9d9122cd6535c793738d6e59751c228d49f768ec9dbb604"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_MacOS_arm64.gz"
-url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227499"
+checksum = "sha256:2d2b312730f3d900354f5f0eb37abf31ff65a033021be761f25a2eb709c9cdbc"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.11/lefthook_2.1.11_MacOS_arm64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/523446757"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.macos-x64"]
-checksum = "sha256:49d905f28ca46442cb236060058b252da650b5f7b864bd275b61aa46945e8c4a"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_MacOS_x86_64.gz"
-url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227495"
+checksum = "sha256:b9ab6e5de57b1fdd1ffe77a9d57fbec34539b50481fa5c38f91f19fe5175dcc5"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.11/lefthook_2.1.11_MacOS_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/523446802"
 provenance = "github-attestations"
 
 [tools.lefthook."platforms.windows-x64"]
-checksum = "sha256:beabbce824641ae71229ed11dd8634f47148921cb649d25c90441b737481494a"
-url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.10/lefthook_2.1.10_Windows_x86_64.gz"
-url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/470227505"
+checksum = "sha256:df7fb73aca464e455f66ab231965cfb15aaea4ccd45be4af4f7df908fc4077d2"
+url = "https://github.com/evilmartians/lefthook/releases/download/v2.1.11/lefthook_2.1.11_Windows_x86_64.gz"
+url_api = "https://api.github.com/repos/evilmartians/lefthook/releases/assets/523446762"
 provenance = "github-attestations"
 
 [[tools.lua-language-server]]
@@ -677,49 +677,49 @@ url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.2/tiny
 url_api = "https://api.github.com/repos/Myriad-Dreamin/tinymist/releases/assets/454537125"
 
 [[tools.tombi]]
-version = "1.4.0"
+version = "1.4.1"
 backend = "aqua:tombi-toml/tombi"
 
 [tools.tombi."platforms.linux-arm64"]
-checksum = "sha256:b70750d462954294c354a014bb90399273876b953c21e3a136aafd3d1d41f5e8"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.0/tombi-cli-1.4.0-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/513163060"
+checksum = "sha256:21f51d092597053266e0ed051082743b5956b6de2f0db1cecce78e0eb29165e5"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.1/tombi-cli-1.4.1-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/525196347"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-arm64-musl"]
-checksum = "sha256:b70750d462954294c354a014bb90399273876b953c21e3a136aafd3d1d41f5e8"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.0/tombi-cli-1.4.0-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/513163060"
+checksum = "sha256:21f51d092597053266e0ed051082743b5956b6de2f0db1cecce78e0eb29165e5"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.1/tombi-cli-1.4.1-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/525196347"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-x64"]
-checksum = "sha256:e2dc1190e0590b1fd0581fa8f85017215ed9b05a4d85c1cf18e0979b6cf24fe1"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.0/tombi-cli-1.4.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/513163088"
+checksum = "sha256:9aa69eb3e75a4a22a961b8a1c8cc44e4f81328ce25ad5b10d151be1a09faa88d"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.1/tombi-cli-1.4.1-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/525196366"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-x64-musl"]
-checksum = "sha256:e2dc1190e0590b1fd0581fa8f85017215ed9b05a4d85c1cf18e0979b6cf24fe1"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.0/tombi-cli-1.4.0-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/513163088"
+checksum = "sha256:9aa69eb3e75a4a22a961b8a1c8cc44e4f81328ce25ad5b10d151be1a09faa88d"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.1/tombi-cli-1.4.1-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/525196366"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.macos-arm64"]
-checksum = "sha256:248159d26488f11fe8c36b9239b1ab84abe3533f4a5d8d066e56c091a99ffde1"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.0/tombi-cli-1.4.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/513163062"
+checksum = "sha256:0054ea75a98db2ccdef3b304bf97aeb2b1fed201df13b30b68a19672a275199c"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.1/tombi-cli-1.4.1-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/525196343"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.macos-x64"]
-checksum = "sha256:7016e0028bf0ff122faeb49b0bb248c9d73885ce73b8ada26be6248e207977bc"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.0/tombi-cli-1.4.0-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/513163065"
+checksum = "sha256:4a14a0bf18ec0bbbeab3003f6c0dea3ffabb2cb38649ebfd6cafabc4d7eeffe0"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.1/tombi-cli-1.4.1-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/525196344"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.windows-x64"]
-checksum = "sha256:376f26ef04c32b7de57352fb1572d550d2f728958f00bfa585cec94a1df677ab"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.0/tombi-cli-1.4.0-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/513163086"
+checksum = "sha256:a0b324b673f469f82337df9561951b8dea2cb5fb491e98345929d3f5a55bfe84"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.1/tombi-cli-1.4.1-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/525196364"
 provenance = "github-attestations"
 
 [[tools.zig]]

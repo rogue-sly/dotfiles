@@ -41,7 +41,7 @@ vim.o.termsync = true
 vim.o.fillchars = "foldopen:,foldclose:,fold: ,foldsep: ,diff:╱,eob: "
 vim.o.foldcolumn = "0"
 vim.o.foldenable = true
-vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()" -- default to treesitter folding
+vim.o.foldexpr = vim.treesitter.foldexpr() -- default to treesitter folding
 vim.o.foldlevel = 99
 vim.o.foldmethod = "expr"
 vim.o.foldtext = ""
@@ -55,8 +55,6 @@ vim.o.undofile = true
 vim.o.clipboard = "unnamedplus"
 vim.o.exrc = true
 vim.o.wrap = false
-vim.o.completeopt = "menuone,noinsert,noselect"
-vim.o.sessionoptions = "curdir,folds,help,tabpages,winsize"
 vim.o.scrolloff = 5
 --- search
 vim.o.ignorecase = true
@@ -71,8 +69,6 @@ vim.diagnostic.config({
     virtual_lines = false,
     virtual_text = false,
 })
-
-vim.o.diffopt = "internal,filler,closeoff,linematch:60,algorithm:histogram,indent-heuristic"
 
 -- WARN: enable experimental UI features
 require("vim._core.ui2").enable({})

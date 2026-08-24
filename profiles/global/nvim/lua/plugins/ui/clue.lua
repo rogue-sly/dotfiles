@@ -5,15 +5,25 @@ return {
         local miniclue = require("mini.clue")
         return {
             triggers = {
-                -- Leader trigger
+                -- leader trigger
                 { mode = { "n", "x" }, keys = "<leader>" },
                 -- LSP (<localleader>) trigger
                 { mode = { "n", "x" }, keys = "<localleader>" },
                 -- `[` and `]` keys
                 { mode = "n", keys = "[" },
                 { mode = "n", keys = "]" },
-                -- Window commands
+                -- Built-in completion
+                { mode = "i", keys = "<C-x>" },
+                -- `g` key
+                { mode = { "n", "x" }, keys = "g" },
+                -- Marks
+                { mode = { "n", "x" }, keys = "'" },
+                { mode = { "n", "x" }, keys = "`" },
+                { mode = { "n", "x" }, keys = '"' },
+                { mode = { "i", "c" }, keys = "<C-r>" },
                 { mode = "n", keys = "<C-w>" },
+                -- `z` key
+                { mode = { "n", "x" }, keys = "z" },
             },
             clues = {
                 -- <leader> mapping groups
@@ -35,7 +45,12 @@ return {
                 { mode = "n", keys = "<localleader>w", desc = "+workspace" },
                 -- Built-in key hints
                 miniclue.gen_clues.square_brackets(),
+                miniclue.gen_clues.builtin_completion(),
+                miniclue.gen_clues.g(),
+                miniclue.gen_clues.marks(),
+                miniclue.gen_clues.registers(),
                 miniclue.gen_clues.windows(),
+                miniclue.gen_clues.z(),
             },
             window = { delay = 0, config = { width = "auto", border = "rounded" } },
         }

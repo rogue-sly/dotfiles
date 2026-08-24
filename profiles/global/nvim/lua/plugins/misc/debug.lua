@@ -7,7 +7,7 @@ return {
         lazy = false,
         keys = {
             {
-                "<F5>",
+                "<F9>",
                 function()
                     require("dap").continue()
                 end,
@@ -83,6 +83,10 @@ return {
                     request = "launch",
                     program = function()
                         return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+                    end,
+                    args = function()
+                        local args_string = vim.fn.input("Program arguments: ")
+                        return vim.split(args_string, " +")
                     end,
                     cwd = "${workspaceFolder}",
                     stopOnEntry = false,
