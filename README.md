@@ -14,8 +14,8 @@ I made this tool because I became quite frustrated with `stow`.
 2. Select desired profile
 
    ```sh
-   dotbee switch laptop # for laptop
-   dotbee switch termux # for termux
+   dotbee sync den
+   dotbee sync termux
    ```
 
 Ta-da!, you're good to go :]
