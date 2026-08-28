@@ -2,6 +2,7 @@
 ---@type LazySpec
 return {
     "Saghen/blink.cmp",
+    version = "1.*",
     dependencies = { "rafamadriz/friendly-snippets", version = false },
     ---@type blink.cmp.Config
     opts = {

@@ -39,11 +39,7 @@ vim.o.termguicolors = true
 vim.o.termsync = true
 --- fold
 vim.o.fillchars = "foldopen:,foldclose:,fold: ,foldsep: ,diff:╱,eob: "
-vim.o.foldcolumn = "0"
-vim.o.foldenable = true
-vim.o.foldexpr = vim.treesitter.foldexpr() -- default to treesitter folding
 vim.o.foldlevel = 99
-vim.o.foldmethod = "expr"
 vim.o.foldtext = ""
 --- highlights for spaces and tabs
 vim.o.list = false

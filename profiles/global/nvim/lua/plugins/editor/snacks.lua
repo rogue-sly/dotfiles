@@ -65,76 +65,273 @@ return {
             lazygit = { position = "float", width = 0, height = 0 },
         },
     },
-	-- stylua: ignore
-	keys = {
-		-- Find
-		{ "<leader>fF", function() Snacks.picker.files() end,                                                       desc = "Fuzzy find files in cwd (inlcuding hidden)" },
-		{ "<leader>fb", function() Snacks.picker.buffers() end,                                                     desc = "Find buffers" },
-		{ "<leader>fc", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end,                     desc = "Find Config File" },
-		{ "<leader>ff", function() Snacks.picker.files() end,                                                       desc = "Fuzzy find files in cwd" },
-		{ "<leader>fg", function() Snacks.picker.git_status() end,                                                  desc = "Find Git Status" },
-		{ "<leader>fp", function() Snacks.picker.projects() end,                                                    desc = "Projects" },
-		{ "<leader>fr", function() Snacks.picker.recent() end,                                                      desc = "Fuzzy find recent files" },
-        { "<leader>fs", function() Snacks.scratch.select() end,                                                     desc = "Scratch Buffer" },
-		-- Search
-		{ "<leader>sB", function() Snacks.picker.grep_buffers() end,                                                desc = "Grep Open Buffers" },
-		{ "<leader>sb", function() Snacks.picker.lines() end,                                                       desc = "Buffer Lines" },
-		{ "<leader>sc", function() Snacks.picker.colorschemes() end,                                                desc = "Colorschemes" },
-		{ "<leader>sg", function() Snacks.picker.grep() end,                                                        desc = "Grep" },
-		{ "<leader>sh", function() Snacks.picker.help() end,                                                        desc = "Help Pages" },
-		{ "<leader>si", function() Snacks.picker.icons() end,                                                       desc = "Icons" },
-		{ "<leader>sk", function() Snacks.picker.keymaps() end,                                                     desc = "Keymaps" },
-		{ "<leader>sl", function() Snacks.picker.lsp_config() end,                                                  desc = "LSP Configs" },
-		{ "<leader>sw", function() Snacks.picker.grep_word() end,                                                   desc = "Visual selection or word",                                   mode = { "n", "x" } },
-        { "<leader>su", function() Snacks.picker.undo() end,                                                        desc = "Undo History" },
-		-- Explorer
-		{ "<leader>e",  function() Snacks.explorer.open() end,                                                      desc = "explore" },
-		{ "<leader>\\", function() Snacks.explorer.reveal() end,                                                    desc = "reveal file location in Filetree" },
-		-- Notifier
-		{ "<leader>n",  "",                                                                                         desc = "notifications" },
-		{ "<leader>nh", function() Snacks.notifier.show_history() end,                                              desc = "History" },
-		{ "<leader>ne", function() Snacks.notifier.show_history({ filter = vim.log.levels.ERROR }) end,             desc = "Errors" },
-		{ "<leader>ni", function() Snacks.notifier.show_history({ filter = vim.log.levels.INFO }) end,              desc = "Info" },
-		{ "<leader>nw", function() Snacks.notifier.show_history({ filter = vim.log.levels.WARN }) end,              desc = "Warn" },
-		{ "<c-esc>",    function() Snacks.notifier.hide() end,                                                      desc = "Dismiss" },
-		-- Terminal
-		{ "<c-/>",      function() Snacks.terminal.toggle(nil, { interactive = true, win = { height = 5, } }) end,  desc = "Toggle Terminal",                                            mode = { "n", "t" } },
-		{ "<leader>rb", function() Snacks.terminal("btop", { win = { position = "float" } }) end,                   desc = "Btop" },
-		{ "<leader>rh", function() Snacks.terminal("htop", { win = { position = "float" } }) end,                   desc = "Htop" },
-		{ "<leader>rg", function() Snacks.lazygit() end,                                                            desc = "Lazygit" },
-		-- Other
-        { "<leader>bd", function() Snacks.bufdelete() end,                                                          desc = "Delete Buffer" },
-		{ "<leader>go", function() Snacks.gitbrowse() end,                                                          desc = "Open the current file, branch, commit, or repo in a browser" },
-        { "<leader>.",  function() Snacks.scratch() end,                                                            desc = "Toggle Scratch Buffer" },
-		{
-			"<leader>N",
-			desc = "Neovim News",
-			function()
-				Snacks.win({
-					file = vim.api.nvim_get_runtime_file("doc/news.txt", false)[1],
-					width = 0.9,
-					height = 0.9,
-					border = "none",
-					wo = {
-						spell = false,
-						wrap = false,
-						signcolumn = "yes",
-						statuscolumn = " ",
-						conceallevel = 3,
-					},
-				})
-			end,
-		},
-	},
+    keys = {
+        -- Find
+        {
+            "<leader>fF",
+            function()
+                Snacks.picker.files()
+            end,
+            desc = "Fuzzy find files in cwd (inlcuding hidden)",
+        },
+        {
+            "<leader>fb",
+            function()
+                Snacks.picker.buffers()
+            end,
+            desc = "Find buffers",
+        },
+        {
+            "<leader>fc",
+            function()
+                Snacks.picker.files({ cwd = vim.fn.stdpath("config") })
+            end,
+            desc = "Find Config File",
+        },
+        {
+            "<leader>ff",
+            function()
+                Snacks.picker.files()
+            end,
+            desc = "Fuzzy find files in cwd",
+        },
+        {
+            "<leader>fg",
+            function()
+                Snacks.picker.git_status()
+            end,
+            desc = "Find Git Status",
+        },
+        {
+            "<leader>fp",
+            function()
+                Snacks.picker.projects()
+            end,
+            desc = "Projects",
+        },
+        {
+            "<leader>fr",
+            function()
+                Snacks.picker.recent()
+            end,
+            desc = "Fuzzy find recent files",
+        },
+        {
+            "<leader>fs",
+            function()
+                Snacks.scratch.select()
+            end,
+            desc = "Scratch Buffer",
+        },
+        -- Search
+        {
+            "<leader>sB",
+            function()
+                Snacks.picker.grep_buffers()
+            end,
+            desc = "Grep Open Buffers",
+        },
+        {
+            "<leader>sb",
+            function()
+                Snacks.picker.lines()
+            end,
+            desc = "Buffer Lines",
+        },
+        {
+            "<leader>sc",
+            function()
+                Snacks.picker.colorschemes()
+            end,
+            desc = "Colorschemes",
+        },
+        {
+            "<leader>sg",
+            function()
+                Snacks.picker.grep()
+            end,
+            desc = "Grep",
+        },
+        {
+            "<leader>sh",
+            function()
+                Snacks.picker.help()
+            end,
+            desc = "Help Pages",
+        },
+        {
+            "<leader>si",
+            function()
+                Snacks.picker.icons()
+            end,
+            desc = "Icons",
+        },
+        {
+            "<leader>sk",
+            function()
+                Snacks.picker.keymaps()
+            end,
+            desc = "Keymaps",
+        },
+        {
+            "<leader>sl",
+            function()
+                Snacks.picker.lsp_config()
+            end,
+            desc = "LSP Configs",
+        },
+        {
+            "<leader>sw",
+            function()
+                Snacks.picker.grep_word()
+            end,
+            desc = "Visual selection or word",
+            mode = { "n", "x" },
+        },
+        {
+            "<leader>su",
+            function()
+                Snacks.picker.undo()
+            end,
+            desc = "Undo History",
+        },
+        -- Explorer
+        {
+            "<leader>e",
+            function()
+                Snacks.explorer.open()
+            end,
+            desc = "explore",
+        },
+        {
+            "<leader>\\",
+            function()
+                Snacks.explorer.reveal()
+            end,
+            desc = "reveal file location in Filetree",
+        },
+        -- Notifier
+        {
+            "<leader>n",
+            "",
+            desc = "notifications",
+        },
+        {
+            "<leader>nh",
+            function()
+                Snacks.notifier.show_history()
+            end,
+            desc = "History",
+        },
+        {
+            "<leader>ne",
+            function()
+                Snacks.notifier.show_history({ filter = vim.log.levels.ERROR })
+            end,
+            desc = "Errors",
+        },
+        {
+            "<leader>ni",
+            function()
+                Snacks.notifier.show_history({ filter = vim.log.levels.INFO })
+            end,
+            desc = "Info",
+        },
+        {
+            "<leader>nw",
+            function()
+                Snacks.notifier.show_history({ filter = vim.log.levels.WARN })
+            end,
+            desc = "Warn",
+        },
+        {
+            "<c-esc>",
+            function()
+                Snacks.notifier.hide()
+            end,
+            desc = "Dismiss",
+        },
+        -- Terminal
+        {
+            "<c-/>",
+            function()
+                Snacks.terminal.toggle(nil, { interactive = true, win = { height = 5 } })
+            end,
+            desc = "Toggle Terminal",
+            mode = { "n", "t" },
+        },
+        {
+            "<leader>rb",
+            function()
+                Snacks.terminal("btop", { win = { position = "float" } })
+            end,
+            desc = "Btop",
+        },
+        {
+            "<leader>rh",
+            function()
+                Snacks.terminal("htop", { win = { position = "float" } })
+            end,
+            desc = "Htop",
+        },
+        {
+            "<leader>rg",
+            function()
+                Snacks.lazygit()
+            end,
+            desc = "Lazygit",
+        },
+        -- Other
+        {
+            "<leader>bd",
+            function()
+                Snacks.bufdelete()
+            end,
+            desc = "Delete Buffer",
+        },
+        {
+            "<leader>go",
+            function()
+                Snacks.gitbrowse()
+            end,
+            desc = "Open the current file, branch, commit, or repo in a browser",
+        },
+        {
+            "<leader>.",
+            function()
+                Snacks.scratch()
+            end,
+            desc = "Toggle Scratch Buffer",
+        },
+        {
+            "<leader>N",
+            desc = "Neovim News",
+            function()
+                Snacks.win({
+                    file = vim.api.nvim_get_runtime_file("doc/news.txt", false)[1],
+                    width = 0.9,
+                    height = 0.9,
+                    border = "none",
+                    wo = {
+                        spell = false,
+                        wrap = false,
+                        signcolumn = "yes",
+                        statuscolumn = " ",
+                        conceallevel = 3,
+                    },
+                })
+            end,
+        },
+    },
     init = function()
         vim.api.nvim_create_autocmd("User", {
             pattern = "VeryLazy",
             callback = function()
-				-- Setup some globals for debugging (lazy-loaded)
-				-- stylua: ignore
-				_G.dd = function(...) Snacks.debug.inspect(...) end
-				-- stylua: ignore
-				_G.bt = function() Snacks.debug.backtrace() end
+                -- Setup some globals for debugging (lazy-loaded)
+                -- stylua: ignore
+                _G.dd = function(...) Snacks.debug.inspect(...) end
+                -- stylua: ignore
+                _G.bt = function() Snacks.debug.backtrace() end
                 vim.print = _G.dd -- Override print to use snacks for `:=` command
                 -- Create some toggle mappings
                 Snacks.toggle.dim():map("<leader>ud")

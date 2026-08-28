@@ -1,0 +1,56 @@
+
+*advanced-find-and-replace* - Search and Replace Multiple Files in Neovim
+
+This guide covers two primary methods for finding and replacing text across
+multiple files.
+
+==============================================================================
+1. Using Snacks.nvim Grep + Quickfix List
+==============================================================================
+
+This is the best method for visual confirmation before replacing.
+
+Step 1: Search
+Use the Snacks grep picker (usually mapped to <leader>sg or similar).
+Type your search term to see the live results.
+
+Step 2: Send to Quickfix List
+While in the Snacks picker, press <C-q> (or the mapped key) to send all 
+matching lines to the Quickfix list.
+
+Step 3: Replace across all files in the list
+Run the following command:
+:cfdo %s/search_term/replace_term/g | update
+
+Breakdown:
+- :cfdo  -> Executes the following command on every file in the Quickfix list.
+- %s    -> Substitute command.
+- /g    -> Global (replace all occurrences on the line).
+- | update -> Saves the file after the substitution.
+
+==============================================================================
+2. Using :args and :argdo
+==============================================================================
+
+This is the best method when you know exactly which files or patterns 
+(e.g., all .lua files) you want to target.
+
+Step 1: Define the argument list
+Specify which files to target using a glob pattern:
+:args **/*.lua
+
+(This adds all .lua files in the current directory and subdirectories to the 
+argument list).
+
+Step 2: Execute replace across the argument list
+Run the following command:
+:argdo %s/search_term/replace_term/g | update
+
+Break 
+- :argdo -> Executes the command on every file in the :args list.
+- %s    -> Substitute command.
+- | update -> Saves each file.
+
+Pro Tip: To avoid "Pattern not found" errors stopping the execution, 
+add the 'e' flag:
+:argdo %s/search_term/replace_term/ge | update

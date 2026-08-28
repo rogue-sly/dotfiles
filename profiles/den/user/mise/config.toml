@@ -29,7 +29,6 @@ disable_tools = [
   "node",
   "rust",
   "uv",
-  "python",
 ]
 lockfile = true
 # backends

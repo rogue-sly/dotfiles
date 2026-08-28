@@ -63,13 +63,12 @@ return {
                 end
             end
 
-            vim.wo[0][0].foldexpr = vim.treesitter.foldexpr()
-            vim.wo[0][0].foldmethod = "expr"
-
             vim.api.nvim_create_autocmd("FileType", {
                 pattern = patterns,
                 callback = function()
                     vim.treesitter.start()
+                    vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+                    vim.wo.foldmethod = "expr"
                 end,
             })
         end,

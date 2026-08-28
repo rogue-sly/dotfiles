@@ -28,8 +28,9 @@ return {
             desc = "Toggle autoformat-on-save",
         })
     end,
-    config = function()
-        require("conform").setup({
+    opts = function()
+        ---@type conform.setupOpts
+        return {
             format_on_save = function()
                 if vim.g.auto_format_is_off then
                     return
@@ -38,18 +39,25 @@ return {
             end,
             default_format_opts = { lsp_format = "fallback" },
             formatters_by_ft = {
+                -- programming langs
                 c = { "clang-format" },
                 cpp = { "clang-format" },
+                lua = { "stylua", lsp_format = "never" },
+                python = { "ruff_format" },
+                rust = { "rustfmt" },
+                -- web stuff
+                javascript = { "oxfmt" },
+                typescript = { "oxfmt" },
+                svelte = { "oxfmt" },
+                -- markup/doc
+                markdown = { "oxfmt" },
+                typst = { "typstyle" },
+                -- etc
                 fish = { "fish_indent" },
                 json = { "oxfmt" },
                 jsonc = { "oxfmt" },
-                lua = { "stylua", lsp_format = "never" },
-                markdown = { "oxfmt" },
                 meson = { "meson" },
-                python = { "ruff_format" },
-                rust = { "rustfmt" },
-                typst = { "typstyle" },
             },
-        })
+        }
     end,
 }
