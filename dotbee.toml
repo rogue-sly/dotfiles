@@ -10,7 +10,6 @@ termux = "./profiles/termux"
 fastfetch = { src = "{global}/fastfetch", dst = "{cfg}/fastfetch" }
 git = { src = "{global}/git", dst = "{cfg}/git" }
 nvim = { src = "{global}/nvim/", dst = "{cfg}/nvim" }
-vim = { src = "{global}/vim/", dst = "{cfg}/vim" }
 zellij = { src = "{global}/zellij", dst = "{cfg}/zellij" }
 wallpapers = { src = "wallpapers", dst = "~/.local/share/wallpapers" }
 
