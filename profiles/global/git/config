@@ -12,6 +12,7 @@
 	compression = 9
 	whitespace = error
 	preloadindex = true
+	pager = delta
 [status]
 	branch = true
 	showStash = true
@@ -27,3 +28,10 @@
 	format = ssh
 [commit]
 	gpgSign = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	dark = true
+[merge]
+	conflictStyle = zdiff3
