@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #MISE description="Run full Fedora workstation setup (repos, DNF, packages, dotfiles)"
-#MISE depends=["setup-fedora:setup-dotfiles"]
+#MISE depends=["fedora:dotfiles"]
 set -euo pipefail
 
 echo

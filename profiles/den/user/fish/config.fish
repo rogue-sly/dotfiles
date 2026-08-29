@@ -8,6 +8,8 @@ set -gx VISUAL nvim
 set -gx PAGER ov
 set -gx GIT_PAGER delta
 
+set -Ux DOCKER_HOST unix:///run/user/(id -u)/podman/podman.sock
+
 # paths
 fish_add_path ~/.local/bin # user installed programs
 fish_add_path ~/.dotnet/tools # dotnet tools
