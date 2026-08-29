@@ -1,9 +1,6 @@
 ---@type LazySpec
 return {
-    {
-        "folke/tokyonight.nvim",
-        lazy = false,
-        priority = 1000,
-        opts = {},
-    },
+    { "folke/tokyonight.nvim" },
+    { "rebelot/kanagawa.nvim" },
+    { "EdenEast/nightfox.nvim" },
 }

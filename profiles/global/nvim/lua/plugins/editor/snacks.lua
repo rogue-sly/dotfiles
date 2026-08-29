@@ -9,7 +9,7 @@ return {
     ---@type snacks.Config
     opts = {
         bigfile = { enabled = true },
-        dashboard = { enabled = false },
+        dashboard = { enabled = true },
         explorer = { enabled = true, replace_netrw = true, trash = true },
         ---@type snacks.picker.Config
         picker = {

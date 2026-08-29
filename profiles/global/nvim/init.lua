@@ -1,7 +1,8 @@
 -- global settings
 vim.g.settings = {
+    ---@type ThemeName
     ---@readonly
-    theme = "tokyonight-night",
+    theme = "kanagawa",
 }
 
 -- prepend mise shims to PATH
