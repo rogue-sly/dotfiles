@@ -4,5 +4,5 @@
 # it's recommended to use "mise en" instead
 
 if command -q -v mise >/dev/null
-    mise activate fish | source
+    mise activate fish --shims | source
 end
