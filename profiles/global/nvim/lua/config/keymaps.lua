@@ -69,7 +69,7 @@ opts.desc = "quit witout saving"
 vim.keymap.set("n", "<leader>qQ", "<cmd>qa!<cr>", opts)
 
 opts.desc = "restart editor"
-vim.keymap.set("n", "<leader>qr", "<cmd>restart<cr>", opts)
+vim.keymap.set("n", "<leader>qr", "<cmd>restart!<cr>", opts)
 
 -- NOTE: LSP related mappings
 vim.api.nvim_create_autocmd("LspAttach", {
