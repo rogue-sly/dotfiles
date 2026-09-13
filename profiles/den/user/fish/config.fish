@@ -2,7 +2,6 @@
 set -U fish_greeting
 
 # env vars
-set -gx RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx PAGER ov
