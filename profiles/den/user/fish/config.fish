@@ -4,7 +4,6 @@ set -U fish_greeting
 # env vars
 set -gx EDITOR nvim
 set -gx VISUAL nvim
-set -gx PAGER ov
 set -gx GIT_PAGER delta
 
 set -Ux DOCKER_HOST unix:///run/user/(id -u)/podman/podman.sock
