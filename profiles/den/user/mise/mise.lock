@@ -2,8 +2,40 @@
 
 lockfile_version = 1
 
+[[tools.actionlint]]
+version = "1.7.12"
+backend = "aqua:rhysd/actionlint"
+specifiers = ["latest"]
+
+[tools.actionlint."platforms.linux-x64"]
+checksum = "sha256:8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8"
+url = "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/384924896"
+provenance = "github-attestations"
+
+[tools.actionlint."platforms.linux-x64-musl"]
+checksum = "sha256:8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8"
+url = "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/384924896"
+provenance = "github-attestations"
+
+[[tools."aqua:bahdotsh/wrkflw"]]
+version = "0.8.0"
+backend = "aqua:bahdotsh/wrkflw"
+specifiers = ["latest"]
+
+[tools."aqua:bahdotsh/wrkflw"."platforms.linux-x64"]
+checksum = "sha256:d7140aa917da5bb13a2f27eab6c592bb019cbe4977e14390d579992087a6a902"
+url = "https://github.com/bahdotsh/wrkflw/releases/download/v0.8.0/wrkflw-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/bahdotsh/wrkflw/releases/assets/401841586"
+
+[tools."aqua:bahdotsh/wrkflw"."platforms.linux-x64-musl"]
+checksum = "sha256:7606fecdc6816f8d1503929f41f1a9d57b25362b13193aaef2732df061a4de30"
+url = "https://github.com/bahdotsh/wrkflw/releases/download/v0.8.0/wrkflw-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/bahdotsh/wrkflw/releases/assets/401841582"
+
 [[tools."cargo:neocmakelsp"]]
-version = "0.11.0"
+version = "0.11.1"
 backend = "cargo:neocmakelsp"
 specifiers = ["latest"]
 
@@ -13,19 +45,19 @@ backend = "dotnet:roslyn-language-server"
 specifiers = ["latest"]
 
 [[tools.git-cliff]]
-version = "2.13.1"
+version = "2.14.1"
 backend = "aqua:orhun/git-cliff"
 specifiers = ["latest"]
 
 [tools.git-cliff."platforms.linux-x64"]
-checksum = "sha256:9a1263f24e59a2f508c7b3d3283c9dea94a8bf697f96dbc18cc783cac6284546"
-url = "https://github.com/orhun/git-cliff/releases/download/v2.13.1/git-cliff-2.13.1-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/orhun/git-cliff/releases/assets/405850439"
+checksum = "sha256:dfe9bef0c7a00d05fafe78e6e591a1a280d39dd495b8066764db0a559acde67f"
+url = "https://github.com/orhun/git-cliff/releases/download/v2.14.1/git-cliff-2.14.1-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/orhun/git-cliff/releases/assets/539696847"
 
 [tools.git-cliff."platforms.linux-x64-musl"]
-checksum = "sha256:200d2535da6d9703f3bcc8a4d159c3b55eacdb01cf2148c55b3eee9dd04d5249"
-url = "https://github.com/orhun/git-cliff/releases/download/v2.13.1/git-cliff-2.13.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/orhun/git-cliff/releases/assets/405850671"
+checksum = "sha256:cba6ae86f0a4205784eed8ef049fe53c904138806e33a1bda2e25026b17198eb"
+url = "https://github.com/orhun/git-cliff/releases/download/v2.14.1/git-cliff-2.14.1-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/orhun/git-cliff/releases/assets/539696922"
 
 [[tools."github:JCWasmx86/MesonLSP"]]
 version = "5.0.4"
@@ -43,19 +75,19 @@ url = "https://github.com/JCWasmx86/mesonlsp/releases/download/v5.0.4/mesonlsp-x
 url_api = "https://api.github.com/repos/JCWasmx86/mesonlsp/releases/assets/507312509"
 
 [[tools."github:RivoLink/leaf"]]
-version = "1.28.0"
+version = "1.28.1"
 backend = "github:RivoLink/leaf"
 specifiers = ["latest"]
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64"]
-checksum = "sha256:75ae19911daca4041a32aa9282e5ae7e51f6d4c6e6ceed1e59fc40879e00825c"
-url = "https://github.com/RivoLink/leaf/releases/download/1.28.0/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/517256707"
+checksum = "sha256:4c3fb454e28953e123d4a70bbe9f129ccdfcc1f0dc48f86ae11d4539bc854d0c"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.1/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/537421092"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-musl"]
-checksum = "sha256:75ae19911daca4041a32aa9282e5ae7e51f6d4c6e6ceed1e59fc40879e00825c"
-url = "https://github.com/RivoLink/leaf/releases/download/1.28.0/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/517256707"
+checksum = "sha256:4c3fb454e28953e123d4a70bbe9f129ccdfcc1f0dc48f86ae11d4539bc854d0c"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.1/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/537421092"
 
 [[tools."github:Y2Z/monolith"]]
 version = "2.10.1"
@@ -69,21 +101,6 @@ url_api = "https://api.github.com/repos/Y2Z/monolith/releases/assets/241974472"
 [tools."github:Y2Z/monolith"."platforms.linux-x64-musl"]
 url = "https://github.com/Y2Z/monolith/releases/download/v2.10.1/monolith-gnu-linux-x86_64"
 url_api = "https://api.github.com/repos/Y2Z/monolith/releases/assets/241974472"
-
-[[tools."github:bahdotsh/wrkflw"]]
-version = "0.8.0"
-backend = "github:bahdotsh/wrkflw"
-specifiers = ["latest"]
-
-[tools."github:bahdotsh/wrkflw"."platforms.linux-x64"]
-checksum = "sha256:d7140aa917da5bb13a2f27eab6c592bb019cbe4977e14390d579992087a6a902"
-url = "https://github.com/bahdotsh/wrkflw/releases/download/v0.8.0/wrkflw-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/bahdotsh/wrkflw/releases/assets/401841586"
-
-[tools."github:bahdotsh/wrkflw"."platforms.linux-x64-musl"]
-checksum = "sha256:7606fecdc6816f8d1503929f41f1a9d57b25362b13193aaef2732df061a4de30"
-url = "https://github.com/bahdotsh/wrkflw/releases/download/v0.8.0/wrkflw-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/bahdotsh/wrkflw/releases/assets/401841582"
 
 [[tools."github:latex-lsp/texlab"]]
 version = "5.26.0"
@@ -119,19 +136,19 @@ url_api = "https://api.github.com/repos/mroboff/vm-curator/releases/assets/51054
 provenance = "github-attestations"
 
 [[tools."github:rogue-sly/dotbee"]]
-version = "0.9.0"
+version = "1.0.0"
 backend = "github:rogue-sly/dotbee"
 specifiers = ["latest"]
 
 [tools."github:rogue-sly/dotbee"."platforms.linux-x64"]
-checksum = "sha256:ae3a257697a91e3bc19d3f50ae9df85abd1076be9d728ea78ec5f178098343bf"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.9.0/dotbee-linux-x86_64"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/524342126"
+checksum = "sha256:983b57a89ddb0073c447f35c980c79db411142378c516367b8b7b97e98b8ab5a"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v1.0.0/dotbee-linux-x86_64"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/546148612"
 
 [tools."github:rogue-sly/dotbee"."platforms.linux-x64-musl"]
-checksum = "sha256:28e19fccec5c8840cd091f8245488c02c35ffb2e6a0c1eb214a6e2ea76b81d82"
-url = "https://github.com/rogue-sly/dotbee/releases/download/v0.9.0/dotbee-linux-x86_64-musl"
-url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/524342136"
+checksum = "sha256:cb78453b23874c0e86412c96a90137a4629dc3b1222fb3c1be80480acc63ee3b"
+url = "https://github.com/rogue-sly/dotbee/releases/download/v1.0.0/dotbee-linux-x86_64-musl"
+url_api = "https://api.github.com/repos/rogue-sly/dotbee/releases/assets/546148618"
 
 [[tools."github:scipenai/tylax"]]
 version = "0.3.7"
@@ -148,20 +165,38 @@ checksum = "sha256:507308f22be4e5d4dc164d9b6a7939c125083673454e6e0841560d3f89898
 url = "https://github.com/scipenai/tylax/releases/download/v0.3.7/t2l-v0.3.7-x86_64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/scipenai/tylax/releases/assets/481216119"
 
-[[tools."github:zk-org/zk"]]
-version = "0.15.6"
-backend = "github:zk-org/zk"
+[[tools."github:turanmahmudov/masume"]]
+version = "0.0.5"
+backend = "github:turanmahmudov/masume"
 specifiers = ["latest"]
 
-[tools."github:zk-org/zk"."platforms.linux-x64"]
-checksum = "sha256:50b2f0a8c533d607e5a8a1f478fe78d5585317178bd86456659c049965a8945d"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.6/zk-v0.15.6-linux-amd64.tar.gz"
-url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/490446227"
+[tools."github:turanmahmudov/masume"."platforms.linux-x64"]
+checksum = "sha256:ead7d559270bc095fb3628e587ffe180228685edf0397096692350b42ae8c72c"
+url = "https://github.com/turanmahmudov/masume/releases/download/v0.0.5/masume_0.0.5_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/turanmahmudov/masume/releases/assets/553690999"
+provenance = "github-attestations"
 
-[tools."github:zk-org/zk"."platforms.linux-x64-musl"]
-checksum = "sha256:50b2f0a8c533d607e5a8a1f478fe78d5585317178bd86456659c049965a8945d"
-url = "https://github.com/zk-org/zk/releases/download/v0.15.6/zk-v0.15.6-linux-amd64.tar.gz"
-url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/490446227"
+[tools."github:turanmahmudov/masume"."platforms.linux-x64-musl"]
+checksum = "sha256:ead7d559270bc095fb3628e587ffe180228685edf0397096692350b42ae8c72c"
+url = "https://github.com/turanmahmudov/masume/releases/download/v0.0.5/masume_0.0.5_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/turanmahmudov/masume/releases/assets/553690999"
+provenance = "github-attestations"
+
+[[tools."http:kotlin-lsp"]]
+version = "263.4421.0"
+backend = "http:kotlin-lsp"
+specifiers = ["263.4421.0"]
+
+[tools."http:kotlin-lsp".options]
+strip_components = "1"
+
+[tools."http:kotlin-lsp"."platforms.linux-x64"]
+checksum = "sha256:d1dab4ef7b39a88f77ccf68d5e5a165c9f3c5e0f9b1bb9923e625a54bd3c673f"
+url = "https://download-cdn.jetbrains.com/language-server/kotlin-server/263.4421.0/kotlin-server-263.4421.0.tar.gz"
+
+[tools."http:kotlin-lsp"."platforms.linux-x64-musl"]
+checksum = "sha256:d1dab4ef7b39a88f77ccf68d5e5a165c9f3c5e0f9b1bb9923e625a54bd3c673f"
+url = "https://download-cdn.jetbrains.com/language-server/kotlin-server/263.4421.0/kotlin-server-263.4421.0.tar.gz"
 
 [[tools.lefthook]]
 version = "2.1.12"
@@ -200,8 +235,23 @@ version = "0.3.0"
 backend = "npm:@vtsls/language-server"
 specifiers = ["latest"]
 
+[[tools.opencode]]
+version = "1.18.30"
+backend = "aqua:anomalyco/opencode"
+specifiers = ["latest"]
+
+[tools.opencode."platforms.linux-x64"]
+checksum = "sha256:55007246858165496ff85ba1c2b648f7421e8e2013bf4189a680c9ff8e699d17"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.30/opencode-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/551875364"
+
+[tools.opencode."platforms.linux-x64-musl"]
+checksum = "sha256:a4eb84374d4f262ac46fe8b25c9e193a54a6f40f44bbe155a29c9c6309a34a5e"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.30/opencode-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/551875359"
+
 [[tools.oxfmt]]
-version = "0.65.0"
+version = "0.67.0"
 backend = "npm:oxfmt"
 specifiers = ["latest"]
 
@@ -257,33 +307,63 @@ url = "https://github.com/JohnnyMorganz/StyLua/releases/download/v2.5.2/stylua-l
 url_api = "https://api.github.com/repos/JohnnyMorganz/StyLua/releases/assets/421901066"
 
 [[tools.tinymist]]
-version = "0.15.2"
+version = "0.15.8"
 backend = "aqua:Myriad-Dreamin/tinymist"
 specifiers = ["latest"]
 
 [tools.tinymist."platforms.linux-x64"]
-checksum = "sha256:f5e275c6289a5c4b45ca211abde329dd662b03f2c4aca2299d6c154b81135684"
-url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.2/tinymist-linux-x64"
-url_api = "https://api.github.com/repos/Myriad-Dreamin/tinymist/releases/assets/454537259"
+checksum = "sha256:781fcd7ccfa099d886f0a227def422595979febe77cbaf4b42f7c66cb746be1d"
+url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.8/tinymist-linux-x64"
+url_api = "https://api.github.com/repos/Myriad-Dreamin/tinymist/releases/assets/550353764"
 
 [tools.tinymist."platforms.linux-x64-musl"]
-checksum = "sha256:f5e275c6289a5c4b45ca211abde329dd662b03f2c4aca2299d6c154b81135684"
-url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.2/tinymist-linux-x64"
-url_api = "https://api.github.com/repos/Myriad-Dreamin/tinymist/releases/assets/454537259"
+checksum = "sha256:781fcd7ccfa099d886f0a227def422595979febe77cbaf4b42f7c66cb746be1d"
+url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.8/tinymist-linux-x64"
+url_api = "https://api.github.com/repos/Myriad-Dreamin/tinymist/releases/assets/550353764"
 
 [[tools.tombi]]
-version = "1.4.1"
+version = "1.5.4"
 backend = "aqua:tombi-toml/tombi"
 specifiers = ["latest"]
 
 [tools.tombi."platforms.linux-x64"]
-checksum = "sha256:9aa69eb3e75a4a22a961b8a1c8cc44e4f81328ce25ad5b10d151be1a09faa88d"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.1/tombi-cli-1.4.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/525196366"
+checksum = "sha256:072a1d61e61d9137bcea2754568181370f8f3dcde85bef457c2c07529699ee6e"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.4/tombi-cli-1.5.4-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/552962856"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-x64-musl"]
-checksum = "sha256:9aa69eb3e75a4a22a961b8a1c8cc44e4f81328ce25ad5b10d151be1a09faa88d"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.4.1/tombi-cli-1.4.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/525196366"
+checksum = "sha256:072a1d61e61d9137bcea2754568181370f8f3dcde85bef457c2c07529699ee6e"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.4/tombi-cli-1.5.4-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/552962856"
 provenance = "github-attestations"
+
+[[tools.usql]]
+version = "0.21.4"
+backend = "aqua:xo/usql"
+specifiers = ["latest"]
+
+[tools.usql."platforms.linux-x64"]
+checksum = "sha256:78bd9b221e223d7a954d41f51e9eca98bdd94b401618367ba0f3887abebd44fc"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-linux-amd64.tar.bz2"
+url_api = "https://api.github.com/repos/xo/usql/releases/assets/381966137"
+
+[tools.usql."platforms.linux-x64-musl"]
+checksum = "sha256:78bd9b221e223d7a954d41f51e9eca98bdd94b401618367ba0f3887abebd44fc"
+url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-linux-amd64.tar.bz2"
+url_api = "https://api.github.com/repos/xo/usql/releases/assets/381966137"
+
+[[tools.zk]]
+version = "0.15.6"
+backend = "aqua:zk-org/zk"
+specifiers = ["latest"]
+
+[tools.zk."platforms.linux-x64"]
+checksum = "sha256:50b2f0a8c533d607e5a8a1f478fe78d5585317178bd86456659c049965a8945d"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.6/zk-v0.15.6-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/490446227"
+
+[tools.zk."platforms.linux-x64-musl"]
+checksum = "sha256:50b2f0a8c533d607e5a8a1f478fe78d5585317178bd86456659c049965a8945d"
+url = "https://github.com/zk-org/zk/releases/download/v0.15.6/zk-v0.15.6-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/zk-org/zk/releases/assets/490446227"

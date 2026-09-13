@@ -1,13 +1,19 @@
+#:tombi toml-version = "v1.1.0"
+
 [tools]
+actionlint = "latest"
+"aqua:bahdotsh/wrkflw" = "latest"
 "github:RivoLink/leaf" = "latest"
 "github:Y2Z/monolith" = "latest"
-"github:bahdotsh/wrkflw" = "latest"
 "github:mroboff/vm-curator" = "latest"
 "github:rogue-sly/dotbee" = "latest"
 "github:scipenai/tylax" = "latest"
-"github:zk-org/zk" = "latest"
+"github:turanmahmudov/masume" = "latest"
 git-cliff = "latest"
 lefthook = "latest"
+opencode = "latest"
+usql = "latest"
+zk = "latest"
 
 # lsp
 "cargo:neocmakelsp" = "latest"
@@ -18,6 +24,7 @@ lefthook = "latest"
 lua-language-server = "latest"
 tinymist = "latest"
 tombi = "latest"
+
 # fmt
 oxfmt = "latest"
 stylua = "latest"
