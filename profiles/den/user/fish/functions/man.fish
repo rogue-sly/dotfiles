@@ -1,8 +1,8 @@
 # manpage with highlights
 function man
     if not command -v batman >/dev/null 2>&1
-        command man "$argv"
+        command man $argv
         return
     end
-    command batman "$argv"
+    command batman $argv
 end
