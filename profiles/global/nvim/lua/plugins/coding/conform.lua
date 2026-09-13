@@ -39,23 +39,29 @@ return {
             end,
             default_format_opts = { lsp_format = "fallback" },
             formatters_by_ft = {
-                -- programming langs
+                -- programming
                 c = { "clang-format" },
                 cpp = { "clang-format" },
                 lua = { "stylua", lsp_format = "never" },
                 python = { "ruff_format" },
                 rust = { "rustfmt" },
+                -- shell
+                bash = { "shfmt" },
+                fish = { "fish_indent" },
                 -- web stuff
+                html = { "oxfmt" },
+                css = { "oxfmt" },
                 javascript = { "oxfmt" },
                 typescript = { "oxfmt" },
-                svelte = { "oxfmt" },
+                svelte = { "oxfmt", lsp_format = "never" },
                 -- markup/doc
                 markdown = { "oxfmt" },
                 typst = { "typstyle" },
-                -- etc
-                fish = { "fish_indent" },
+                -- data/config
                 json = { "oxfmt" },
                 jsonc = { "oxfmt" },
+                yaml = { "oxfmt" },
+                -- etc
                 meson = { "meson" },
             },
         }

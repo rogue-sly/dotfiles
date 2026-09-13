@@ -2,11 +2,8 @@
 vim.g.settings = {
     ---@type ThemeName
     ---@readonly
-    theme = "kanagawa",
+    theme = "duskfox",
 }
-
--- prepend mise shims to PATH
-vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH
 
 -- load vim options, lazy.nvim, keymaps, autocmds
 require("config")
@@ -26,6 +23,8 @@ vim.lsp.enable({
     -- doc
     "texlab",
     "tinymist",
+    -- web
+    "svelte",
     -- etc
     "jason",
     "mesonlsp",

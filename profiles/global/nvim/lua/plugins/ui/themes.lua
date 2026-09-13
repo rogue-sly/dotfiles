@@ -1,6 +1,6 @@
 ---@type LazySpec
 return {
-    { "folke/tokyonight.nvim" },
-    { "rebelot/kanagawa.nvim" },
-    { "EdenEast/nightfox.nvim" },
+    { "folke/tokyonight.nvim", version = false, cond = false },
+    { "rebelot/kanagawa.nvim", version = false, cond = false },
+    { "EdenEast/nightfox.nvim", version = false, cond = true },
 }

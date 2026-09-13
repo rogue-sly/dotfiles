@@ -1,3 +1,4 @@
+---@type LazySpec
 return {
     -- treesitter-nvim
     {
@@ -72,11 +73,5 @@ return {
                 end,
             })
         end,
-    },
-    -- context
-    {
-        "nvim-treesitter/nvim-treesitter-context",
-        ---@type TSContext.UserConfig
-        opts = { enable = true },
     },
 }
