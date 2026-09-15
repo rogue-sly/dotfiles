@@ -26,7 +26,6 @@ vim.lsp.enable({
     -- web
     "svelte",
     -- etc
-    "jason",
     "mesonlsp",
     "neocmake",
     "tombi",
