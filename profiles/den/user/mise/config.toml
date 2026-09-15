@@ -39,7 +39,6 @@ disable_tools = [
   "rust",
   "uv",
 ]
-locked = true
 lockfile = true
 # backends
 cargo = { binstall = true }
