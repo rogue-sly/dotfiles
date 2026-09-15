@@ -63,7 +63,7 @@ vim.diagnostic.config({
     underline = true,
     update_in_insert = false,
     virtual_lines = false,
-    virtual_text = false,
+    virtual_text = true,
 })
 
 -- WARN: enable experimental UI features
