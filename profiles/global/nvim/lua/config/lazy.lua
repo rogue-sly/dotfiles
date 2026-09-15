@@ -30,6 +30,7 @@ require("lazy").setup({
         { import = "plugins.misc.markdown", enabled = true }, -- better markdown
         { import = "plugins.misc.roslyn", enabled = true }, -- C# support
         { import = "plugins.misc.typst", enabled = true }, -- better typst
+        { import = "plugins.misc.zettelkasten", enabled = true }, -- zk-cli integration
     },
     checker = { enabled = false },
     defaults = { version = "*" },
