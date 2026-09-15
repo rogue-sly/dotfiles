@@ -19,6 +19,21 @@ url = "https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_
 url_api = "https://api.github.com/repos/rhysd/actionlint/releases/assets/384924896"
 provenance = "github-attestations"
 
+[[tools."aqua:VirusTotal/vt-cli"]]
+version = "1.3.1"
+backend = "aqua:VirusTotal/vt-cli"
+specifiers = ["latest"]
+
+[tools."aqua:VirusTotal/vt-cli"."platforms.linux-x64"]
+checksum = "sha256:a340bcb2ee98aff6f19bde1de30702ddf106cbbc63b4309f60b33058e7689266"
+url = "https://github.com/VirusTotal/vt-cli/releases/download/1.3.1/Linux64.zip"
+url_api = "https://api.github.com/repos/VirusTotal/vt-cli/releases/assets/424234885"
+
+[tools."aqua:VirusTotal/vt-cli"."platforms.linux-x64-musl"]
+checksum = "sha256:a340bcb2ee98aff6f19bde1de30702ddf106cbbc63b4309f60b33058e7689266"
+url = "https://github.com/VirusTotal/vt-cli/releases/download/1.3.1/Linux64.zip"
+url_api = "https://api.github.com/repos/VirusTotal/vt-cli/releases/assets/424234885"
+
 [[tools."aqua:bahdotsh/wrkflw"]]
 version = "0.8.0"
 backend = "aqua:bahdotsh/wrkflw"
@@ -75,19 +90,19 @@ url = "https://github.com/JCWasmx86/mesonlsp/releases/download/v5.0.4/mesonlsp-x
 url_api = "https://api.github.com/repos/JCWasmx86/mesonlsp/releases/assets/507312509"
 
 [[tools."github:RivoLink/leaf"]]
-version = "1.28.1"
+version = "1.28.2"
 backend = "github:RivoLink/leaf"
 specifiers = ["latest"]
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64"]
-checksum = "sha256:4c3fb454e28953e123d4a70bbe9f129ccdfcc1f0dc48f86ae11d4539bc854d0c"
-url = "https://github.com/RivoLink/leaf/releases/download/1.28.1/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/537421092"
+checksum = "sha256:8b66475512749065b43281bfd83f5c5bd857233044c390c22c589f2e1e354ac5"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.2/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/562589923"
 
 [tools."github:RivoLink/leaf"."platforms.linux-x64-musl"]
-checksum = "sha256:4c3fb454e28953e123d4a70bbe9f129ccdfcc1f0dc48f86ae11d4539bc854d0c"
-url = "https://github.com/RivoLink/leaf/releases/download/1.28.1/leaf-linux-x86_64"
-url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/537421092"
+checksum = "sha256:8b66475512749065b43281bfd83f5c5bd857233044c390c22c589f2e1e354ac5"
+url = "https://github.com/RivoLink/leaf/releases/download/1.28.2/leaf-linux-x86_64"
+url_api = "https://api.github.com/repos/RivoLink/leaf/releases/assets/562589923"
 
 [[tools."github:Y2Z/monolith"]]
 version = "2.10.1"
@@ -166,20 +181,20 @@ url = "https://github.com/scipenai/tylax/releases/download/v0.3.7/t2l-v0.3.7-x86
 url_api = "https://api.github.com/repos/scipenai/tylax/releases/assets/481216119"
 
 [[tools."github:turanmahmudov/masume"]]
-version = "0.0.5"
+version = "0.0.6"
 backend = "github:turanmahmudov/masume"
 specifiers = ["latest"]
 
 [tools."github:turanmahmudov/masume"."platforms.linux-x64"]
-checksum = "sha256:ead7d559270bc095fb3628e587ffe180228685edf0397096692350b42ae8c72c"
-url = "https://github.com/turanmahmudov/masume/releases/download/v0.0.5/masume_0.0.5_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/turanmahmudov/masume/releases/assets/553690999"
+checksum = "sha256:9f6b218a4df5fc32858dafc6a3f51647f70d2e0863ceab58cac00d11fae86ef0"
+url = "https://github.com/turanmahmudov/masume/releases/download/v0.0.6/masume_0.0.6_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/turanmahmudov/masume/releases/assets/561650933"
 provenance = "github-attestations"
 
 [tools."github:turanmahmudov/masume"."platforms.linux-x64-musl"]
-checksum = "sha256:ead7d559270bc095fb3628e587ffe180228685edf0397096692350b42ae8c72c"
-url = "https://github.com/turanmahmudov/masume/releases/download/v0.0.5/masume_0.0.5_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/turanmahmudov/masume/releases/assets/553690999"
+checksum = "sha256:9f6b218a4df5fc32858dafc6a3f51647f70d2e0863ceab58cac00d11fae86ef0"
+url = "https://github.com/turanmahmudov/masume/releases/download/v0.0.6/masume_0.0.6_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/turanmahmudov/masume/releases/assets/561650933"
 provenance = "github-attestations"
 
 [[tools."http:kotlin-lsp"]]
@@ -197,6 +212,21 @@ url = "https://download-cdn.jetbrains.com/language-server/kotlin-server/263.4421
 [tools."http:kotlin-lsp"."platforms.linux-x64-musl"]
 checksum = "sha256:d1dab4ef7b39a88f77ccf68d5e5a165c9f3c5e0f9b1bb9923e625a54bd3c673f"
 url = "https://download-cdn.jetbrains.com/language-server/kotlin-server/263.4421.0/kotlin-server-263.4421.0.tar.gz"
+
+[[tools.lazygit]]
+version = "0.65.1"
+backend = "aqua:jesseduffield/lazygit"
+specifiers = ["latest"]
+
+[tools.lazygit."platforms.linux-x64"]
+checksum = "sha256:02beacbcda0fa342e50ae3480ba8147307353af3fb28e1d5f790e02329c201a6"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.1/lazygit_0.65.1_linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/560658266"
+
+[tools.lazygit."platforms.linux-x64-musl"]
+checksum = "sha256:02beacbcda0fa342e50ae3480ba8147307353af3fb28e1d5f790e02329c201a6"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.65.1/lazygit_0.65.1_linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/560658266"
 
 [[tools.lefthook]]
 version = "2.1.12"
@@ -229,6 +259,11 @@ url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/asset
 checksum = "sha256:e9235d2d72ef55bc41cf8c99cda2ed64777682024b4bb81f5dea425060c5cbb8"
 url = "https://github.com/LuaLS/lua-language-server/releases/download/3.19.1/lua-language-server-3.19.1-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/513572259"
+
+[[tools."npm:@mermaid-js/mermaid-cli"]]
+version = "11.17.0"
+backend = "npm:@mermaid-js/mermaid-cli"
+specifiers = ["latest"]
 
 [[tools."npm:@vtsls/language-server"]]
 version = "0.3.0"
@@ -322,36 +357,36 @@ url = "https://github.com/Myriad-Dreamin/tinymist/releases/download/v0.15.8/tiny
 url_api = "https://api.github.com/repos/Myriad-Dreamin/tinymist/releases/assets/550353764"
 
 [[tools.tombi]]
-version = "1.5.4"
+version = "1.5.5"
 backend = "aqua:tombi-toml/tombi"
 specifiers = ["latest"]
 
 [tools.tombi."platforms.linux-x64"]
-checksum = "sha256:072a1d61e61d9137bcea2754568181370f8f3dcde85bef457c2c07529699ee6e"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.4/tombi-cli-1.5.4-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/552962856"
+checksum = "sha256:6c50d2589989e8182e9f6e774b4b25c9f5729b67a2a7e7dcaadddbedbe1da5ec"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.5/tombi-cli-1.5.5-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/559313407"
 provenance = "github-attestations"
 
 [tools.tombi."platforms.linux-x64-musl"]
-checksum = "sha256:072a1d61e61d9137bcea2754568181370f8f3dcde85bef457c2c07529699ee6e"
-url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.4/tombi-cli-1.5.4-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/552962856"
+checksum = "sha256:6c50d2589989e8182e9f6e774b4b25c9f5729b67a2a7e7dcaadddbedbe1da5ec"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.5/tombi-cli-1.5.5-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/559313407"
 provenance = "github-attestations"
 
 [[tools.usql]]
-version = "0.21.4"
+version = "0.21.5"
 backend = "aqua:xo/usql"
 specifiers = ["latest"]
 
 [tools.usql."platforms.linux-x64"]
-checksum = "sha256:78bd9b221e223d7a954d41f51e9eca98bdd94b401618367ba0f3887abebd44fc"
-url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-linux-amd64.tar.bz2"
-url_api = "https://api.github.com/repos/xo/usql/releases/assets/381966137"
+checksum = "sha256:033823cce96e2f5f658cbe7120e375fce19430218d0a128c1f55c2d755b65edb"
+url = "https://github.com/xo/usql/releases/download/v0.21.5/usql-0.21.5-linux-amd64.tar.bz2"
+url_api = "https://api.github.com/repos/xo/usql/releases/assets/560756001"
 
 [tools.usql."platforms.linux-x64-musl"]
-checksum = "sha256:78bd9b221e223d7a954d41f51e9eca98bdd94b401618367ba0f3887abebd44fc"
-url = "https://github.com/xo/usql/releases/download/v0.21.4/usql-0.21.4-linux-amd64.tar.bz2"
-url_api = "https://api.github.com/repos/xo/usql/releases/assets/381966137"
+checksum = "sha256:033823cce96e2f5f658cbe7120e375fce19430218d0a128c1f55c2d755b65edb"
+url = "https://github.com/xo/usql/releases/download/v0.21.5/usql-0.21.5-linux-amd64.tar.bz2"
+url_api = "https://api.github.com/repos/xo/usql/releases/assets/560756001"
 
 [[tools.zk]]
 version = "0.15.6"
