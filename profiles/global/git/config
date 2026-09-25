@@ -2,6 +2,7 @@
 [user]
     name = rogue
 	email = 68822497+rogue-sly@users.noreply.github.com
+	signingkey = /home/rogue/.ssh/git_signing.pub
 [init]
 	defaultBranch = main
 [github]
@@ -28,3 +29,7 @@
 	conflictStyle = zdiff3
 [rerere]
 	enabled = true
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
