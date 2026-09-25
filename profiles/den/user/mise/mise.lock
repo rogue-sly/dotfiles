@@ -292,10 +292,46 @@ version = "0.32.3"
 backend = "github:matthart1983/netwatch"
 specifiers = ["latest"]
 
+[tools."github:matthart1983/netwatch"."platforms.linux-arm64"]
+checksum = "sha256:3346be005c694928665ec49a62715593e38e2dcca3fc134e318ef8a6ada7c4d6"
+url = "https://github.com/matthart1983/netwatch/releases/download/v0.32.3/netwatch-linux-aarch64.tar.gz"
+url_api = "https://api.github.com/repos/matthart1983/netwatch/releases/assets/576137022"
+provenance = "github-attestations"
+
+[tools."github:matthart1983/netwatch"."platforms.linux-arm64-musl"]
+checksum = "sha256:3346be005c694928665ec49a62715593e38e2dcca3fc134e318ef8a6ada7c4d6"
+url = "https://github.com/matthart1983/netwatch/releases/download/v0.32.3/netwatch-linux-aarch64.tar.gz"
+url_api = "https://api.github.com/repos/matthart1983/netwatch/releases/assets/576137022"
+provenance = "github-attestations"
+
 [tools."github:matthart1983/netwatch"."platforms.linux-x64"]
 checksum = "sha256:884314c9636d141d6b317069f161c7e7efd1050cac8d395db815e09bdfdd5313"
 url = "https://github.com/matthart1983/netwatch/releases/download/v0.32.3/netwatch-linux-x86_64.tar.gz"
 url_api = "https://api.github.com/repos/matthart1983/netwatch/releases/assets/576137016"
+provenance = "github-attestations"
+
+[tools."github:matthart1983/netwatch"."platforms.linux-x64-musl"]
+checksum = "sha256:884314c9636d141d6b317069f161c7e7efd1050cac8d395db815e09bdfdd5313"
+url = "https://github.com/matthart1983/netwatch/releases/download/v0.32.3/netwatch-linux-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/matthart1983/netwatch/releases/assets/576137016"
+provenance = "github-attestations"
+
+[tools."github:matthart1983/netwatch"."platforms.macos-arm64"]
+checksum = "sha256:d79a5d3f7cd7b4b3548f980ec91228da28934e45bd083600200b862273c3fe8c"
+url = "https://github.com/matthart1983/netwatch/releases/download/v0.32.3/netwatch-macos-aarch64.tar.gz"
+url_api = "https://api.github.com/repos/matthart1983/netwatch/releases/assets/576137009"
+provenance = "github-attestations"
+
+[tools."github:matthart1983/netwatch"."platforms.macos-x64"]
+checksum = "sha256:9e1e8e98352e1adca34ac3e4a81f924474b8c931d94d59597297f301a00bb331"
+url = "https://github.com/matthart1983/netwatch/releases/download/v0.32.3/netwatch-macos-x86_64.tar.gz"
+url_api = "https://api.github.com/repos/matthart1983/netwatch/releases/assets/576137015"
+provenance = "github-attestations"
+
+[tools."github:matthart1983/netwatch"."platforms.windows-x64"]
+checksum = "sha256:5c57167144049afd3ffda3a5876764fe9a68aa6b28e475370ff981b9dfc7dcf2"
+url = "https://github.com/matthart1983/netwatch/releases/download/v0.32.3/netwatch-windows-x86_64.exe.zip"
+url_api = "https://api.github.com/repos/matthart1983/netwatch/releases/assets/576137018"
 provenance = "github-attestations"
 
 [[tools."github:mroboff/vm-curator"]]
@@ -332,10 +368,40 @@ version = "3.0.1"
 backend = "github:riii111/sabiql"
 specifiers = ["latest"]
 
+[tools."github:riii111/sabiql"."platforms.linux-arm64"]
+checksum = "sha256:86faf38c2fe8c31fecab672f734b306759377d516c96d50700c41c8d702b2939"
+url = "https://github.com/riii111/sabiql/releases/download/v3.0.1/sabiql-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/riii111/sabiql/releases/assets/545712687"
+
+[tools."github:riii111/sabiql"."platforms.linux-arm64-musl"]
+checksum = "sha256:86faf38c2fe8c31fecab672f734b306759377d516c96d50700c41c8d702b2939"
+url = "https://github.com/riii111/sabiql/releases/download/v3.0.1/sabiql-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/riii111/sabiql/releases/assets/545712687"
+
 [tools."github:riii111/sabiql"."platforms.linux-x64"]
 checksum = "sha256:c26b87d93e8bbfe8d1a25b8fd6506f869679395980dac1c188c9428d189cf6aa"
 url = "https://github.com/riii111/sabiql/releases/download/v3.0.1/sabiql-x86_64-unknown-linux-gnu.tar.gz"
 url_api = "https://api.github.com/repos/riii111/sabiql/releases/assets/545712683"
+
+[tools."github:riii111/sabiql"."platforms.linux-x64-musl"]
+checksum = "sha256:c26b87d93e8bbfe8d1a25b8fd6506f869679395980dac1c188c9428d189cf6aa"
+url = "https://github.com/riii111/sabiql/releases/download/v3.0.1/sabiql-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/riii111/sabiql/releases/assets/545712683"
+
+[tools."github:riii111/sabiql"."platforms.macos-arm64"]
+checksum = "sha256:124ab147c2f6a10cc6a68431e961d7bf15d4650791a102ffd5437c858e4404ab"
+url = "https://github.com/riii111/sabiql/releases/download/v3.0.1/sabiql-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/riii111/sabiql/releases/assets/545712684"
+
+[tools."github:riii111/sabiql"."platforms.macos-x64"]
+checksum = "sha256:9e14e6b749a57f412b858771e6c761c1b2239f22909f1b260e955ca92d499dac"
+url = "https://github.com/riii111/sabiql/releases/download/v3.0.1/sabiql-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/riii111/sabiql/releases/assets/545712680"
+
+[tools."github:riii111/sabiql"."platforms.windows-x64"]
+checksum = "sha256:8eb60524b386fc770912109be12f4ecd68705a8eba31ac5e630dc4b7cd142873"
+url = "https://github.com/riii111/sabiql/releases/download/v3.0.1/sabiql-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/riii111/sabiql/releases/assets/545712686"
 
 [[tools."github:rogue-sly/dotbee"]]
 version = "1.0.0"
@@ -397,10 +463,46 @@ version = "1.17.3"
 backend = "aqua:gopasspw/gopass"
 specifiers = ["latest"]
 
+[tools.gopass."platforms.linux-arm64"]
+checksum = "sha256:b83de1d43fab75d609239fe6fbd62747d28d03cf18e32d73dfe183ae3a610e91"
+url = "https://github.com/gopasspw/gopass/releases/download/v1.17.3/gopass-1.17.3-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/gopasspw/gopass/releases/assets/581984149"
+provenance = "cosign"
+
+[tools.gopass."platforms.linux-arm64-musl"]
+checksum = "sha256:b83de1d43fab75d609239fe6fbd62747d28d03cf18e32d73dfe183ae3a610e91"
+url = "https://github.com/gopasspw/gopass/releases/download/v1.17.3/gopass-1.17.3-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/gopasspw/gopass/releases/assets/581984149"
+provenance = "cosign"
+
 [tools.gopass."platforms.linux-x64"]
 checksum = "sha256:a9646cdd28a2a9e5503407f10823df6761e036e04657a488ab6160c67fa1e1c8"
 url = "https://github.com/gopasspw/gopass/releases/download/v1.17.3/gopass-1.17.3-linux-amd64.tar.gz"
 url_api = "https://api.github.com/repos/gopasspw/gopass/releases/assets/581984090"
+provenance = "cosign"
+
+[tools.gopass."platforms.linux-x64-musl"]
+checksum = "sha256:a9646cdd28a2a9e5503407f10823df6761e036e04657a488ab6160c67fa1e1c8"
+url = "https://github.com/gopasspw/gopass/releases/download/v1.17.3/gopass-1.17.3-linux-amd64.tar.gz"
+url_api = "https://api.github.com/repos/gopasspw/gopass/releases/assets/581984090"
+provenance = "cosign"
+
+[tools.gopass."platforms.macos-arm64"]
+checksum = "sha256:79a711cf6a3759de4fee82c9de61db8cb8c61ca3d28db179d79ecd4664eff7d5"
+url = "https://github.com/gopasspw/gopass/releases/download/v1.17.3/gopass-1.17.3-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/gopasspw/gopass/releases/assets/581984120"
+provenance = "cosign"
+
+[tools.gopass."platforms.macos-x64"]
+checksum = "sha256:fe9394cab6f7f476c3ca042d6de1d76c948ca0d7f51a17c6199887c5623369ea"
+url = "https://github.com/gopasspw/gopass/releases/download/v1.17.3/gopass-1.17.3-darwin-amd64.tar.gz"
+url_api = "https://api.github.com/repos/gopasspw/gopass/releases/assets/581984119"
+provenance = "cosign"
+
+[tools.gopass."platforms.windows-x64"]
+checksum = "sha256:16b3300f711c7b3936687dadedf9673b5dc98bd85cc0f569b5f37e1ffcc733ac"
+url = "https://github.com/gopasspw/gopass/releases/download/v1.17.3/gopass-1.17.3-windows-amd64.zip"
+url_api = "https://api.github.com/repos/gopasspw/gopass/releases/assets/581984041"
 provenance = "cosign"
 
 [[tools."http:kotlin-lsp"]]
@@ -500,7 +602,7 @@ url = "https://github.com/LuaLS/lua-language-server/releases/download/3.19.1/lua
 url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/513572668"
 
 [[tools."npm:@mermaid-js/mermaid-cli"]]
-version = "11.17.0"
+version = "12.0.0"
 backend = "npm:@mermaid-js/mermaid-cli"
 specifiers = ["latest"]
 
@@ -519,10 +621,40 @@ version = "1.18.32"
 backend = "aqua:anomalyco/opencode"
 specifiers = ["latest"]
 
+[tools.opencode."platforms.linux-arm64"]
+checksum = "sha256:568461b7d4d8c19865c97e9a1102e613049c6039d01fe772154de873c1865840"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/580000055"
+
+[tools.opencode."platforms.linux-arm64-musl"]
+checksum = "sha256:abf302edbc996548e28417dcdf7f67109fd95c7344f813a312633a818986204d"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/580000150"
+
 [tools.opencode."platforms.linux-x64"]
 checksum = "sha256:3046e0404fdc60fb80307e7a47824ba07477364178a4d09baa8548496dd6d43b"
 url = "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode-linux-x64.tar.gz"
 url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/580000044"
+
+[tools.opencode."platforms.linux-x64-musl"]
+checksum = "sha256:1ce4699c8a9470ad806fa824112cd30b5d51b4038c29231189486302ef394d94"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/580000043"
+
+[tools.opencode."platforms.macos-arm64"]
+checksum = "sha256:fa643f93401c13508d8d513780e54ce9cc01203d501114be9b88d62408b8101f"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode-darwin-arm64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/579999982"
+
+[tools.opencode."platforms.macos-x64"]
+checksum = "sha256:a24bf10499382f8855e19d2a081b8683e4ab99c7c2affb32dc89b17c8a00ccd6"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode-darwin-x64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/579999983"
+
+[tools.opencode."platforms.windows-x64"]
+checksum = "sha256:1483c72d5adced825590a0ecf8cc18b3e87e535960a125dbf539d33bce135d0f"
+url = "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode-windows-x64.zip"
+url_api = "https://api.github.com/repos/anomalyco/opencode/releases/assets/580003748"
 
 [[tools.oxfmt]]
 version = "0.70.0"
@@ -537,7 +669,37 @@ specifiers = ["latest"]
 [tools.slint-lsp.options]
 asset_pattern = "slint-lsp-linux*"
 
+[tools.slint-lsp."platforms.linux-arm64"]
+checksum = "sha256:62735d2b1908ae8a33b35dcdc71fd0c713f44ef8a4a9b57e8dfa07319903eefa"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-lsp-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695719"
+
+[tools.slint-lsp."platforms.linux-arm64-musl"]
+checksum = "sha256:62735d2b1908ae8a33b35dcdc71fd0c713f44ef8a4a9b57e8dfa07319903eefa"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-lsp-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695719"
+
 [tools.slint-lsp."platforms.linux-x64"]
+checksum = "sha256:62735d2b1908ae8a33b35dcdc71fd0c713f44ef8a4a9b57e8dfa07319903eefa"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-lsp-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695719"
+
+[tools.slint-lsp."platforms.linux-x64-musl"]
+checksum = "sha256:62735d2b1908ae8a33b35dcdc71fd0c713f44ef8a4a9b57e8dfa07319903eefa"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-lsp-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695719"
+
+[tools.slint-lsp."platforms.macos-arm64"]
+checksum = "sha256:62735d2b1908ae8a33b35dcdc71fd0c713f44ef8a4a9b57e8dfa07319903eefa"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-lsp-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695719"
+
+[tools.slint-lsp."platforms.macos-x64"]
+checksum = "sha256:62735d2b1908ae8a33b35dcdc71fd0c713f44ef8a4a9b57e8dfa07319903eefa"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-lsp-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695719"
+
+[tools.slint-lsp."platforms.windows-x64"]
 checksum = "sha256:62735d2b1908ae8a33b35dcdc71fd0c713f44ef8a4a9b57e8dfa07319903eefa"
 url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-lsp-linux.tar.gz"
 url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695719"
@@ -550,7 +712,37 @@ specifiers = ["latest"]
 [tools.slint-viewer.options]
 asset_pattern = "slint-viewer-linux*"
 
+[tools.slint-viewer."platforms.linux-arm64"]
+checksum = "sha256:86b260e661cdc24dcadaf63266b034f3281cbec542afc26545a72a986fe42a13"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-viewer-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695308"
+
+[tools.slint-viewer."platforms.linux-arm64-musl"]
+checksum = "sha256:86b260e661cdc24dcadaf63266b034f3281cbec542afc26545a72a986fe42a13"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-viewer-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695308"
+
 [tools.slint-viewer."platforms.linux-x64"]
+checksum = "sha256:86b260e661cdc24dcadaf63266b034f3281cbec542afc26545a72a986fe42a13"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-viewer-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695308"
+
+[tools.slint-viewer."platforms.linux-x64-musl"]
+checksum = "sha256:86b260e661cdc24dcadaf63266b034f3281cbec542afc26545a72a986fe42a13"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-viewer-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695308"
+
+[tools.slint-viewer."platforms.macos-arm64"]
+checksum = "sha256:86b260e661cdc24dcadaf63266b034f3281cbec542afc26545a72a986fe42a13"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-viewer-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695308"
+
+[tools.slint-viewer."platforms.macos-x64"]
+checksum = "sha256:86b260e661cdc24dcadaf63266b034f3281cbec542afc26545a72a986fe42a13"
+url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-viewer-linux.tar.gz"
+url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695308"
+
+[tools.slint-viewer."platforms.windows-x64"]
 checksum = "sha256:86b260e661cdc24dcadaf63266b034f3281cbec542afc26545a72a986fe42a13"
 url = "https://github.com/slint-ui/slint/releases/download/v1.18.1/slint-viewer-linux.tar.gz"
 url_api = "https://api.github.com/repos/slint-ui/slint/releases/assets/578695308"
@@ -640,10 +832,46 @@ version = "1.5.5"
 backend = "aqua:tombi-toml/tombi"
 specifiers = ["latest"]
 
+[tools.tombi."platforms.linux-arm64"]
+checksum = "sha256:a545a471cec6baf982bcb8e274d097303cece1a72136ada79d240adb6d1354f6"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.5/tombi-cli-1.5.5-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/559313379"
+provenance = "github-attestations"
+
+[tools.tombi."platforms.linux-arm64-musl"]
+checksum = "sha256:a545a471cec6baf982bcb8e274d097303cece1a72136ada79d240adb6d1354f6"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.5/tombi-cli-1.5.5-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/559313379"
+provenance = "github-attestations"
+
 [tools.tombi."platforms.linux-x64"]
 checksum = "sha256:6c50d2589989e8182e9f6e774b4b25c9f5729b67a2a7e7dcaadddbedbe1da5ec"
 url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.5/tombi-cli-1.5.5-x86_64-unknown-linux-musl.tar.gz"
 url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/559313407"
+provenance = "github-attestations"
+
+[tools.tombi."platforms.linux-x64-musl"]
+checksum = "sha256:6c50d2589989e8182e9f6e774b4b25c9f5729b67a2a7e7dcaadddbedbe1da5ec"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.5/tombi-cli-1.5.5-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/559313407"
+provenance = "github-attestations"
+
+[tools.tombi."platforms.macos-arm64"]
+checksum = "sha256:460b3269414d2ca26e05863908764f118bea3b4a52068081af6a3dae03c1320e"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.5/tombi-cli-1.5.5-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/559313381"
+provenance = "github-attestations"
+
+[tools.tombi."platforms.macos-x64"]
+checksum = "sha256:9276c456e4a0217e95fb84ac3cde29d281d7b53e5eb168d83cb038ec07e2083d"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.5/tombi-cli-1.5.5-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/559313375"
+provenance = "github-attestations"
+
+[tools.tombi."platforms.windows-x64"]
+checksum = "sha256:49e8aa14e82038a13c5f9f50cc6524b56b9bce167734bead31439939e0830a3b"
+url = "https://github.com/tombi-toml/tombi/releases/download/v1.5.5/tombi-cli-1.5.5-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/tombi-toml/tombi/releases/assets/559313401"
 provenance = "github-attestations"
 
 [[tools.usql]]
@@ -651,20 +879,80 @@ version = "0.21.6"
 backend = "aqua:xo/usql"
 specifiers = ["latest"]
 
+[tools.usql."platforms.linux-arm64"]
+checksum = "sha256:52bb8a1b9d1643ccdb79348d63626b75694d9fd3667b3f62f97f43cf51be0bab"
+url = "https://github.com/xo/usql/releases/download/v0.21.6/usql-0.21.6-linux-arm64.tar.bz2"
+url_api = "https://api.github.com/repos/xo/usql/releases/assets/582302125"
+
+[tools.usql."platforms.linux-arm64-musl"]
+checksum = "sha256:52bb8a1b9d1643ccdb79348d63626b75694d9fd3667b3f62f97f43cf51be0bab"
+url = "https://github.com/xo/usql/releases/download/v0.21.6/usql-0.21.6-linux-arm64.tar.bz2"
+url_api = "https://api.github.com/repos/xo/usql/releases/assets/582302125"
+
 [tools.usql."platforms.linux-x64"]
 checksum = "sha256:b3046140f8f2add0e2afaaa595b824d445e933d400a00d50a1c038760d4ce13c"
 url = "https://github.com/xo/usql/releases/download/v0.21.6/usql-0.21.6-linux-amd64.tar.bz2"
 url_api = "https://api.github.com/repos/xo/usql/releases/assets/582302121"
+
+[tools.usql."platforms.linux-x64-musl"]
+checksum = "sha256:b3046140f8f2add0e2afaaa595b824d445e933d400a00d50a1c038760d4ce13c"
+url = "https://github.com/xo/usql/releases/download/v0.21.6/usql-0.21.6-linux-amd64.tar.bz2"
+url_api = "https://api.github.com/repos/xo/usql/releases/assets/582302121"
+
+[tools.usql."platforms.macos-arm64"]
+checksum = "sha256:869b969d58b3ffd33ad97de46e3b29130dc337a5ad8027297ce63d5fe535f4b5"
+url = "https://github.com/xo/usql/releases/download/v0.21.6/usql-0.21.6-darwin-arm64.tar.bz2"
+url_api = "https://api.github.com/repos/xo/usql/releases/assets/582302123"
+
+[tools.usql."platforms.macos-x64"]
+checksum = "sha256:ece7442e062d25e54fa8f32b9de959a5444830b4d613ced89ac08fb2b17d79c8"
+url = "https://github.com/xo/usql/releases/download/v0.21.6/usql-0.21.6-darwin-amd64.tar.bz2"
+url_api = "https://api.github.com/repos/xo/usql/releases/assets/582302126"
+
+[tools.usql."platforms.windows-x64"]
+checksum = "sha256:9b5dd191fc13d2619e7cefd9f619093bf151381bc7eb4f01dce88d03bea02a99"
+url = "https://github.com/xo/usql/releases/download/v0.21.6/usql-0.21.6-windows-amd64.zip"
+url_api = "https://api.github.com/repos/xo/usql/releases/assets/582302122"
 
 [[tools.websocat]]
 version = "1.14.1"
 backend = "aqua:vi/websocat"
 specifiers = ["latest"]
 
+[tools.websocat."platforms.linux-arm64"]
+checksum = "sha256:711a69576a2ff473fb01a90ffafb571c2ed019e55479d7ae71b12c2eadeb7011"
+url = "https://github.com/vi/websocat/releases/download/v1.14.1/websocat.aarch64-unknown-linux-musl"
+url_api = "https://api.github.com/repos/vi/websocat/releases/assets/333370262"
+
+[tools.websocat."platforms.linux-arm64-musl"]
+checksum = "sha256:711a69576a2ff473fb01a90ffafb571c2ed019e55479d7ae71b12c2eadeb7011"
+url = "https://github.com/vi/websocat/releases/download/v1.14.1/websocat.aarch64-unknown-linux-musl"
+url_api = "https://api.github.com/repos/vi/websocat/releases/assets/333370262"
+
 [tools.websocat."platforms.linux-x64"]
 checksum = "sha256:66f8dd3a0394761556339117f8bb5123bddefd44e087af2a72ec22b0bd08d514"
 url = "https://github.com/vi/websocat/releases/download/v1.14.1/websocat.x86_64-unknown-linux-musl"
 url_api = "https://api.github.com/repos/vi/websocat/releases/assets/333370405"
+
+[tools.websocat."platforms.linux-x64-musl"]
+checksum = "sha256:66f8dd3a0394761556339117f8bb5123bddefd44e087af2a72ec22b0bd08d514"
+url = "https://github.com/vi/websocat/releases/download/v1.14.1/websocat.x86_64-unknown-linux-musl"
+url_api = "https://api.github.com/repos/vi/websocat/releases/assets/333370405"
+
+[tools.websocat."platforms.macos-arm64"]
+checksum = "sha256:45521ba59a6604785543406bf8e398ce7d565d54c09657176afba795dd28f191"
+url = "https://github.com/vi/websocat/releases/download/v1.14.1/websocat.x86_64-apple-darwin"
+url_api = "https://api.github.com/repos/vi/websocat/releases/assets/333370364"
+
+[tools.websocat."platforms.macos-x64"]
+checksum = "sha256:45521ba59a6604785543406bf8e398ce7d565d54c09657176afba795dd28f191"
+url = "https://github.com/vi/websocat/releases/download/v1.14.1/websocat.x86_64-apple-darwin"
+url_api = "https://api.github.com/repos/vi/websocat/releases/assets/333370364"
+
+[tools.websocat."platforms.windows-x64"]
+checksum = "sha256:284339b5b86f2b11496137d97b6705bb2ef27e64f21527c1ba240bdb6177ba3b"
+url = "https://github.com/vi/websocat/releases/download/v1.14.1/websocat.x86_64-pc-windows-gnu.exe"
+url_api = "https://api.github.com/repos/vi/websocat/releases/assets/333370392"
 
 [[tools.zk]]
 version = "0.15.6"

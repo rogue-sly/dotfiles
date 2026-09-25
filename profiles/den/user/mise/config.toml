@@ -17,7 +17,6 @@ usql = "latest"
 [settings]
 auto_install = true
 lockfile = true
-lockfile_platforms = ["linux-x64"]
 # minimum_release_age = "7d"
 disable_tools = [
   "dotnet",
