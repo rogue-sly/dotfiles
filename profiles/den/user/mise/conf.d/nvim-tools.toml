@@ -1,0 +1,21 @@
+[tools]
+# lsp
+"cargo:neocmakelsp" = "latest"
+"dotnet:roslyn-language-server" = { version = "latest", prerelease = true }
+"github:JCWasmx86/MesonLSP" = "latest"
+"github:latex-lsp/texlab" = "latest"
+"npm:@vtsls/language-server" = "latest"
+"npm:fish-lsp" = "latest"
+lua-language-server = "latest"
+tinymist = "latest"
+tombi = "latest"
+websocat = "latest"
+
+# fmt
+oxfmt = "latest"
+stylua = "latest"
+
+# etc (required by nvim plugins)
+"npm:@mermaid-js/mermaid-cli" = "latest"
+lazygit = "latest"
+zk = "latest"

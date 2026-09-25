@@ -1,0 +1,8 @@
+---@alias ThemeName
+---| "carbonfox"
+---| "dawnfox"
+---| "dayfox"
+---| "duskfox"
+---| "nightfox"
+---| "nordfox"
+---| "terafox"

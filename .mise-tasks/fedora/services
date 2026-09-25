@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#MISE description="Enable systemd services (podman socket, etc.)"
+#MISE depends=["fedora:dnf"]
+set -euo pipefail
+
+systemctl --user enable --now podman.socket

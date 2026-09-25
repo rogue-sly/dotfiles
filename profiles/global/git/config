@@ -1,0 +1,30 @@
+; vim: ft=gitconfig
+[user]
+    name = rogue
+	email = 68822497+rogue-sly@users.noreply.github.com
+[init]
+	defaultBranch = main
+[github]
+  user = rogue-sly
+[core]
+	compression = 9
+	whitespace = error
+	preloadindex = true
+	pager = delta
+[status]
+	branch = true
+	showStash = true
+[diff]
+	context = 3
+	renames = copies
+	interHunkContext = 10
+	algorithm = histogram
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	dark = true
+[merge]
+	conflictStyle = zdiff3
+[rerere]
+	enabled = true
