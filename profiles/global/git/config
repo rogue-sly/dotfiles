@@ -1,35 +1,35 @@
 ; vim: ft=gitconfig
 [user]
-    name = rogue
-	email = 68822497+rogue-sly@users.noreply.github.com
-	signingkey = /home/rogue/.ssh/git_signing.pub
+    name = Ali Mohammed
+    email = ali.moh@tuta.io
+    signingkey = ~/.ssh/git_signing.pub
+[gitlab]
+    user = rogue-sly
 [init]
-	defaultBranch = main
-[github]
-  user = rogue-sly
+    defaultBranch = main
 [core]
-	compression = 9
-	whitespace = error
-	preloadindex = true
-	pager = delta
+    compression = 9
+    whitespace = error
+    preloadindex = true
+    pager = delta
 [status]
-	branch = true
-	showStash = true
+    branch = true
+    showStash = true
 [diff]
-	context = 3
-	renames = copies
-	interHunkContext = 10
-	algorithm = histogram
+    context = 3
+    renames = copies
+    interHunkContext = 10
+    algorithm = histogram
 [interactive]
-	diffFilter = delta --color-only
+    diffFilter = delta --color-only
 [delta]
-	navigate = true
-	dark = true
+    navigate = true
+    dark = true
 [merge]
-	conflictStyle = zdiff3
+    conflictStyle = zdiff3
 [rerere]
-	enabled = true
+    enabled = true
 [gpg]
-	format = ssh
+    format = ssh
 [commit]
-	gpgsign = true
+    gpgsign = true
