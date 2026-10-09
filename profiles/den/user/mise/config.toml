@@ -11,7 +11,6 @@
 "github:rogue-sly/dotbee" = "latest"
 "github:scipenai/tylax" = "latest"
 gopass = "latest"
-opencode = "latest"
 usql = "latest"
 
 [settings]

@@ -6,6 +6,7 @@
 "github:latex-lsp/texlab" = "latest"
 "npm:@vtsls/language-server" = "latest"
 "npm:fish-lsp" = "latest"
+"npm:svelte-language-server" = "latest"
 lua-language-server = "latest"
 tinymist = "latest"
 tombi = "latest"
@@ -18,4 +19,3 @@ stylua = "latest"
 # etc (required by nvim plugins)
 "npm:@mermaid-js/mermaid-cli" = "latest"
 lazygit = "latest"
-zk = "latest"
