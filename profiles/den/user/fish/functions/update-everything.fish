@@ -1,9 +1,16 @@
 function update-everything
     if type -q dnf
         echo "Updating system (dnf)..."
-        sudo dnf upgrade --refresh
+        sudo dnf up --refresh
     else
         echo "dnf not installed, skipping"
+    end
+
+    if type -q nvim
+        echo "Updating neovim plugins"
+        nvim --headless "+Lazy! update" +qa
+    else
+        echo "nvim not installed, skipping"
     end
 
     if type -q flatpak
