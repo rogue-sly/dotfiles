@@ -30,9 +30,9 @@ require("lazy").setup({
         { import = "plugins.misc.lang.markdown" }, -- Markdown
         { import = "plugins.misc.lang.roslyn" }, -- C#
         { import = "plugins.misc.lang.typst" }, -- Typst
-        --- other
+        --- etc
         { import = "plugins.misc.debug" }, -- debugging support
-        { import = "plugins.misc.zettelkasten" }, -- zk-cli integration
+        { import = "plugins.misc.obsidian" }, -- obsidian integration
     },
     checker = { enabled = false },
     defaults = { version = "*" },
