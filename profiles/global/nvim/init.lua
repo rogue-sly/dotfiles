@@ -29,6 +29,7 @@ vim.lsp.enable({
     -- etc
     "mesonlsp",
     "neocmake",
+    "nixd",
     "tombi",
     "zk",
 })

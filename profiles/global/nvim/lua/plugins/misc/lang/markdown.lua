@@ -8,11 +8,11 @@ return {
         name = "markdown.nvim",
         ---@type render.md.UserConfig
         opts = {
-            anti_conceal = { enabled = true },
+            anti_conceal = { enabled = false },
             bullet = { enabled = false },
             checkbox = { enabled = false },
             code = { enabled = false },
-            completions = { lsp = { enabled = true } },
+            completions = { lsp = { enabled = false } },
             heading = { enabled = false },
             html = { enabled = true, render_modes = false, comment = { conceal = false } },
             latex = { enabled = false },

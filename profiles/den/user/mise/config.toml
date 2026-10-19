@@ -1,8 +1,8 @@
 [tools]
-"aqua:VirusTotal/vt-cli" = "latest"
 "aqua:bahdotsh/wrkflw" = "latest"
 "aqua:gokcehan/lf" = "latest"
 "aqua:showwin/speedtest-go" = "latest"
+"github:RivoLink/leaf" = "latest"
 "github:Y2Z/monolith" = "latest"
 "github:bugzmanov/bookokrat" = "latest"
 "github:matthart1983/netwatch" = "latest"
@@ -11,11 +11,13 @@
 "github:rogue-sly/dotbee" = "latest"
 "github:scipenai/tylax" = "latest"
 gopass = "latest"
+trufflehog = "latest"
 usql = "latest"
 
 [settings]
 auto_install = true
 lockfile = true
+activate_shims = false
 # minimum_release_age = "7d"
 disable_tools = [
   "dotnet",
@@ -23,8 +25,9 @@ disable_tools = [
   "rust",
   "uv",
 ]
+disable_backends = ["npm"]
 
 # backends
 cargo = { binstall = true }
-npm = { package_manager = "npm" }
 pipx = { uvx = true }
+github = { credential_command = "gopass show keys/github" }

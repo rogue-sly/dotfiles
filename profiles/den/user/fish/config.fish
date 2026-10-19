@@ -6,6 +6,7 @@ set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx GIT_PAGER delta
 set -gx DOCKER_HOST unix:///run/user/(id -u)/podman/podman.sock
+set -gx LEDGER_FILE ~/Documents/Finance/main.journal
 
 # paths
 fish_add_path ~/.local/bin # user installed programs

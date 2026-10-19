@@ -6,13 +6,6 @@ function update-everything
         echo "dnf not installed, skipping"
     end
 
-    if type -q nvim
-        echo "Updating neovim plugins"
-        nvim --headless "+Lazy! update" +qa
-    else
-        echo "nvim not installed, skipping"
-    end
-
     if type -q flatpak
         echo "Updating flatpaks..."
         flatpak update -y
