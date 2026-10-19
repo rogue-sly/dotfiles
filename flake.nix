@@ -1,4 +1,4 @@
- {
+{
   description = "Rogue's toolbelt";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -9,61 +9,83 @@
     };
   };
 
-  outputs = { nixpkgs, dotbee, self }: let
-    systems = [ "x86_64-linux" ];
-    forAllSystems = f: nixpkgs.lib.genAttrs systems (system:
-      f system (import nixpkgs { inherit system; config.allowUnfree = true; }));
+  outputs =
+    {
+      self,
+      nixpkgs,
+      dotbee,
+    }:
+    let
+      systems = [ "x86_64-linux" ];
+      forAllSystems =
+        f:
+        nixpkgs.lib.genAttrs systems (
+          system:
+          f system (
+            import nixpkgs {
+              inherit system;
+              config.allowUnfree = true;
+            }
+          )
+        );
 
-    tools = pkgs: with pkgs; [
-      # cli/tui
-      btop
-      curl
-      fd
-      jq
-      lazygit
-      lf
-      ripgrep
-      tealdeer
-      tree
-      zoxide
-      nixfmt
-      nixd
+      cli =
+        pkgs: with pkgs; [
+          btop
+          curl
+          devenv
+          fd
+          gopass
+          jq
+          lazygit
+          lf
+          monolith
+          neovim
+          netwatch
+          ripgrep
+          sabiql
+          speedtest-go
+          tealdeer
+          tree
+          trufflehog
+          usql
+          vm-curator
+          wrkflw
+          zoxide
+        ];
 
-      # was mise [tools]
-      gopass
-      monolith
-      netwatch
-      sabiql
-      speedtest-go
-      trufflehog
-      usql
-      vm-curator
-      wrkflw
+      lsp =
+        pkgs: with pkgs; [
+          lua-language-server
+          nixd
+          texlab
+          tinymist
+          tombi
+          websocat
 
-      # was mise conf.d (nvim LSPs/formatters)
-      lua-language-server
-      # mesonlsp
-      # neocmakelsp
-      oxfmt
-      oxlint
-      # roslyn-ls
-      # slint-lsp
-      # slint-viewer
-      stylua
-      texlab
-      tinymist
-      tombi
-      websocat
-    ];
-  in {
-    packages = forAllSystems (system: pkgs: {
-      dotbee = dotbee.packages.${system}.default;
+        ];
+      fmt =
+        pkgs: with pkgs; [
+          nixfmt
+          oxfmt
+          stylua
+        ];
+      lint =
+        pkgs: with pkgs; [
+          selene
+        ];
 
-      default = pkgs.buildEnv {
-        name = "rogue-tools";
-        paths = [ self.packages.${system}.dotbee ] ++ tools pkgs;
-        ignoreCollisions = true;
-      };
-    });
-  };
+    in
+    {
+      packages = forAllSystems (
+        system: pkgs: {
+          dotbee = dotbee.packages.${system}.default;
+          default = pkgs.buildEnv {
+            name = "rogue-tools";
+            paths = [ self.packages.${system}.dotbee ] ++ cli pkgs ++ lsp pkgs ++ fmt pkgs ++ lint pkgs;
+            ignoreCollisions = true;
+          };
+        }
+      );
+    };
 }
