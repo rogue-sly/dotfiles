@@ -28,28 +28,14 @@ packages=(
     # cli/tui
     7zip
     btop
-    curl
-    direnv
-    fastfetch
-    fd-find
-    jq
-    tealdeer
-    tree
     unzip
-    wget
-    which
-    zellij
-    zoxide
     # editor + tools
-    neovim neovim-default-editor zed
-    git mise fzf lazygit ripgrep ov git-delta
+    neovim neovim-default-editor
+    git
     # languages + package-managers
-    dotnet-sdk-10.0 dotnet-sdk-8.0
-    nodejs
-    python3-pip python3-uv
     rustup
     # containers
-    podman podman-compose podman-docker
+    podman podman-compose
     # multimedia codecs (RPM Fusion)
     ffmpeg gstreamer1-plugins-good-extras gstreamer1-plugins-bad-free-extras
     gstreamer1-plugins-ugly gstreamer1-libav gstreamer1-vaapi libva-utils

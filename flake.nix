@@ -31,16 +31,16 @@
 
       cli =
         pkgs: with pkgs; [
-          btop
           curl
+          delta
           devenv
+          fastfetch
           fd
           gopass
           jq
           lazygit
           lf
           monolith
-          neovim
           netwatch
           ripgrep
           sabiql
@@ -58,11 +58,11 @@
         pkgs: with pkgs; [
           lua-language-server
           nixd
+          # doc
           texlab
           tinymist
           tombi
           websocat
-
         ];
       fmt =
         pkgs: with pkgs; [
