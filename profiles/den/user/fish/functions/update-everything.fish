@@ -20,13 +20,6 @@ function update-everything
         echo "app-manager not installed, skipping"
     end
 
-    if type -q mise
-        echo "Updating tools (mise)..."
-        mise upgrade
-    else
-        echo "mise not installed, skipping"
-    end
-
     if type -q fwupdmgr
         echo "Updating firmware (fwupd)..."
         fwupdmgr refresh && fwupdmgr update

@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-#MISE description="Enable OpenH264 codec repo in DNF"
 set -euo pipefail
-# configure dnf
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+# --- dnf
 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 
 RELEASE=$(rpm -E %fedora)
@@ -15,13 +17,6 @@ sudo dnf install --nogpgcheck \
     --repofrompath "terra,https://repos.fyralabs.com/terra${RELEASE}" \
     terra-release
 
-for copr in \
-    "brycensranch/gpu-screen-recorder-git" \
-    "roguedotsly/pixelorama" \
-    "roguedotsly/trenchbroom"; do
-    sudo dnf copr enable -y "$copr"
-done
-
 # install packages
 packages=(
     kitty
@@ -34,6 +29,7 @@ packages=(
     git
     # languages + package-managers
     rustup
+    nix nix-daemon
     # containers
     podman podman-compose
     # multimedia codecs (RPM Fusion)
@@ -49,13 +45,36 @@ groups=(
     rpm-development-tools
 )
 
-sudo dnf upgrade -y --refresh
-
+# install & update
+sudo dnf update -y --refresh
 sudo dnf group install -y "${groups[@]}"
-
 sudo dnf swap -y ffmpeg-free ffmpeg --allowerasing
-
 sudo dnf install "${packages[@]}"
-
+# clean up
 sudo dnf autoremove -y
 sudo dnf clean all
+
+# --- nix
+sudo systemctl enable --now nix-daemon.service
+. /etc/profile.d/nix-daemon.sh
+
+if nix profile list 2>/dev/null | grep -q '^Name:.*dotfiles'; then
+    nix profile upgrade dotfiles
+else
+    nix profile add .
+fi
+
+# --- services
+systemctl --user enable --now podman.socket
+
+# --- dotfiles
+dotbee sync den
+
+# --- done
+echo
+echo "Fedora setup complete!"
+echo
+echo "Next steps:"
+echo "  1. Restart your shell or run:  exec fish"
+echo "  2. Verify dotfiles:            dotbee doctor"
+echo "  3. Reboot (recommended) to pick up kernel/driver updates."
