@@ -2,7 +2,7 @@
   description = "Rogue's toolbelt";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-
+    # my beloved dotfiles manager
     dotbee = {
       url = "github:rogue-sly/dotbee";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -31,6 +31,7 @@
 
       cli =
         pkgs: with pkgs; [
+          binsider
           curl
           delta
           devenv
@@ -43,11 +44,12 @@
           monolith
           netwatch
           ripgrep
-          sabiql
           speedtest-go
           tealdeer
+          tectonic
           tree
           trufflehog
+          typst
           usql
           vm-curator
           wrkflw
@@ -64,12 +66,15 @@
           tombi
           websocat
         ];
+
       fmt =
         pkgs: with pkgs; [
           nixfmt
           oxfmt
           stylua
+          typstyle
         ];
+
       lint =
         pkgs: with pkgs; [
           selene
