@@ -5,10 +5,11 @@ return {
 
         mini_icons.setup({
             default = {},
-            extension = {},
+            extension = {
+                ["lock"] = { glyph = "", hl = "MiniIconsYellow" },
+            },
             file = {
                 ["init.lua"] = { glyph = "󰢱", hl = "MiniIconsAzure" },
-                ["mise.lock"] = { glyph = "", hl = "MiniIconsYellow" },
                 ["LICENSE"] = { glyph = "", hl = "MiniIconsYellow" },
                 ["LICENCE"] = { glyph = "", hl = "MiniIconsYellow" },
                 ["LICENSE-MIT"] = { glyph = "", hl = "MiniIconsYellow" },

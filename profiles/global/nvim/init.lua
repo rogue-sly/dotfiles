@@ -31,5 +31,4 @@ vim.lsp.enable({
     "neocmake",
     "nixd",
     "tombi",
-    "zk",
 })
