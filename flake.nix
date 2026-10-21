@@ -29,53 +29,75 @@
           )
         );
 
-      cli =
+      shell = # things that are integrated into the shell rather than used directly as clis
         pkgs: with pkgs; [
-          binsider
-          curl
+          bat
+          bat-extras.core
           delta
           devenv
-          fastfetch
+          direnv
           fd
+          fish
+          lf
+          ripgrep
+          tectonic
+          zellij
+          zoxide
+        ];
+
+      nvim = # neovim + other components for proper workflow
+        pkgs: with pkgs; [
+          git
+          lazygit
+          neovim
+          sqlite
+          tree-sitter
+        ];
+
+      cli = # cli tools
+        pkgs: with pkgs; [
+          fastfetch
           gopass
           jq
-          lazygit
-          lf
           monolith
-          netwatch
-          ripgrep
           speedtest-go
           tealdeer
-          tectonic
           tree
           trufflehog
           typst
           usql
-          vm-curator
-          wrkflw
-          zoxide
         ];
 
-      lsp =
+      tui = # tui tools
+        pkgs: with pkgs; [
+          binsider
+          netwatch
+          vm-curator
+          wrkflw
+        ];
+
+      lsp = # language servers
         pkgs: with pkgs; [
           lua-language-server
           nixd
+          tombi
           # doc
           texlab
           tinymist
-          tombi
           websocat
         ];
 
-      fmt =
+      fmt = # formatters
         pkgs: with pkgs; [
           nixfmt
           oxfmt
+          shellcheck
+          shfmt
           stylua
           typstyle
         ];
 
-      lint =
+      lint = # linters
         pkgs: with pkgs; [
           selene
         ];
@@ -86,8 +108,17 @@
         system: pkgs: {
           dotbee = dotbee.packages.${system}.default;
           default = pkgs.buildEnv {
-            name = "rogue-tools";
-            paths = [ self.packages.${system}.dotbee ] ++ cli pkgs ++ lsp pkgs ++ fmt pkgs ++ lint pkgs;
+            name = "rogue";
+            paths = [
+              self.packages.${system}.dotbee
+            ]
+            ++ cli pkgs
+            ++ fmt pkgs
+            ++ lint pkgs
+            ++ lsp pkgs
+            ++ nvim pkgs
+            ++ shell pkgs
+            ++ tui pkgs;
             ignoreCollisions = true;
           };
         }
