@@ -1,7 +1,7 @@
 {
   description = "Rogue's toolbelt";
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable"; # nixpkgs
     # my beloved dotfiles manager
     dotbee = {
       url = "github:rogue-sly/dotbee";
@@ -14,6 +14,7 @@
       self,
       nixpkgs,
       dotbee,
+      ...
     }:
     let
       systems = [ "x86_64-linux" ];
@@ -60,6 +61,7 @@
           gopass
           jq
           monolith
+          pandoc
           speedtest-go
           tealdeer
           tree
@@ -79,6 +81,7 @@
       lsp = # language servers
         pkgs: with pkgs; [
           lua-language-server
+          nil
           nixd
           tombi
           # doc
