@@ -46,11 +46,10 @@
           zoxide
         ];
 
-      nvim = # neovim + other components for proper workflow
+      nvim = # programs used by nvim
         pkgs: with pkgs; [
           git
           lazygit
-          neovim
           sqlite
           tree-sitter
         ];

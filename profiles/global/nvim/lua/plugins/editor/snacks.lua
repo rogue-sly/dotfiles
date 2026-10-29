@@ -50,7 +50,7 @@ return {
         input = { enabled = true },
         ---@type snacks.image.Config
         image = {
-            enabled = true,
+            enabled = false,
             math = { enabled = false },
         },
         notifier = {
