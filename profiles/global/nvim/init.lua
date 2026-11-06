@@ -28,6 +28,7 @@ vim.lsp.enable({
     "svelte",
     -- etc
     "mesonlsp",
+    "mise",
     "neocmake",
     "nixd",
     "tombi",

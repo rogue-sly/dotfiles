@@ -19,7 +19,7 @@ fish = { src = "{den}/user/fish", dst = "{cfg}/fish" }
 godot = { src = "{den}/user/godot", dst = "{cfg}/godot" }
 inlyne = { src = "{den}/user/inlyne", dst = "{cfg}/inlyne" }
 kitty = { src = "{den}/user/kitty", dst = "{cfg}/kitty" }
-npmrc = { src = "{den}/user/.npmrc", dst = "~/.npmrc" }
+mise = { src = "{den}/user/mise", dst = "{cfg}/mise" }
 zathura = { src = "{den}/user/zathura", dst = "{cfg}/zathura" }
 
 [profiles.termux.links]

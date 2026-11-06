@@ -1,0 +1,17 @@
+[tools]
+# lsp
+# "dotnet:roslyn-language-server" = { version = "latest", prerelease = true }
+"github:neocmakelsp/neocmakelsp" = "latest"
+"github:JCWasmx86/MesonLSP" = "latest"
+"github:latex-lsp/texlab" = "latest"
+lua-language-server = "latest"
+tinymist = "latest"
+tombi = "latest"
+websocat = "latest"
+
+# fmt
+"aqua:oxc-project/oxc/oxfmt" = "latest"
+stylua = "latest"
+
+# etc (required by nvim plugins)
+lazygit = "latest"
