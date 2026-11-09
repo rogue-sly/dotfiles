@@ -96,53 +96,6 @@ checksum_source = "mise-versions"
 url = "https://github.com/gokcehan/lf/releases/download/r42/lf-windows-amd64.zip"
 url_api = "https://api.github.com/repos/gokcehan/lf/releases/assets/496377674"
 
-[[tools."aqua:oxc-project/oxc/oxfmt"]]
-version = "0.76.0"
-backend = "aqua:oxc-project/oxc/oxfmt"
-specifiers = ["latest"]
-
-[tools."aqua:oxc-project/oxc/oxfmt"."platforms.linux-arm64"]
-checksum = "sha256:e12f4377c74a417558efc9ce5b9380392f458f2121733dac82b2b541d54b7f2a"
-checksum_source = "mise-versions"
-url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.76.0/oxfmt-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/705814752"
-
-[tools."aqua:oxc-project/oxc/oxfmt"."platforms.linux-arm64-musl"]
-checksum = "sha256:1761c9a8a32e6aa3f3544ca37c2eea0dca3adfbb5a1713114fbedc5ca3aa279b"
-checksum_source = "mise-versions"
-url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.76.0/oxfmt-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/705814751"
-
-[tools."aqua:oxc-project/oxc/oxfmt"."platforms.linux-x64"]
-checksum = "sha256:3471c9d9aabfa817208a135546d7f8237c8bfc59970f3a4ed8017368be403003"
-checksum_source = "mise-versions"
-url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.76.0/oxfmt-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/705814856"
-
-[tools."aqua:oxc-project/oxc/oxfmt"."platforms.linux-x64-musl"]
-checksum = "sha256:3e8d2310b9ccf7f1d6c3a1250abb184e9c8c3298ae79b9edb3d60ec8d48e135c"
-checksum_source = "mise-versions"
-url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.76.0/oxfmt-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/705814869"
-
-[tools."aqua:oxc-project/oxc/oxfmt"."platforms.macos-arm64"]
-checksum = "sha256:2ad708e9afe27c0b4430d27fbd008d815bb3c4479eaacfabb4f3d4b1b1c2ae9e"
-checksum_source = "mise-versions"
-url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.76.0/oxfmt-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/705814756"
-
-[tools."aqua:oxc-project/oxc/oxfmt"."platforms.macos-x64"]
-checksum = "sha256:c8c35ae8245108b1dace679bd516745727456385230dd899ba3a2aa3595681f7"
-checksum_source = "mise-versions"
-url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.76.0/oxfmt-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/705814836"
-
-[tools."aqua:oxc-project/oxc/oxfmt"."platforms.windows-x64"]
-checksum = "sha256:3982af5a54069dc6a9ccb1fce2153d2b03caab8cd79feaecc5e93f02ec83b851"
-checksum_source = "mise-versions"
-url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.76.0/oxfmt-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/705814842"
-
 [[tools."aqua:showwin/speedtest-go"]]
 version = "1.8.3"
 backend = "aqua:showwin/speedtest-go"
@@ -271,6 +224,52 @@ url_api = "https://api.github.com/repos/eth-p/bat-extras/releases/assets/1880901
 checksum = "sha256:d79c085b9d0af7f56c3f69d766a83fe26405faac999c4ed7cdfc27417d2c736f"
 url = "https://github.com/eth-p/bat-extras/releases/download/v2024.08.24/bat-extras-2024.08.24.zip"
 url_api = "https://api.github.com/repos/eth-p/bat-extras/releases/assets/188090138"
+
+[[tools.cloudflared]]
+version = "2026.10.7"
+backend = "aqua:cloudflare/cloudflared"
+specifiers = ["latest"]
+
+[tools.cloudflared."platforms.linux-arm64"]
+checksum = "sha256:3df43aedc9ff291d1735b5cb576cb97e0b157488796db2e32b28aecabb445775"
+checksum_source = "mise-versions"
+url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.7/cloudflared-linux-arm64"
+url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/692818763"
+
+[tools.cloudflared."platforms.linux-arm64-musl"]
+checksum = "sha256:3df43aedc9ff291d1735b5cb576cb97e0b157488796db2e32b28aecabb445775"
+checksum_source = "mise-versions"
+url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.7/cloudflared-linux-arm64"
+url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/692818763"
+
+[tools.cloudflared."platforms.linux-x64"]
+checksum = "sha256:1f99fb518b83dec2ba8d870a7cc991d82a77e6196295a3d2754ba17ab9f91872"
+url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.7/cloudflared-linux-amd64"
+url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/692817008"
+
+[tools.cloudflared."platforms.linux-x64-musl"]
+checksum = "sha256:1f99fb518b83dec2ba8d870a7cc991d82a77e6196295a3d2754ba17ab9f91872"
+checksum_source = "mise-versions"
+url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.7/cloudflared-linux-amd64"
+url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/692817008"
+
+[tools.cloudflared."platforms.macos-arm64"]
+checksum = "sha256:3586ccf397e98e5f437e60e7c307ca6ac463e110580503af8bb8e6f9ebf831bd"
+checksum_source = "mise-versions"
+url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.7/cloudflared-darwin-arm64.tgz"
+url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/692819281"
+
+[tools.cloudflared."platforms.macos-x64"]
+checksum = "sha256:02f3edfd87684dd5b705607688e4eb4b323f6e777b81e7b3a85af556aa356848"
+checksum_source = "mise-versions"
+url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.7/cloudflared-darwin-amd64.tgz"
+url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/692819049"
+
+[tools.cloudflared."platforms.windows-x64"]
+checksum = "sha256:2493dbc168923bb3e59e5e7716f71deced92992eea9acd6e9d74f84ac7751343"
+checksum_source = "mise-versions"
+url = "https://github.com/cloudflare/cloudflared/releases/download/2026.10.7/cloudflared-windows-amd64.exe"
+url_api = "https://api.github.com/repos/cloudflare/cloudflared/releases/assets/692820426"
 
 [[tools.delta]]
 version = "0.20.1"
@@ -783,148 +782,50 @@ url_api = "https://api.github.com/repos/gopasspw/gopass/releases/assets/62749479
 provenance = "cosign"
 
 [[tools.lazygit]]
-version = "0.66.2"
+version = "0.66.3"
 backend = "aqua:jesseduffield/lazygit"
 specifiers = ["latest"]
 
 [tools.lazygit."platforms.linux-arm64"]
-checksum = "sha256:79a3161eeb642f0473e23db6341f7baabd4a5933e921a9c1167c5d5c765c41a4"
+checksum = "sha256:ac0b48237f3d0283813e7154ec063237e519532feb0470c0881a1793ee78fd42"
 checksum_source = "mise-versions"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/646837842"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/722269035"
 
 [tools.lazygit."platforms.linux-arm64-musl"]
-checksum = "sha256:79a3161eeb642f0473e23db6341f7baabd4a5933e921a9c1167c5d5c765c41a4"
+checksum = "sha256:ac0b48237f3d0283813e7154ec063237e519532feb0470c0881a1793ee78fd42"
 checksum_source = "mise-versions"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/646837842"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/722269035"
 
 [tools.lazygit."platforms.linux-x64"]
-checksum = "sha256:158efc9ddfa1241fab5fb3526bb442c8dc6c4b1904d73213b9e4e93e03c52034"
-checksum_source = "mise-versions"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/646837723"
+checksum = "sha256:0a23f429a95f0d09db298b3c291536d818de066aa5a85c255806f0490ff6656b"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/722268995"
 
 [tools.lazygit."platforms.linux-x64-musl"]
-checksum = "sha256:158efc9ddfa1241fab5fb3526bb442c8dc6c4b1904d73213b9e4e93e03c52034"
+checksum = "sha256:0a23f429a95f0d09db298b3c291536d818de066aa5a85c255806f0490ff6656b"
 checksum_source = "mise-versions"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_linux_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/646837723"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_linux_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/722268995"
 
 [tools.lazygit."platforms.macos-arm64"]
-checksum = "sha256:fadda59ae7665ba556fcbaa704c7eade6e40d016d3f3b25d6327dd1f3f906a0c"
+checksum = "sha256:6873e6b7a538b521c4d7ff3f76ec49e6dcafa41e6053a6aae33c12f62663e163"
 checksum_source = "mise-versions"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/646837816"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/722268996"
 
 [tools.lazygit."platforms.macos-x64"]
-checksum = "sha256:de5d3771e4befa6fe17590e21445614998adc1ef34a71f4003df6764247517ab"
+checksum = "sha256:f6c116c09b960842351e3e142cc8be1784de611f19d09920421bd7639cccd30b"
 checksum_source = "mise-versions"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_darwin_x86_64.tar.gz"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/646837852"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_darwin_x86_64.tar.gz"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/722269090"
 
 [tools.lazygit."platforms.windows-x64"]
-checksum = "sha256:8b1e2194c2d8ac660f0a132cb4384e9d2fe1405217a144e280df16383c18d45c"
+checksum = "sha256:a76fe17339fd387c20addc09060f07c240e4b20a9f55fee4ad7c86a251c0741e"
 checksum_source = "mise-versions"
-url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.2/lazygit_0.66.2_windows_x86_64.zip"
-url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/646837778"
-
-[[tools."llama.cpp"]]
-version = "12121"
-backend = "github:ggml-org/llama.cpp"
-specifiers = ["latest"]
-
-[tools."llama.cpp".options]
-version_prefix = "b"
-
-[tools."llama.cpp"."platforms.linux-arm64"]
-checksum = "sha256:7b172aa70a9963737991baeaf4e5f2c0338860bdca91e5e9ea6836838a58e7bc"
-url = "https://github.com/ggml-org/llama.cpp/releases/download/b12121/llama-b12121-bin-ubuntu-arm64.tar.gz"
-url_api = "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/711847471"
-provenance = "github-attestations"
-
-[tools."llama.cpp"."platforms.linux-arm64-musl"]
-checksum = "sha256:7b172aa70a9963737991baeaf4e5f2c0338860bdca91e5e9ea6836838a58e7bc"
-url = "https://github.com/ggml-org/llama.cpp/releases/download/b12121/llama-b12121-bin-ubuntu-arm64.tar.gz"
-url_api = "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/711847471"
-provenance = "github-attestations"
-
-[tools."llama.cpp"."platforms.linux-x64"]
-checksum = "sha256:462cdbf73907c799bd29c02799af7cee6bf2ca1257a206c2797846e5db004b86"
-url = "https://github.com/ggml-org/llama.cpp/releases/download/b12121/llama-b12121-bin-ubuntu-x64.tar.gz"
-url_api = "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/711849593"
-provenance = "github-attestations"
-
-[tools."llama.cpp"."platforms.linux-x64-musl"]
-checksum = "sha256:462cdbf73907c799bd29c02799af7cee6bf2ca1257a206c2797846e5db004b86"
-url = "https://github.com/ggml-org/llama.cpp/releases/download/b12121/llama-b12121-bin-ubuntu-x64.tar.gz"
-url_api = "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/711849593"
-provenance = "github-attestations"
-
-[tools."llama.cpp"."platforms.macos-arm64"]
-checksum = "sha256:75e2176148b2d79ff20f503fa131f3d66d74176ed06c58f48e273e20383c32c2"
-url = "https://github.com/ggml-org/llama.cpp/releases/download/b12121/llama-b12121-bin-macos-arm64.tar.gz"
-url_api = "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/711847333"
-provenance = "github-attestations"
-
-[tools."llama.cpp"."platforms.macos-x64"]
-checksum = "sha256:c68c96e267d3c3391356d71fc03c6d61eca5ccda25b29bd2417d0c04f3edf9bc"
-url = "https://github.com/ggml-org/llama.cpp/releases/download/b12121/llama-b12121-bin-macos-x64.tar.gz"
-url_api = "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/711847388"
-provenance = "github-attestations"
-
-[tools."llama.cpp"."platforms.windows-x64"]
-checksum = "sha256:8811e941123225c03927c52847d4eb6688f1f1e025b13014e3e98f09f35cac8c"
-url = "https://github.com/ggml-org/llama.cpp/releases/download/b12121/llama-b12121-bin-win-cpu-x64.zip"
-url_api = "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/711849754"
-provenance = "github-attestations"
-
-[[tools.llmfit]]
-version = "1.1.20"
-backend = "github:AlexsJones/llmfit"
-specifiers = ["latest"]
-
-[tools.llmfit."platforms.linux-arm64"]
-checksum = "sha256:fe56463b13757663eb936559424667693bc7b9e33df1ac1572064fd8685ed98d"
-checksum_source = "mise-versions"
-url = "https://github.com/AlexsJones/llmfit/releases/download/v1.1.20/llmfit-v1.1.20-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/AlexsJones/llmfit/releases/assets/706534297"
-
-[tools.llmfit."platforms.linux-arm64-musl"]
-checksum = "sha256:de9fcb030b19997a983a616c149d101a57b1a83556fe9be1740f88dc348e3ec7"
-checksum_source = "mise-versions"
-url = "https://github.com/AlexsJones/llmfit/releases/download/v1.1.20/llmfit-v1.1.20-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/AlexsJones/llmfit/releases/assets/706534295"
-
-[tools.llmfit."platforms.linux-x64"]
-checksum = "sha256:d57076fab42ff875c2497d8f685adb3172856c219d13a81219cdc063b6318602"
-checksum_source = "mise-versions"
-url = "https://github.com/AlexsJones/llmfit/releases/download/v1.1.20/llmfit-v1.1.20-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/AlexsJones/llmfit/releases/assets/706534296"
-
-[tools.llmfit."platforms.linux-x64-musl"]
-checksum = "sha256:64d71c876965fb883c175ff20558a26f4dd5ad1404b582a1922c496b16720421"
-checksum_source = "mise-versions"
-url = "https://github.com/AlexsJones/llmfit/releases/download/v1.1.20/llmfit-v1.1.20-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/AlexsJones/llmfit/releases/assets/706534294"
-
-[tools.llmfit."platforms.macos-arm64"]
-checksum = "sha256:d95629660505debdd3d8086a020512600ae1e1fcc35d89dc716424788497a73b"
-checksum_source = "mise-versions"
-url = "https://github.com/AlexsJones/llmfit/releases/download/v1.1.20/llmfit-v1.1.20-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/AlexsJones/llmfit/releases/assets/706534289"
-
-[tools.llmfit."platforms.macos-x64"]
-checksum = "sha256:3fcce436bb6d34d5fd4e3e62ccd7232b8332ec3b91f8c47ec8a346df90cbde66"
-checksum_source = "mise-versions"
-url = "https://github.com/AlexsJones/llmfit/releases/download/v1.1.20/llmfit-v1.1.20-x86_64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/AlexsJones/llmfit/releases/assets/706534287"
-
-[tools.llmfit."platforms.windows-x64"]
-checksum = "sha256:1f848ddf2554adb89b3a31a034245826694148249fadace572c4544bb3c9c489"
-checksum_source = "mise-versions"
-url = "https://github.com/AlexsJones/llmfit/releases/download/v1.1.20/llmfit-v1.1.20-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/AlexsJones/llmfit/releases/assets/706534303"
+url = "https://github.com/jesseduffield/lazygit/releases/download/v0.66.3/lazygit_0.66.3_windows_x86_64.zip"
+url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/722269081"
 
 [[tools.lua-language-server]]
 version = "3.19.2"
@@ -974,83 +875,130 @@ url = "https://github.com/LuaLS/lua-language-server/releases/download/3.19.2/lua
 url_api = "https://api.github.com/repos/LuaLS/lua-language-server/releases/assets/635856461"
 
 [[tools.opencode]]
-version = "2.2.5"
+version = "2.2.6"
 backend = "aqua:anomalyco/opencode"
 specifiers = ["latest"]
 
 [tools.opencode."platforms.linux-arm64"]
-checksum = "sha256:5a528f42caf576c6cdece6a191eb273d3db54effa5518e0402684d8f8026aeb6"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-arm64.tar.gz"
+checksum = "sha256:f2d27600c367e45057d6a16f6a5c2aa8d77b41a9b10d4bc3d849c2f88870e944"
+url = "https://opencode.ai/files/bin/2.2.6/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-arm64-musl"]
-checksum = "sha256:5a528f42caf576c6cdece6a191eb273d3db54effa5518e0402684d8f8026aeb6"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-arm64.tar.gz"
+checksum = "sha256:f2d27600c367e45057d6a16f6a5c2aa8d77b41a9b10d4bc3d849c2f88870e944"
+url = "https://opencode.ai/files/bin/2.2.6/opencode-linux-arm64.tar.gz"
 
 [tools.opencode."platforms.linux-x64"]
-checksum = "sha256:09f44302c10fd036912f59c81fd1aef5df45dd06f649197f9dfc9bbe2a79614e"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz"
+checksum = "blake3:41325f79141a3052fb4be4a83a25bc0da280b29355e0457b8afb199f38dfb3b9"
+url = "https://opencode.ai/files/bin/2.2.6/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.linux-x64-musl"]
-checksum = "sha256:09f44302c10fd036912f59c81fd1aef5df45dd06f649197f9dfc9bbe2a79614e"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-linux-x64.tar.gz"
+checksum = "sha256:08bb21d6326ce740d91cce7ebe88a6536933f6e1e30353b91a06b01f25da306c"
+url = "https://opencode.ai/files/bin/2.2.6/opencode-linux-x64.tar.gz"
 
 [tools.opencode."platforms.macos-arm64"]
-checksum = "sha256:25ba9908979fa7d764792c82589b4b5768ab1511154e0317d98aa77d216ce767"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-darwin-arm64.zip"
+checksum = "sha256:15491608f6b0bc4debe5eac35eab629a2b07ea9a1fbac68ad53bcea59fcc4b45"
+url = "https://opencode.ai/files/bin/2.2.6/opencode-darwin-arm64.zip"
 
 [tools.opencode."platforms.macos-x64"]
-checksum = "sha256:4d4419022e6ffbd48afc97c5101bdf001d38b0499f516169b9a80a87a340fd56"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-darwin-x64.zip"
+checksum = "sha256:b2962dc445d873df56ae7d3ba7e66502b046bbc4dafa820eca18d0303a98a29c"
+url = "https://opencode.ai/files/bin/2.2.6/opencode-darwin-x64.zip"
 
 [tools.opencode."platforms.windows-x64"]
-checksum = "sha256:2f3bfd6b3527c60c2a882557b20ddc9ba6bdff4b5a8fe61c853da8fcfb3076e8"
-url = "https://opencode.ai/files/bin/2.2.5/opencode-windows-x64.zip"
+checksum = "sha256:f75c16b33b8523fe1ff41e7d97e3ae654a47d59a0e327def24db2d9291bb24be"
+url = "https://opencode.ai/files/bin/2.2.6/opencode-windows-x64.zip"
 
-[[tools.rclone]]
-version = "1.75.2"
-backend = "aqua:rclone/rclone"
+[[tools.oxfmt]]
+version = "0.77.0"
+backend = "aqua:oxc-project/oxc/oxfmt"
 specifiers = ["latest"]
 
-[tools.rclone."platforms.linux-arm64"]
-checksum = "sha256:7e1e8d69654941b7b7df84ee74c5f7fb09cce7d5496947fb7bf16b55ff427d10"
+[tools.oxfmt."platforms.linux-arm64"]
+checksum = "sha256:1fdac20a4d8a665c3e5ed33cbc4ba7ab84045ae162e28409000882034752a9d2"
 checksum_source = "mise-versions"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624698085"
+url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.77.0/oxfmt-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/717100803"
 
-[tools.rclone."platforms.linux-arm64-musl"]
-checksum = "sha256:7e1e8d69654941b7b7df84ee74c5f7fb09cce7d5496947fb7bf16b55ff427d10"
+[tools.oxfmt."platforms.linux-arm64-musl"]
+checksum = "sha256:e79f2859f178893f1dc1cbf34c0108e7005aeb4959ea72f0568080a8591f8313"
 checksum_source = "mise-versions"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624698085"
+url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.77.0/oxfmt-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/717100808"
 
-[tools.rclone."platforms.linux-x64"]
-checksum = "sha256:349ac8fba6ff65d6247043f1750cdcb518ec5d500ef91463a10d37c0ccdf3702"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624695998"
-
-[tools.rclone."platforms.linux-x64-musl"]
-checksum = "sha256:349ac8fba6ff65d6247043f1750cdcb518ec5d500ef91463a10d37c0ccdf3702"
+[tools.oxfmt."platforms.linux-x64"]
+checksum = "sha256:fe6e04872d2914693ecc31d8679c8c34816dd5e8f9fe0022d99c143b6633c091"
 checksum_source = "mise-versions"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624695998"
+url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.77.0/oxfmt-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/717100913"
 
-[tools.rclone."platforms.macos-arm64"]
-checksum = "sha256:610ab7d48615135dfc60b763858b11a426a0d3d1160c1bb76fb0ae6011b02edd"
+[tools.oxfmt."platforms.linux-x64-musl"]
+checksum = "sha256:881469ed2d0f8d7fdfc19e2bdf4e9570fe924e0b1a87efe36adcf3581fab52a5"
 checksum_source = "mise-versions"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-osx-arm64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624713742"
+url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.77.0/oxfmt-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/717100929"
 
-[tools.rclone."platforms.macos-x64"]
-checksum = "sha256:574e1f31cf1c464e5fb0325cb66fcbdeaf1efa1802bd9b17f13c256fd74b6561"
+[tools.oxfmt."platforms.macos-arm64"]
+checksum = "sha256:e56a18418c48fb3e81a3a3df78199deabecac051d93be1a07a08e67d4e8d43b3"
 checksum_source = "mise-versions"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-osx-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624713102"
+url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.77.0/oxfmt-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/717100800"
 
-[tools.rclone."platforms.windows-x64"]
-checksum = "sha256:8a9db2bad1dc79a65b3348fd857069598e2aab7cf4d118b77b1df23055aff818"
+[tools.oxfmt."platforms.macos-x64"]
+checksum = "sha256:6ef22899a2e824be3971cdf9645937c6c19ef69378bf37ba2a9ba4a4b1135159"
 checksum_source = "mise-versions"
-url = "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-windows-amd64.zip"
-url_api = "https://api.github.com/repos/rclone/rclone/releases/assets/624717601"
+url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.77.0/oxfmt-x86_64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/717100898"
+
+[tools.oxfmt."platforms.windows-x64"]
+checksum = "sha256:f2c894690b8a1d6d4a3eed651748adf50054f3ffaebff67b02a9a9780b2e143c"
+checksum_source = "mise-versions"
+url = "https://github.com/oxc-project/oxc/releases/download/oxfmt_v0.77.0/oxfmt-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/oxc-project/oxc/releases/assets/717100899"
+
+[[tools.shfmt]]
+version = "3.14.1"
+backend = "aqua:mvdan/sh"
+specifiers = ["latest"]
+
+[tools.shfmt."platforms.linux-arm64"]
+checksum = "sha256:5f2db09dae91fca848f7adbdd014632e921a383863a2ad7e0450ad3aba0c6489"
+checksum_source = "mise-versions"
+url = "https://github.com/mvdan/sh/releases/download/v3.14.1/shfmt_v3.14.1_linux_arm64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/547320869"
+
+[tools.shfmt."platforms.linux-arm64-musl"]
+checksum = "sha256:5f2db09dae91fca848f7adbdd014632e921a383863a2ad7e0450ad3aba0c6489"
+checksum_source = "mise-versions"
+url = "https://github.com/mvdan/sh/releases/download/v3.14.1/shfmt_v3.14.1_linux_arm64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/547320869"
+
+[tools.shfmt."platforms.linux-x64"]
+checksum = "sha256:76e77641faa025814b77f153b29796b8e6fa2fca03e0c76a691608b86c7ea7bf"
+url = "https://github.com/mvdan/sh/releases/download/v3.14.1/shfmt_v3.14.1_linux_amd64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/547320883"
+
+[tools.shfmt."platforms.linux-x64-musl"]
+checksum = "sha256:76e77641faa025814b77f153b29796b8e6fa2fca03e0c76a691608b86c7ea7bf"
+checksum_source = "mise-versions"
+url = "https://github.com/mvdan/sh/releases/download/v3.14.1/shfmt_v3.14.1_linux_amd64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/547320883"
+
+[tools.shfmt."platforms.macos-arm64"]
+checksum = "sha256:b7c872db63553ccffc7253aba3ed7d4885a27d83f1ba567b1138c6315a5847e5"
+checksum_source = "mise-versions"
+url = "https://github.com/mvdan/sh/releases/download/v3.14.1/shfmt_v3.14.1_darwin_arm64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/547320930"
+
+[tools.shfmt."platforms.macos-x64"]
+checksum = "sha256:d33eee0da0f92835b3562e9767a05cee7e4eaeef47daa03bfd09da17b4b590a6"
+checksum_source = "mise-versions"
+url = "https://github.com/mvdan/sh/releases/download/v3.14.1/shfmt_v3.14.1_darwin_amd64"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/547320946"
+
+[tools.shfmt."platforms.windows-x64"]
+checksum = "sha256:13629ce28442ca80b6b5a819f7574ab39e1c28c6e26734ca816c9714e04851df"
+checksum_source = "mise-versions"
+url = "https://github.com/mvdan/sh/releases/download/v3.14.1/shfmt_v3.14.1_windows_amd64.exe"
+url_api = "https://api.github.com/repos/mvdan/sh/releases/assets/547320827"
 
 [[tools.stylua]]
 version = "2.6.0"

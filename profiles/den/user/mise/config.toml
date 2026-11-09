@@ -4,6 +4,7 @@
 "aqua:showwin/speedtest-go" = "latest"
 bat = "latest"
 bat-extras = "latest"
+cloudflared = "latest"
 delta = "latest"
 "github:RivoLink/leaf" = "latest"
 "github:Y2Z/monolith" = "latest"
@@ -13,10 +14,7 @@ delta = "latest"
 "github:rogue-sly/dotbee" = "latest"
 "github:scipenai/tylax" = "latest"
 gopass = "latest"
-"llama.cpp" = { version = "latest", prerelease = true, version_prefix = "b" }
-llmfit = "latest"
 opencode = "latest"
-rclone = "latest"
 tealdeer = "latest"
 trufflehog = "latest"
 typst = "latest"
@@ -28,12 +26,9 @@ zoxide = "latest"
 auto_install = true
 lockfile = true
 activate_shims = false
-# minimum_release_age = "7d"
-disable_tools = ["dotnet", "node", "rust", "uv"]
-# fuck you npm
-disable_backends = ["npm"]
+disable_backends = ["npm", "asdf"]  # unsafe af to install from these
 
 # backends
 cargo = { binstall = true }
 pipx = { uvx = true }
-github = { credential_command = "mise x -- gopass show keys/github" }
+github = { credential_command = "gopass show -o keys/github" }

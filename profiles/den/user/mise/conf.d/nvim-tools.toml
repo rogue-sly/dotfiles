@@ -10,7 +10,8 @@ tombi = "latest"
 websocat = "latest"
 
 # fmt
-"aqua:oxc-project/oxc/oxfmt" = "latest"
+oxfmt = "latest"
+shfmt = "latest"
 stylua = "latest"
 
 # etc (required by nvim plugins)
