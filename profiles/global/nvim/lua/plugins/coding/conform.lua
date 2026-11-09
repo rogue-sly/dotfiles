@@ -49,18 +49,18 @@ return {
                 bash = { "shfmt" },
                 fish = { "fish_indent" },
                 -- web stuff
-                html = { "oxfmt" },
-                css = { "oxfmt" },
-                javascript = { "oxfmt" },
-                typescript = { "oxfmt" },
-                svelte = { "oxfmt", lsp_format = "never" },
+                -- html = { "oxfmt" },
+                -- css = { "oxfmt" },
+                -- javascript = { "oxfmt" },
+                -- typescript = { "oxfmt" },
+                -- svelte = { "oxfmt" },
                 -- markup/doc
-                markdown = { "oxfmt" },
+                -- markdown = { "oxfmt" },
                 typst = { "typstyle" },
                 -- data/config
-                json = { "oxfmt" },
-                jsonc = { "oxfmt" },
-                yaml = { "oxfmt" },
+                -- json = { "oxfmt" },
+                -- jsonc = { "oxfmt" },
+                -- yaml = { "oxfmt" },
                 -- etc
                 meson = { "meson" },
             },

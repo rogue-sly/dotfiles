@@ -33,6 +33,7 @@ require("lazy").setup({
         --- etc
         { import = "plugins.misc.debug" }, -- debugging support
         { import = "plugins.misc.obsidian" }, -- obsidian integration
+        { import = "plugins.misc.sql" }, -- databases
     },
     checker = { enabled = false },
     defaults = { version = "*" },
