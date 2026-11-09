@@ -2,7 +2,7 @@ function update-everything
     # system
     if type -q dnf
         echo "Updating system (dnf)..."
-        sudo dnf up --refresh
+        sudo dnf update --refresh -y
     else
         echo "dnf not installed, skipping"
     end
